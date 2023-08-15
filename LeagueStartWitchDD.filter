@@ -1414,7 +1414,7 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "sounds/bbgg.mp3" 300
+	CustomAlertSound "sounds/rgbg.mp3" 300
 	MinimapIcon 2 Red Hexagon
 
 
