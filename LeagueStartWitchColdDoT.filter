@@ -106,7 +106,7 @@
 #Note that the filter is extremely modular. If you don't need a section feel free to delete it without interfering with other key sections.
 
 Show
-	CustomAlertSound "StopUsingNow.mp3"
+	CustomAlertSound "gucci_sounds/StopUsingNow.mp3" 300
 	AreaLevel >= 69
 
 ##################################################
