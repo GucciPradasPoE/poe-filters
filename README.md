@@ -1,5 +1,6 @@
 # How To Use
-Download LeagueStartWitchColdDoT.filter and sounds folder. 
+Video Explanation: https://clips.twitch.tv/FitHeadstrongLadiesTTours-3Gn7TZTxjf0pNpw1
+Download whichever you intend to use and sounds folder. 
 
 
 Put both in Documents > My Games > Path of Exile
