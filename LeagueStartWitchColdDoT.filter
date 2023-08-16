@@ -105,6 +105,10 @@
 #To enable the chaos recipe go read the notes in Section 22.
 #Note that the filter is extremely modular. If you don't need a section feel free to delete it without interfering with other key sections.
 
+Show
+	CustomAlertSound "StopUsingNow.mp3"
+	AreaLevel >= 69
+
 ##################################################
 ##### Section 0 - Racing Options & Overrides #####
 ##################################################
@@ -1539,7 +1543,7 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
-	CustomAlertSound "sounds/leatherbelt.mp3" 300
+#	CustomAlertSound "sounds/leatherbelt.mp3" 300
 	MinimapIcon 2 White Circle
 Show
 	Class "Belt"
@@ -1858,7 +1862,7 @@ Show
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
 	MinimapIcon 2 White Circle
-	CustomAlertSound "sounds/amethystring.mp3" 300
+#	CustomAlertSound "sounds/amethystring.mp3" 300
 Show
 	Class "Ring"
 	BaseType "Amethyst Ring"
@@ -1880,7 +1884,7 @@ Show
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
 	MinimapIcon 2 Blue Circle
-	CustomAlertSound "sounds/amethystring.mp3" 300
+#	CustomAlertSound "sounds/amethystring.mp3" 300
 Show
 	Class "Ring"
 	BaseType "Amethyst Ring"
@@ -1965,12 +1969,8 @@ Show
 
 ##### Gems #####
 ## Strand ##
-Show
-	Class "Gem"
-	BaseType "Burning Arrow" "Pierce" "Momentum Support" "Fireball" "Arcane Surge" "Spectral Throw" "Prismatic Burst" "Glacial Hammer" "Elemental Proliferation Support" "Flame Dash" "Arcane Surge" "Frostblink" "Rolling Magma" "Flame Wall" "Combustion" "War Banner" "Holy Flame Totem" 
-	SetFontSize 45
 
-	
+
 ### +1 cold recipe####
 Show
 	Class Gem
@@ -1985,25 +1985,42 @@ Show
 	
 ## Zones ##
 Show
+	Class "Gem"
+	AreaLevel = 1
+	SetFontSize 45
+	
+Show
     Class Gem
     Quality >= 1
 	SetBorderColor 150 120 60
-	SetFontSize 36
+	SetFontSize 45
+	
 Show
 	Class "Gem"
-	BaseType "Summon Skitterbots" "Herald of Thunder" "Herald of Ash" "Herald of Ice" "Lesser Multiple Projectiles" "Volley Support" "Elemental Focus" "Faster Casting" "Cruelty" "Leap Slam" "Anger" "Determination" "Cremation" "Haste" "Vaal"
+	GemLevel >= 2
 	SetFontSize 45
+	
+	
 Show
-	Class "Gem"
-	BaseType "War Banner" 
-	SetBackgroundColor 180 0 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
+	Class Gem
+	BaseType "Vaal"
+	Corrupted True
+	SetBackgroundColor 50 0 0
 	SetFontSize 45
-	PlayAlertSound 6 250
-	MinimapIcon 0 Red Circle
-	PlayEffect Red
-	DisableDropSound
+
+	
+#tink#
+#Show
+#	Class "Gem"
+#	BaseType "Blood Rage" 
+#	SetBackgroundColor 180 0 0
+#	SetBorderColor 0 0 0
+#	SetTextColor 0 0 0
+#	SetFontSize 45
+#	PlayAlertSound 6 250
+#	MinimapIcon 0 Red Circle
+#	PlayEffect Red
+#	DisableDropSound
 	
 ##### Uniques #####
 
@@ -2058,7 +2075,6 @@ Show
 Show
 	Rarity Normal Magic Rare
 	Class "Body Armour"
-	Sockets = 5
 	LinkedSockets = 5
 	SetBackgroundColor 0 150 150
 	SetBorderColor 0 250 250
@@ -4389,15 +4405,15 @@ Show
 	PlayEffect Grey
 	
 #Forbidden Sanctum (v3.20) - brown/gold
-Show
-	Class "Sanctified Relic"
-	SetBackgroundColor 225 175 125
-	SetBorderColor 225 225 225
-	SetTextColor 250 225 200
-	SetFontSize 45		
-	PlayAlertSound 11 200
-	MinimapIcon 0 Yellow Square
-	PlayEffect Yellow
+#Show
+#	Class "Sanctified Relic"
+#	SetBackgroundColor 225 175 125
+#	SetBorderColor 225 225 225
+#	SetTextColor 250 225 200
+#	SetFontSize 45		
+#	PlayAlertSound 11 200
+#	MinimapIcon 0 Yellow Square
+#	PlayEffect Yellow
 Show
 	Class "Relic"
 	SetBackgroundColor 225 175 125
@@ -4409,25 +4425,25 @@ Show
 	PlayEffect Yellow
 	
 #Crucible (v3.21) - reddish orange
-Show
-	BaseType "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
-	SetBackgroundColor 250 75 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 11 200
-	MinimapIcon 1 Orange Circle
-	PlayEffect Orange
-Show
-	BaseType "Primeval Remnant"
-	Class "Misc Map Items"
-	SetBackgroundColor 250 175 100
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 8 150
-	MinimapIcon 0 Yellow Hexagon
-	PlayEffect Yellow
+#Show
+#	BaseType "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
+#	SetBackgroundColor 250 75 0
+#	SetBorderColor 0 0 0
+#	SetTextColor 0 0 0
+#	SetFontSize 45
+#	PlayAlertSound 11 200
+#	MinimapIcon 1 Orange Circle
+#	PlayEffect Orange
+#Show
+#	BaseType "Primeval Remnant"
+#	Class "Misc Map Items"
+#	SetBackgroundColor 250 175 100
+#	SetBorderColor 0 0 0
+#	SetTextColor 0 0 0
+#	SetFontSize 45
+#	PlayAlertSound 8 150
+#	MinimapIcon 0 Yellow Hexagon
+#	PlayEffect Yellow
 	
 #League Unknowns - Uniques and div cards whose names/basetypes are known before launch but not the details, or if I'm not quite sure how significantly the changes will impact the value. Small green icons.
 #Show
@@ -11029,7 +11045,7 @@ Show
 	MinimapIcon 2 Green Triangle
 
 Show
-	Class "Active Skill Gem"
+	Class "Gem"
 	GemLevel >= 21
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
