@@ -1454,7 +1454,7 @@ Show
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
 	ItemLevel <= 47
 	Sockets < 6
 	Sockets >= 3
