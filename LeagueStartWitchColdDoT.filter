@@ -1457,6 +1457,7 @@ Show
 	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
 	ItemLevel <= 47
 	Sockets < 6
+	LinkedSockets <= 3
 	Sockets >= 3
 	Rarity Normal Magic Rare
 	SocketGroup BB BBB BBG RG BRB
@@ -1475,9 +1476,10 @@ Show
 #	SetFontSize 35
 
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "One Hand Swords" "One Hand Axes"
+	Class "Gloves" "Helm" "Boots" "Body Armour" 
 	ItemLevel <= 47
 	Sockets < 6
+	LinkedSockets <= 3
 	Sockets >= 4
 	Rarity Normal Magic Rare
 	SocketGroup BB BR BBB BBR BBG RG BG
@@ -4424,16 +4426,7 @@ Show
 	MinimapIcon 1 Yellow Square
 	PlayEffect Yellow
 	
-#Crucible (v3.21) - reddish orange
-#Show
-#	BaseType "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
-#	SetBackgroundColor 250 75 0
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 0 0
-#	SetFontSize 45
-#	PlayAlertSound 11 200
-#	MinimapIcon 1 Orange Circle
-#	PlayEffect Orange
+#Crucible (v3.21) - reddish orange. geode/ore removed in 3.22
 #Show
 #	BaseType "Primeval Remnant"
 #	Class "Misc Map Items"
@@ -4445,17 +4438,39 @@ Show
 #	MinimapIcon 0 Yellow Hexagon
 #	PlayEffect Yellow
 	
+#Trial of the Ancestors (v3.22)
+Show
+	BaseType "Silver Coin" "Hinekora's Lock"
+	Class Currency
+	SetBackgroundColor 185 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 2 Grey Circle
+	PlayEffect Grey Temp
+Show
+	BaseType "Tattoo" "Omen"
+	Class Currency
+	SetBackgroundColor 25 165 165
+	SetBorderColor 225 225 225
+	SetTextColor 225 225 225
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 2 Cyan Square
+	PlayEffect Cyan Temp
+
 #League Unknowns - Uniques and div cards whose names/basetypes are known before launch but not the details, or if I'm not quite sure how significantly the changes will impact the value. Small green icons.
-#Show
-#	BaseType ""
-#	Rarity Unique
-#	SetBackgroundColor 225 100 0
-#	SetBorderColor 0 0 250
-#	SetTextColor 0 0 0
-#	SetFontSize 38
-#	PlayAlertSound 4 100	
-#	MinimapIcon 2 Green Star
-#	PlayEffect Green
+Show
+	BaseType "Majestic Plate" "Karui Sceptre"
+	Rarity Unique
+	SetBackgroundColor 225 100 0
+	SetBorderColor 0 0 250
+	SetTextColor 0 0 0
+	SetFontSize 38
+	PlayAlertSound 4 100
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 #Show
 #	BaseType == 
 #	Class "Divination Card"
