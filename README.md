@@ -1,3 +1,7 @@
+# Do not use LeagueStart filters past a10.
+# Do not use Racing_ filters past act 5. 
+
+
 # How To Use
 Video Explanation: https://clips.twitch.tv/FitHeadstrongLadiesTTours-3Gn7TZTxjf0pNpw1
 
@@ -12,4 +16,13 @@ Check back before league start for potential updates
 
 If you have any feedback feel free to post in the filter feedback channel in discord here  https://discord.gg/W4uKt67jxD
 
-# Do not use LeagueStart filters past a10. Do not use Racing_ filters past act 5. You have been warned.
+# Example of runs with the filter
+
+LeagueStartWitchColdDoT: https://youtu.be/61sl5TAzsu0
+
+LeagueStartWitchDD: https://youtu.be/RzBEVoEV1iI
+
+Racing_Templar321: https://www.twitch.tv/videos/1892350038
+
+
+
