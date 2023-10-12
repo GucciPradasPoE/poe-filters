@@ -8441,7 +8441,7 @@ Show
 	MinimapIcon 2 Green Triangle
 
 Show
-	Class "Active Skill Gem"
+	Class "Skill Gem"
 	GemLevel >= 21
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
