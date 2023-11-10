@@ -4358,42 +4358,42 @@ Show
 	PlayAlertSound 3 200
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
-#Show
-#	BaseType "Power Core"
-#	SetBackgroundColor 0 150 250
-#	SetBorderColor 200 200 200
-#	SetTextColor 200 200 200
-#	SetFontSize 45		
-#	PlayAlertSound 11 200
-#	MinimapIcon 0 Blue Triangle
-#	PlayEffect Blue
-#Show
-#	Class "Sentinel Drone"
-#	Rarity Unique
-#	SetBackgroundColor 0 150 250
-#	SetBorderColor 225 100 0
-#	SetTextColor 200 200 200
-#	SetFontSize 45		
-#	PlayAlertSound 11 200
-#	MinimapIcon 0 Orange Triangle
-#	PlayEffect Orange
-#Show
-#	Class "Sentinel Drone"
-#	Rarity Magic Rare
-#	SetBackgroundColor 0 150 250
-#	SetBorderColor 200 200 200
-#	SetTextColor 200 200 200
-#	SetFontSize 45		
-#	PlayAlertSound 11 200
-#	MinimapIcon 0 Blue Triangle
-#	PlayEffect Blue
-#Show
-#	Class "Sentinel Drone"
-#	Rarity Normal
-#	SetBackgroundColor 0 150 250
-#	SetBorderColor 200 200 200
-#	SetTextColor 200 200 200
-#	SetFontSize 40
+Show
+	BaseType "Power Core"
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetTextColor 200 200 200
+	SetFontSize 45		
+	PlayAlertSound 11 200
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+Show
+	Class "Sentinel Drone"
+	Rarity Unique
+	SetBackgroundColor 0 150 250
+	SetBorderColor 225 100 0
+	SetTextColor 200 200 200
+	SetFontSize 45		
+	PlayAlertSound 11 200
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+Show
+	Class "Sentinel Drone"
+	Rarity Magic Rare
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetTextColor 200 200 200
+	SetFontSize 45		
+	PlayAlertSound 11 200
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+Show
+	Class "Sentinel Drone"
+	Rarity Normal
+	SetBackgroundColor 0 150 250
+	SetBorderColor 200 200 200
+	SetTextColor 200 200 200
+	SetFontSize 40
 
 #Lake of Kalandra (v3.19) - greyish green-blue
 Show
