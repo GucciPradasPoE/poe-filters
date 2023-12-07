@@ -714,7 +714,7 @@ Show
 Show
 	BaseType "Scroll of Wisdom"
 	Class Currency
-	AreaLevel < 34
+	AreaLevel < 99
 	SetFontSize 45
 	SetBorderColor 170 158 130
 	SetTextColor 170 158 130
@@ -737,15 +737,7 @@ Show
 	CustomAlertSound "gucci_sounds/essence.mp3" 
 	MinimapIcon 2 Green Circle
 
-#marker
-Show
-	BaseType "Rogue's Marker"
-	SetBackgroundColor 65 10 0
-	SetBorderColor 225 225 225
-	SetTextColor 225 225 225
-	SetFontSize 42
-#	PlayAlertSound 3 150
-	MinimapIcon 2 Grey Circle
+
 
 
 	
@@ -958,15 +950,6 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Red Triangle
 Show
-	BaseType "Granite Flask" "Jade Flask" "Quartz Flask"
-	SetTextColor 250 0 125
-	ItemLevel <= 99
-	MinimapIcon 2 Orange Raindrop
-	SetFontSize 45
-	PlayAlertSound 14 200
-	
-
-Show
 	BaseType "Goat's Horn"
 	AreaLevel < 13	
 	Rarity Normal
@@ -1163,32 +1146,9 @@ Show
 #	SetFontSize 45
 #	CustomAlertSound "gucci_sounds/wand3b.mp3" 300
 #	MinimapIcon 2 Yellow Triangle
-#Show
-#	Class "Shield"
-#	BaseType "Twig Spirit Shield" "Yew Spirit Shield" "Tarnished Spirit Shield" "Jingling Spirit Shield"
-#	AreaLevel < 33
-#	LinkedSockets = 3	
-#	Rarity Normal Magic Rare
-#	SocketGroup BBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/shield3b.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-#
-#
-#Show
-#	Class "Shield"
-#	BaseType "Twig Spirit Shield" "Yew Spirit Shield" "Tarnished Spirit Shield" "Jingling Spirit Shield"
-#	AreaLevel < 33
-#	LinkedSockets = 3	
-#	Rarity Normal Magic Rare
-#	SocketGroup BBG BGB GBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/shield2b1g.mp3" 300
-#	MinimapIcon 2 Yellow Triangle	
+
+
+
 #Show
 #	Class "Wand"
 #	BaseType "Carved Wand"
@@ -1247,18 +1207,7 @@ Show
 	
 	
 	
-Show
-	Class "Shield"
-	BaseType "Twig Spirit Shield" "Yew Spirit Shield" "Tarnished Spirit Shield" "Jingling Spirit Shield"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/shield2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle	
+	
 #Show
 #	Class "Wand"
 #	BaseType "Carved Wand"
@@ -1365,7 +1314,32 @@ Show
 
 
 
+Show
+	Class "Shield"
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGR GRG RGG
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/shield2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 
+
+Show
+	Class "Shield"
+#	BaseEvasion < 1
+	BaseArmour < 1
+	BaseEnergyShield < 1
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/3linkshield.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 
 #### 4 LINK ####
 
@@ -1560,7 +1534,6 @@ Show
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
 	
-	
 #this block shows 1 b items pre ledge#	
 Show
 	Class "Gloves" "Helm" "Boots" 
@@ -1580,8 +1553,9 @@ Show
 	SocketGroup G
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
-	SetFontSize 45	
-
+	SetFontSize 45
+	
+	
 Show
 	Class "Body Armour"
 	AreaLevel == 2
@@ -1594,8 +1568,28 @@ Show
 	AreaLevel == 4
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
-	SetFontSize 35		
+	SetFontSize 35	
+	
+### Experimental Normal Bases to Alchemy/Essence past i60 ###
+Show
+	BaseType "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Carnal Mitts" "Assassin's Mitts" "Murder Mitts" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Carnal Boots" "Assassin's Boots" "Murder Boots"
+	ItemLevel >= 60
+	Rarity Normal
+	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
 
+Show	
+	BaseType "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Harlequin Mask" "Vaal Mask" "Deicide Mask" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Battle Buckler" "Crusader Buckler"
+	ItemLevel >= 60
+	Rarity Normal
+	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	
+	
 #### JEWELLERY ####
 
 Show
@@ -1653,7 +1647,7 @@ Show
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
 #	CustomAlertSound "gucci_sounds/leatherbelt.mp3" 300
-	MinimapIcon 2 White Circle
+#	MinimapIcon 2 White Circle
 Show
 	Class "Belt"
 	BaseType "Leather Belt"
@@ -2018,7 +2012,7 @@ Show
 	CustomAlertSound "gucci_sounds/amethystring.mp3" 300
 
 Show
-	Class "Shield"
+	Class "Shield"	
 #	BaseEvasion < 1
 	BaseArmour < 1
 	BaseEnergyShield < 1
@@ -2097,6 +2091,31 @@ Show
 #	Class Gem
 #	Quality >= 5
 #	BaseType == "Added Cold Damage Support" "Arctic Armour" "Bonechill Support" "Cold Penetration Support" "Cold Snap" "Cold to Fire Support" "Creeping Frost" "Discharge" "Elemental Hit" "Elemental Proliferation Support" "Explosive Concoction" "Eye of Winter" "Freezing Pulse" "Frost Blades" "Frost Bomb" "Frost Shield" "Frost Wall" "Frostbite" "Frostblink" "Frostbolt" "Frozen Legion" "Glacial Cascade" "Glacial Hammer" "Hatred" "Herald of Ice" "Hydrosphere" "Hypothermia Support" "Ice Bite Support" "Ice Crash" "Ice Nova" "Ice Shot" "Ice Spear" "Ice Trap" "Icicle Mine" "Prismatic Burst Support" "Purity of Ice" "Siphoning Trap" "Summon Ice Golem" "Summon Skitterbots" "Vaal Arctic Armour" "Vaal Cold Snap" "Vaal Glacial Hammer" "Vaal Ice Nova" "Vaal Ice Shot" "Vaal Impurity of Ice" "Vortex" "Wild Strike" "Winter Orb" "Wintertide Brand"
+#	SetBackgroundColor 180 0 0
+#	SetBorderColor 0 0 0
+#	SetTextColor 0 0 0
+#	SetFontSize 45
+#	PlayAlertSound 16 200
+#	MinimapIcon 0 Blue Moon
+
+
+### +1 fire recipe###
+#Show  
+#	Quality >= 5
+#	Class "Gem"
+#	BaseType == "Added Fire Damage Support" "Alchemist's Mark" "Anger" "Armageddon Brand" "Artillery Ballista" "Blast Rain" "Blazing Salvo" "Bodyswap" "Burning Arrow" "Burning Damage Support" "Cold to Fire Support" "Combustion Support" "Consecrated Path" "Controlled Blaze Support" "Cremation" "Detonate Dead" "Discharge" "Elemental Hit" "Elemental Proliferation Support" "Explosive Arrow" "Explosive Concoction" "Explosive Trap" "Fire Penetration Support" "Fireball" "Firestorm" "Flame Dash" "Flame Link" "Flame Surge" "Flame Wall" "Flameblast" "Flamethrower Trap" "Flamewood Support" "Flammability" "Herald of Ash" "Holy Flame Totem" "Ignite Proliferation Support" "Immolate Support" "Incinerate" "Infernal Blow" "Infernal Cry" "Infernal Legion Support" "Molten Shell" "Molten Strike" "Prismatic Burst Support" "Purifying Flame" "Purity of Fire" "Pyroclast Mine" "Righteous Fire" "Rolling Magma" "Scorching Ray" "Searing Bond" "Summon Flame Golem" "Summon Raging Spirit" "Tectonic Slam" "Vaal Burning Arrow" "Vaal Fireball" "Vaal Firestorm" "Vaal Flameblast" "Vaal Impurity of Fire" "Vaal Molten Shell" "Vaal Molten Strike" "Vaal Righteous Fire" "Vaal Volcanic Fissure" "Volatile Dead" "Volcanic Fissure" "Wave of Conviction" "Wild Strike"
+#	SetBackgroundColor 180 0 0
+#	SetBorderColor 0 0 0
+#	SetTextColor 0 0 0
+#	SetFontSize 45
+#	PlayAlertSound 16 200
+#	MinimapIcon 0 Blue Moon
+#
+#### +1 phys recipe###
+#Show 
+#	Quality >= 5
+#	Class "Gem"
+#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Reckoning" "Riposte" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Vengeance" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
 #	SetBackgroundColor 180 0 0
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 0 0
@@ -2615,42 +2634,42 @@ Show
 
 #Set preferred 4L colors in the SocketGroup lines in the next block and enable the sound. Note that multiple color groups can be entered, i.e. RRG RGG. If no colors are entered then the lines will apply to all 2L/3L/4L that drop.
 #note: melee RRRG, caster BBBG BBBB, ranged GGRR GGGR GGRB, summoner BBBB BBBR. Partial matches work, i.e. "BBB" in the 4L block will flag all 4L's with BBB included in the links
-#Show
-#	Class "Gloves" "Helm" "Boots" "Body Armour"
-#	AreaLevel <= 67
-#	LinkedSockets = 4
-#	Sockets < 6
-#	Rarity Normal Magic Rare
-#	SocketGroup RRR BBB GGG
-#	SetBackgroundColor 0 65 65
-#	SetBorderColor 0 250 250
-#	SetFontSize 45
-#	PlayAlertSound 1 100
-#	MinimapIcon 0 Cyan Pentagon
-#
-##Set your preferred 3L colors in these next blocks. First block is for sounded 3L's in A1/A2, second block is for unsounded through A5.
-##note: melee RGG RRG, caster BBG BGG BBB, ranged GGG GGR, summoner BBB BBR
-#Show
-#	Class "Gloves" "Helm" "Boots" "Body Armour"
-#	AreaLevel <= 25
-#	LinkedSockets = 3
-#	Rarity Normal Magic Rare
-#	SocketGroup GGG GGR BBG BBB RRG
-#	SetBackgroundColor 0 50 0
-#	SetBorderColor 0 200 0
-#	SetFontSize 45
-#	PlayAlertSound 1 100
-#	MinimapIcon 0 Green Pentagon
-#Show
-#	Class "Gloves" "Helm" "Body Armour"
-#	AreaLevel <= 47
-#	LinkedSockets = 3
-#	Rarity Normal Magic Rare
-#	SocketGroup GGG GGR BBG BBB RRG
-#	SetBackgroundColor 0 50 0
-#	SetBorderColor 0 200 0
-#	SetFontSize 45
-#	MinimapIcon 0 Green Pentagon
+Show
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	AreaLevel <= 67
+	LinkedSockets = 4
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SocketGroup RRR BBB GGG
+	SetBackgroundColor 0 65 65
+	SetBorderColor 0 250 250
+	SetFontSize 45
+	PlayAlertSound 1 100
+	MinimapIcon 0 Cyan Pentagon
+
+#Set your preferred 3L colors in these next blocks. First block is for sounded 3L's in A1/A2, second block is for unsounded through A5.
+#note: melee RGG RRG, caster BBG BGG BBB, ranged GGG GGR, summoner BBB BBR
+Show
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	AreaLevel <= 25
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SocketGroup GGG GGR BBG BBB RRG
+	SetBackgroundColor 0 50 0
+	SetBorderColor 0 200 0
+	SetFontSize 45
+	PlayAlertSound 1 100
+	MinimapIcon 0 Green Pentagon
+Show
+	Class "Gloves" "Helm" "Body Armour"
+	AreaLevel <= 47
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SocketGroup GGG GGR BBG BBB RRG
+	SetBackgroundColor 0 50 0
+	SetBorderColor 0 200 0
+	SetFontSize 45
+	MinimapIcon 0 Green Pentagon
 
 #2L colors go here
 #note: melee RG RR, caster/summoner BB BG, ranger GG RG
@@ -2659,11 +2678,11 @@ Show
 	AreaLevel <= 14
 	LinkedSockets = 2
 	Rarity Normal Magic Rare
-	SocketGroup BB BG
+	SocketGroup BB RG GG RR BG
 	SetBackgroundColor 0 0 35
 	SetBorderColor 75 75 250
 	SetFontSize 45
-#	MinimapIcon 0 Blue Pentagon
+	MinimapIcon 0 Blue Pentagon
 
 #Archetype-specific blocks
 #caster weapon link colors
@@ -2755,6 +2774,9 @@ Show
 ######################### Section 2 - Currency & 6L ###############################
 ###################################################################################
 #GENERAL ONLY - leaguestart currency overrides - makes race currency bigger/more dramatic highlights at race levels. next five blocks in general filter only
+Hide
+	BaseType "Engineer's Orb"
+	DisableDropSound
 Show
 	BaseType "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Orb of Chance"
 	AreaLevel <= 67
@@ -2883,7 +2905,7 @@ Show
 	PlayEffect Purple
 	DisableDropSound
 Show
-	BaseType "Orb of Binding" "Engineer's Orb" "Veiled Chaos Orb" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
+	BaseType "Orb of Binding" "Veiled Chaos Orb" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
@@ -4257,7 +4279,7 @@ Show
 	SetBorderColor 225 225 225
 	SetTextColor 225 225 225
 	SetFontSize 42
-#	PlayAlertSound 3 150
+	PlayAlertSound 3 150
 	MinimapIcon 2 Grey Circle
 #Contracts
 Show
@@ -4269,7 +4291,7 @@ Show
 	SetFontSize 45
 	PlayAlertSound 5 150
 	MinimapIcon 0 Orange Hexagon
-	PlayEffect Orange
+#PlayEffect Orange
 Show
 	BaseType "Contract"
 	SetBackgroundColor 255 221 153
@@ -4278,7 +4300,7 @@ Show
 	SetFontSize 45
 	PlayAlertSound 9 150
 	MinimapIcon 0 Brown Hexagon
-	PlayEffect Brown Temp
+#PlayEffect Brown Temp
 #Blueprint
 Show
 	BaseType "Blueprint"
@@ -4349,25 +4371,7 @@ Show
 	PlayAlertSound 16 200
 	MinimapIcon 0 Blue Moon
 	PlayEffect Blue
-#alternate quality gems
-Show
-	Class Gem
-	AlternateQuality True
-	SetBorderColor 0 225 225
-	SetFontSize 45
-	PlayAlertSound 12 200
-	MinimapIcon 1 Cyan Triangle
-	PlayEffect Cyan Temp
-#new currency that GGG added at the last ducking second lmao
-Show
-	BaseType "Regrading Lens" "Tempering Orb" "Tailoring Orb"
-	SetBackgroundColor 240 0 200
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	PlayAlertSound 10 250
-	SetFontSize 45
-	MinimapIcon 1 Pink Circle
-	PlayEffect Pink
+
 	
 #Ritual (v3.13) / Echoes of the Atlas
 Show
@@ -4522,23 +4526,23 @@ Show
 	PlayEffect Grey
 	
 #Forbidden Sanctum (v3.20) - brown/gold
-Show
-	Class "Sanctified Relic" "Sanctum Research"
-	SetBackgroundColor 225 175 125
-	SetBorderColor 225 225 225
-	SetTextColor 250 225 200
-	SetFontSize 45
-	PlayAlertSound 11 200
-	MinimapIcon 1 Yellow Square
-	PlayEffect Yellow
+#Show
+#	Class "Sanctified Relic"
+#	SetBackgroundColor 225 175 125
+#	SetBorderColor 225 225 225
+#	SetTextColor 250 225 200
+#	SetFontSize 45		
+#	PlayAlertSound 11 200
+#	MinimapIcon 0 Yellow Square
+#	PlayEffect Yellow
 Show
 	Class "Relic"
 	SetBackgroundColor 225 175 125
 	SetBorderColor 225 225 225
 	SetTextColor 0 0 0
-	SetFontSize 45
+	SetFontSize 45		
 	PlayAlertSound 11 200
-	MinimapIcon 2 Yellow Square
+	MinimapIcon 1 Yellow Square
 	PlayEffect Yellow
 	
 #Crucible (v3.21) - reddish orange. geode/ore removed in 3.22
@@ -4554,8 +4558,19 @@ Show
 #	PlayEffect Yellow
 	
 #Trial of the Ancestors (v3.22)
+
+Hide
+	BaseType "Silver Coin"
+	Class Currency
+	SetBackgroundColor 185 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+#	PlayAlertSound 3 125
+#	MinimapIcon 2 Grey Circle
+#	PlayEffect Grey Temp 
 Show
-	BaseType "Silver Coin" "Hinekora's Lock"
+	BaseType "Hinekora's Lock"
 	Class Currency
 	SetBackgroundColor 185 185 185
 	SetBorderColor 0 0 0
