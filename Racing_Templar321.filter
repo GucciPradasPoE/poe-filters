@@ -1923,6 +1923,7 @@ Show
 	AreaLevel < 33
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/rareboots.mp3" 300
+	MinimapIcon 2 Yellow Circle
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
