@@ -4391,15 +4391,15 @@ Show
 	PlayEffect Red Temp
 
 #Ultimatum (v3.14)
-Show
-	BaseType "Sacred Blossom" "Chronicle of Atzoatl" "Inscribed Ultimatum" "Ultimatum"
-	SetBackgroundColor 250 175 100
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 8 150
-	MinimapIcon 0 Yellow Hexagon
-	PlayEffect Yellow
+#Show
+#	BaseType "Sacred Blossom" "Chronicle of Atzoatl" "Inscribed Ultimatum" "Ultimatum"
+#	SetBackgroundColor 250 175 100
+#	SetBorderColor 0 0 0
+#	SetTextColor 0 0 0
+#	SetFontSize 45
+#	PlayAlertSound 8 150
+#	MinimapIcon 0 Yellow Hexagon
+#	PlayEffect Yellow
 	
 #Expedition (v3.15) - "End of the world" dark bluish grey
 Show
