@@ -3931,7 +3931,7 @@ Show
 	PlayAlertSound 10 200
 	MinimapIcon 0 Purple Star
 Show
-	BaseType "Thaumaturge's" "Time-Lost" "Gemcutter's" "Ornate" "Mysterious" "Celestial" "Cartographer's" "Fine" "Diviner's" "Blighted" "Morphing" "Maddening"
+	BaseType "Thaumaturge's" "Time-Lost" "Gemcutter's" "Ornate" "Mysterious" "Celestial" "Cartographer's" "Fine" "Diviner's" "Blighted" "Maddening"
 	Class Incubator
 	SetBackgroundColor 125 0 225
 	SetBorderColor 0 0 0
