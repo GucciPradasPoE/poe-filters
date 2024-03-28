@@ -18,7 +18,6 @@ If you have any feedback feel free to post in the filter feedback channel in dis
 
 # Example of runs with the filter
 
-LeagueStartWitchColdDoT: https://youtu.be/61sl5TAzsu0
 
 LeagueStartWitchDD: https://youtu.be/RzBEVoEV1iI
 

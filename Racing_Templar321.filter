@@ -3801,28 +3801,10 @@ Show
 	PlayEffect Brown Temp
 	MinimapIcon 2 Brown Moon
 #scarabs
+
+
 Show
-	BaseType "Gilded"
-	Class Map Fragment
-	SetBackgroundColor 80 0 0
-	SetBorderColor 250 250 250
-	SetTextColor 250 0 0 
-	SetFontSize 45
-	PlayAlertSound 11 200
-	MinimapIcon 0 Brown Hexagon
-	PlayEffect Red
-Show
-	BaseType "Polished"
-	Class Map Fragment
-	SetBackgroundColor 100 50 0
-	SetBorderColor 225 225 225
-	SetTextColor 250 150 0
-	SetFontSize 45
-	PlayAlertSound 11 200
-	MinimapIcon 1 Brown Hexagon
-	PlayEffect Yellow
-Show
-	BaseType "Rusted"
+	BaseType "Scarab"
 	Class Map Fragment
 	SetBackgroundColor 80 40 0
 	SetBorderColor 200 200 200
@@ -8385,6 +8367,7 @@ Show
 #top and rare gems
 Show
 	BaseType "Item Quantity" "Awakened"
+	Class "Gem"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
 	SetTextColor 27 162 155
