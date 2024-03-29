@@ -2251,6 +2251,7 @@ Show
 	
 Show
 	BaseType "Apex Rapier" "Smallsword" "Courtesan Sword" "Thorn Rapier" "Apex Rapier" "Whalebone Rapier" "Jagged Foil" "Elegant Foil" "Serrated Foil" "Fancy Foil"
+	ItemLevel >= 44
 	SetBorderColor 240 0 200
 	SetTextColor 240 0 200
 	PlayAlertSound 10 250
