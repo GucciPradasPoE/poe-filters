@@ -2520,7 +2520,51 @@ Show
 	Height = 3
 	SetBackgroundColor 40 40 40
 	SetBorderColor 150 150 150
+#Trial of the Ancestors (v3.22)
 
+Hide
+	BaseType "Silver Coin"
+	Class Currency
+	SetBackgroundColor 185 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+#	PlayAlertSound 3 125
+#	MinimapIcon 2 Grey Circle
+#	PlayEffect Grey Temp 
+Show
+	BaseType "Hinekora's Lock"
+	Class Currency
+	SetBackgroundColor 185 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 2 Grey Circle
+	PlayEffect Grey Temp
+Show
+	BaseType "Tattoo" "Omen"
+	Class Currency
+	SetBackgroundColor 25 165 165
+	SetBorderColor 225 225 225
+	SetTextColor 225 225 225
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 2 Cyan Square
+	PlayEffect Cyan Temp
+	
+#Necropolis (v3.24)
+Show
+	BaseType "Allflame Ember" "Coffin"
+	Class Currency
+	SetBackgroundColor 75 75 125
+	SetBorderColor 225 225 225
+	SetTextColor 225 225 225
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 2 Grey Square
+	PlayEffect Grey Temp
+	
 ##### Hide Section #####
 Show
 	Class "Quest Items"
@@ -2529,6 +2573,14 @@ Show
 	SetFontSize 45
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
+Show
+	BaseType "Treasure Key" 
+	SetBorderColor 0 250 0
+	SetTextColor 0 250 0
+	SetFontSize 45
+	MinimapIcon 0 Green UpsideDownHouse
+	PlayEffect Green	
+	
 Hide
 	Class Divination Card
 Hide

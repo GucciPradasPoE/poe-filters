@@ -5828,6 +5828,17 @@ Show
 	PlayAlertSound 11 200
 	MinimapIcon 2 Cyan Square
 	PlayEffect Cyan Temp
+#Necropolis (v3.24)
+Show
+	BaseType "Allflame Ember" "Coffin"
+	Class Currency
+	SetBackgroundColor 75 75 125
+	SetBorderColor 225 225 225
+	SetTextColor 225 225 225
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 2 Grey Square
+	PlayEffect Grey Temp
 
 #League Unknowns - Uniques and div cards whose names/basetypes are known before launch but not the details, or if I'm not quite sure how significantly the changes will impact the value. Small green icons.
 Show
