@@ -2238,27 +2238,27 @@ Show
 	SetFontSize 45
 	
 ### Sword for going COCK ###
-Show
-	BaseType "Battered Foil" "Burnished Foil"
-	ItemLevel >= 44
-	SetBorderColor 240 0 200
-	SetTextColor 240 0 200
-	PlayAlertSound 10 250
-	SetFontSize 45
-	MinimapIcon 1 Pink Circle
-	PlayEffect Pink
-	DisableDropSound
-	
-Show
-	BaseType "Apex Rapier" "Smallsword" "Courtesan Sword" "Thorn Rapier" "Apex Rapier" "Whalebone Rapier" "Jagged Foil" "Elegant Foil" "Serrated Foil" "Fancy Foil"
-	ItemLevel >= 44
-	SetBorderColor 240 0 200
-	SetTextColor 240 0 200
-	PlayAlertSound 10 250
-	SetFontSize 45
-	MinimapIcon 1 Pink Circle
-	PlayEffect Pink
-	DisableDropSound
+#Show
+#	BaseType "Battered Foil" "Burnished Foil"
+#	ItemLevel >= 44
+#	SetBorderColor 240 0 200
+#	SetTextColor 240 0 200
+#	PlayAlertSound 10 250
+#	SetFontSize 45
+#	MinimapIcon 1 Pink Circle
+#	PlayEffect Pink
+#	DisableDropSound
+#	
+#Show
+#	BaseType "Apex Rapier" "Smallsword" "Courtesan Sword" "Thorn Rapier" "Apex Rapier" "Whalebone Rapier" "Jagged Foil" "Elegant Foil" "Serrated Foil" "Fancy Foil"
+#	ItemLevel >= 44
+#	SetBorderColor 240 0 200
+#	SetTextColor 240 0 200
+#	PlayAlertSound 10 250
+#	SetFontSize 45
+#	MinimapIcon 1 Pink Circle
+#	PlayEffect Pink
+#	DisableDropSound
 	
 	
 #### JEWELLERY ####
@@ -6505,7 +6505,6 @@ Show
 #Necropolis (v3.24)
 Show
 	BaseType "Allflame Ember" "Coffin"
-	Class Currency
 	SetBackgroundColor 75 75 125
 	SetBorderColor 225 225 225
 	SetTextColor 225 225 225
