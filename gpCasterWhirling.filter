@@ -198,15 +198,48 @@
 ########## Section 0A - Race Overrides ###########
 ##################################################
 
+
+#Maps
+Show
+	Class Map
+	Rarity Normal Magic Rare
+	HasInfluence None
+	SetBackgroundColor 255 221 153
+	SetBorderColor 0 200 200
+	SetTextColor 0 200 200
+	SetFontSize 40
+	PlayAlertSound 8 150
+	MinimapIcon 0 Cyan Hexagon
+	PlayEffect Cyan
+
 ##########################################
 ############### CURRENCY #################
 ##########################################
 
 #####General####
 
+#Settlers of Kalguur
+Show
+	BaseType "Rune"
+	Class Currency
+	SetBackgroundColor 68 98 122
+	SetBorderColor 225 225 225
+	SetTextColor 225 225 225
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue Temp
+Show
+	Class Currency
+	BaseType == "Gold"
+	SetTextColor 233 241 55
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	SetFontSize 15
+	MinimapIcon 2 Yellow Square
 #tink#
 Show
-	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Imprint" "Awakener's Orb" "Orb of Dominance"
+	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Imprint" "Awakener's Orb" "Orb of Dominance" "Hinekora's Lock"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
 	SetTextColor 250 0 0
@@ -632,28 +665,31 @@ Show
 
 Show
 	BaseType "Blacksmith's Whetstone" 
-	AreaLevel < 46
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/whetstone.mp3" 300
 Show
 	BaseType "Blacksmith's Whetstone" 
 	StackSize >= 2
-	AreaLevel < 69
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/whetstone.mp3" 300
 Show
 	BaseType "Blacksmith's Whetstone" 
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
-	AreaLevel < 69
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	DisableDropSound
 #Hide
 #	BaseType "Blacksmith's Whetstone" 
@@ -664,28 +700,31 @@ Show
 	
 Show
 	BaseType "Armourer's Scrap"
-	AreaLevel < 46
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/scrap.mp3" 300
 Show
 	BaseType "Armourer's Scrap"
 	StackSize >= 2
-	AreaLevel < 69
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/scrap.mp3" 300
 Show
 	BaseType "Armourer's Scrap"
-	AreaLevel < 69
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	DisableDropSound
 #Hide
 #	BaseType "Armourer's Scrap"
@@ -924,9 +963,9 @@ Show
 
 # # # # TWILIGHT STRAND ITEMS # # # # 
 Show
-	Class "Sceptre" "Bow"
+	Class "Sceptre" "Wand" "Dagger"
 	LinkedSockets = 2
-	SocketGroup GG RB
+	SocketGroup RB BB GG
 	SetTextColor 200 0 200
 	SetBorderColor 200 0 200
 	AreaLevel = 1
@@ -982,37 +1021,66 @@ Show
 	MinimapIcon 2 Yellow Circle
 
 
-
-
-#### 2 LINK #### (no sound/icon by default)
-
-Show
-	Class "Gloves" "Helm" 
-	ItemLevel <= 25
-	LinkedSockets = 2
-	Rarity Normal Magic Rare	
-	SocketGroup BB BR GR
-	SetBorderColor 75 75 250
-	SetBackgroundColor 0 0 75
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/bb.mp3" 300 
-#	MinimapIcon 2 Yellow Triangle 
+### Whirling Weapon ###
+# Daggers & Claws (Whirling) allex stuff
 #Show
-#	Class "Gloves" "Helm" "Boots" "Wand"
-#	ItemLevel <= 25
-#	LinkedSockets = 2
-#	Rarity Normal Magic Rare	
-#	SocketGroup BG RG BB
-#	SetBorderColor 75 75 250
-#	SetBackgroundColor 0 0 75
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/bg.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+#SocketGroup = "GGG"
+#CustomAlertSound "allex-sounds/3green_offhand.mp3" 300
+#BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Glass Shank" "Stiletto" "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
+#SetBorderColor 255 68 0 
+#MinimapIcon 2 Orange UpsideDownHouse
+#SetFontSize 45
+#AreaLevel < 24	
+#
+#Show
+#SocketGroup = "BBB"
+#CustomAlertSound "allex-sounds/3b_offhand.mp3" 300
+#BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Glass Shank" "Stiletto"
+#SetBorderColor 255 68 0 
+#MinimapIcon 2 Orange UpsideDownHouse
+#SetFontSize 45
+#AreaLevel < 24	
+#
+#Show
+#SocketGroup >= "GG"
+#CustomAlertSound "allex-sounds/gg_offhand.mp3" 300
+#BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Glass Shank" "Stiletto"
+#SetBorderColor 255 68 0 
+#MinimapIcon 2 Orange UpsideDownHouse
+#SetFontSize 45
+#AreaLevel < 24	
+#
+#Show
+#Sockets = BBB
+#CustomAlertSound "allex-sounds/offhand_3_blues.mp3" 300
+#BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Glass Shank" "Stiletto"
+#SetBorderColor 255 68 0 
+#MinimapIcon 2 Orange UpsideDownHouse
+#SetFontSize 45
+#AreaLevel < 24	
+#
+#Show
+#Sockets >= BB
+#CustomAlertSound "allex-sounds/offhand_2_blues.mp3" 300
+#BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Glass Shank" "Stiletto"
+#SetBorderColor 255 68 0 
+#MinimapIcon 2 Orange UpsideDownHouse
+#SetFontSize 45
+#AreaLevel < 24	
+#
+#Show
+#Sockets >= B
+#CustomAlertSound "allex-sounds/offhand_1_blue.mp3" 300
+#BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Glass Shank" "Stiletto"
+#SetBorderColor 255 68 0 
+#MinimapIcon 2 Orange UpsideDownHouse
+#SetFontSize 45
+#AreaLevel < 24	
 
-#### 3 LINK #### (Sound + Icon till end of A2, hidden past a3)
-
+###Claw
+#RGB
 Show
-	BaseType "Whalebone Rapier" 
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
 	AreaLevel < 24	
 	LinkedSockets = 3	
 	Rarity Normal
@@ -1021,10 +1089,10 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 80 80 80
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/whalergb.mp3" 300
+	CustomAlertSound "gucci_sounds/clawrgb.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
-	BaseType "Whalebone Rapier" 
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
 	AreaLevel < 24	
 	LinkedSockets = 3	
 	Rarity Magic
@@ -1033,21 +1101,404 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/whalergb.mp3" 300
+	CustomAlertSound "gucci_sounds/clawrgb.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
-	BaseType "Whalebone Rapier" 
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" 
 	AreaLevel < 24	
 	LinkedSockets = 3	
 	Rarity Rare
 	SocketGroup RGB
 	SetTextColor 0 0 0
+	SetBorderColor 255 0 0	
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/clawrgb.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+
+#GGG
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup GGG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup GGG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup GGG
+	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 225 225 110
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/whalergb.mp3" 300
+	CustomAlertSound "gucci_sounds/claw3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+
+#BBB
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup BBB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw3b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup BBB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw3b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup BBB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw3b.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 	
+#BB
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw2b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw2b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw2b.mp3" 300
+	MinimapIcon 2 Yellow Triangle	
+
+#GG
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup GG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw2g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup GG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw2g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup GG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/claw2g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+
+
+
+##Dagger	
+#RGB
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup RGB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/daggerrgb.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup RGB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/daggerrgb.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup RGB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0	
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/daggerrgb.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+
+#GGG
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup GGG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup GGG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup GGG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+
+#BBB
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup BBB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger3b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup BBB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger3b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup BBB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger3b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+	
+#BB
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger2b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger2b.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger2b.mp3" 300
+	MinimapIcon 2 Yellow Triangle	
+
+#GG
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup GG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger2g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup GG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger2g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Glass Shank" "Stiletto"
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup GG
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/dagger2g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+
+
+
+Show
+	BaseType "Whalebone Rapier" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Normal
+	SocketGroup RGB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/whalergb.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Whalebone Rapier" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Magic
+	SocketGroup RGB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/whalergb.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Whalebone Rapier" 
+	AreaLevel < 24	
+	LinkedSockets = 3	
+	Rarity Rare
+	SocketGroup RGB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/whalergb.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 Show
 	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
 	AreaLevel < 24	
@@ -1084,84 +1535,7 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/swordrgb.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-
-
-
-
-
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Normal
-	SocketGroup RGB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axergb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Magic
-	SocketGroup RGB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axergb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Rare
-	SocketGroup RGB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axergb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-
-Show
-	BaseType "Driftwood Club" "Spiked Club"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Normal
-	SocketGroup RGB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/macergb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Driftwood Club" "Spiked Club"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Magic
-	SocketGroup RGB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/macergb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Driftwood Club" "Spiked Club"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Rare
-	SocketGroup RGB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/macergb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
+	
 Show
 	BaseType "Whalebone Rapier" 
 	AreaLevel < 24	
@@ -1241,47 +1615,6 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/swordrg.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-	
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Normal
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axerg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Magic
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axerg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Rare
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axerg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-	
 Show
 	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
 	AreaLevel < 24	
@@ -1318,45 +1651,6 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/sword3b.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Normal
-	SocketGroup BBB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Magic
-	SocketGroup BBB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24	
-	LinkedSockets = 3	
-	Rarity Rare
-	SocketGroup BBB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-	
-	
 Show
 	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
 	AreaLevel < 24
@@ -1393,46 +1687,6 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/sword2b1g.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24
-	LinkedSockets = 3	
-	Rarity Normal
-	SocketGroup BBG BGB GBB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe2b1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24
-	LinkedSockets = 3	
-	Rarity Magic
-	SocketGroup BBG BGB GBB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe2b1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24
-	LinkedSockets = 3	
-	Rarity Rare
-	SocketGroup BBG BGB GBB
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe2b1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-
-
-
 Show
 	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
 	AreaLevel < 24
@@ -1468,44 +1722,145 @@ Show
 	SetBackgroundColor 225 225 110
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/sword2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-	
+	MinimapIcon 2 Yellow Triangle	
+#Blue sword axe thing#
 Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
+	BaseType "Whalebone Rapier" 
 	AreaLevel < 24
-	LinkedSockets = 3	
-	Rarity Normal
-	SocketGroup BBR BRB RBB
+	Sockets >= 2	
+	Rarity Normal 
+	SocketGroup B
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 80 80 80
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe2b1r.mp3" 300
+	CustomAlertSound "gucci_sounds/BlueWhale.mp3" 300 
 	MinimapIcon 2 Yellow Triangle
 Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
+	BaseType "Whalebone Rapier" 
 	AreaLevel < 24
-	LinkedSockets = 3	
-	Rarity Magic
-	SocketGroup BBR BRB RBB
+	Sockets >= 2	
+	Rarity Magic 
+	SocketGroup B
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe2b1r.mp3" 300
+	CustomAlertSound "gucci_sounds/BlueWhale.mp3" 300 
 	MinimapIcon 2 Yellow Triangle
 Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
+	BaseType "Whalebone Rapier" 
 	AreaLevel < 24
-	LinkedSockets = 3	
+	Sockets >= 2	
 	Rarity Rare
-	SocketGroup BBR BRB RBB
+	SocketGroup B
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 225 225 110
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/axe2b1r.mp3" 300
+	CustomAlertSound "gucci_sounds/BlueWhale.mp3" 300 
 	MinimapIcon 2 Yellow Triangle
+
+Show
+	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
+	AreaLevel < 24
+	Sockets >= 2	
+	Rarity Normal 
+	SocketGroup B
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/BlueSword.mp3" 300 
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
+	AreaLevel < 24
+	Sockets >= 2	
+	Rarity Magic
+	SocketGroup B
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/BlueSword.mp3" 300 
+	MinimapIcon 2 Yellow Triangle
+Show
+	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
+	AreaLevel < 24
+	Sockets >= 2	
+	Rarity Rare
+	SocketGroup B
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/BlueSword.mp3" 300 
+	MinimapIcon 2 Yellow Triangle	
+Show
+	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
+	AreaLevel < 23
+	Sockets < 6
+	Sockets >= 2
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Sword.mp3" 300
+	SetFontSize 45
+Show
+	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
+	AreaLevel < 23
+	Sockets < 6
+	Sockets >= 2
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Sword.mp3" 300
+	SetFontSize 45
+Show
+	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
+	AreaLevel < 23
+	Sockets < 6
+	Sockets >= 2
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Sword.mp3" 300
+	SetFontSize 45
+	
+#### 2 LINK #### (no sound/icon by default)
+
+Show
+	Class "Gloves" "Helm" "Boots" "Wand"
+	ItemLevel <= 25
+	LinkedSockets = 2
+	Rarity Normal Magic Rare	
+	SocketGroup BB BR GR GG
+	SetBorderColor 75 75 250
+	SetBackgroundColor 0 0 75
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/bb.mp3" 300 
+#	MinimapIcon 2 Yellow Triangle 
+#Show
+#	Class "Gloves" "Helm" "Boots" "Wand"
+#	ItemLevel <= 25
+#	LinkedSockets = 2
+#	Rarity Normal Magic Rare	
+#	SocketGroup BG RG BB
+#	SetBorderColor 75 75 250
+#	SetBackgroundColor 0 0 75
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/bg.mp3" 300
+#	MinimapIcon 2 Yellow Triangle
+
+#### 3 LINK #### (Sound + Icon till end of A2, hidden past a3)
+
 
 Show
 	Class "Gloves" 
@@ -1556,7 +1911,52 @@ Show
 
 	
 
+Show
+	Class "Gloves" 
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGG
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/glove3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	Class "Helm" 
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGG
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/helm3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	Class "Boots" 
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGG
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/boots3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show
+	Class "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGG
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/chest3g.mp3" 300
+	MinimapIcon 2 Yellow Triangle	
 	
+
 Show
 	Class "Gloves" 
 	AreaLevel < 33	
@@ -1601,32 +2001,7 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/chest3b.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-#Show
-#	Class "Wand"
-#	BaseType "Carved Wand"
-#	AreaLevel < 33
-#	LinkedSockets = 3	
-#	Rarity Normal Magic Rare
-#	SocketGroup BBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/wand3b.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
 
-
-
-#Show
-#	Class "Wand"
-#	BaseType "Carved Wand"
-#	AreaLevel < 33
-#	Rarity Normal Magic Rare
-#	SocketGroup BBG BGB GBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/wand2b1g.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Gloves" 
 	AreaLevel < 33
@@ -1735,7 +2110,7 @@ Show
 	MinimapIcon 2 Yellow Triangle
 
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" 
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
 	AreaLevel < 40
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
@@ -1746,7 +2121,7 @@ Show
 #	CustomAlertSound "gucci_sounds/bbb.mp3" 300
 #	MinimapIcon 2 Yellow Triangle
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" 
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
 	AreaLevel < 40
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
@@ -1757,7 +2132,7 @@ Show
 #	CustomAlertSound "gucci_sounds/bbg.mp3" 300
 #	MinimapIcon 2 Yellow Triangle
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
 	AreaLevel < 40
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
@@ -1768,7 +2143,7 @@ Show
 #	CustomAlertSound "gucci_sounds/bbr.mp3" 300
 #	MinimapIcon 2 Yellow Triangle
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
 	AreaLevel < 40
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
@@ -1779,120 +2154,34 @@ Show
 #	CustomAlertSound "gucci_sounds/bbr.mp3" 300
 #	MinimapIcon 2 Yellow Triangle
 
-#Blue sword axe thing#
-Show
-	BaseType "Whalebone Rapier" 
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Normal 
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueWhale.mp3" 300 
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Whalebone Rapier" 
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Magic 
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueWhale.mp3" 300 
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Whalebone Rapier" 
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Rare
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueWhale.mp3" 300 
-	MinimapIcon 2 Yellow Triangle
-
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Normal 
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueSword.mp3" 300 
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Magic
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueSword.mp3" 300 
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Rare
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueSword.mp3" 300 
-	MinimapIcon 2 Yellow Triangle
-	
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Normal
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueAxe.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Magic
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueAxe.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 24
-	Sockets >= 2	
-	Rarity Rare
-	SocketGroup B
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/BlueAxe.mp3" 300
-	MinimapIcon 2 Yellow Triangle
 
 
-
+#Show
+#	Class "Shield"
+#	AreaLevel < 33
+#	LinkedSockets = 3	
+#	Rarity Normal Magic Rare
+#	SocketGroup GGR GRG RGG
+#	SetBorderColor 0 200 0
+#	SetBackgroundColor 0 35 0
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/shield2g1r.mp3" 300
+#	MinimapIcon 2 Yellow Triangle
+#
+#
+#Show
+#	Class "Shield"
+##	BaseEvasion < 1
+#	BaseArmour < 1
+#	BaseEnergyShield < 1
+#	AreaLevel < 33
+#	LinkedSockets = 3	
+#	Rarity Normal Magic Rare
+#	SetBorderColor 0 200 0
+#	SetBackgroundColor 0 35 0
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/3linkshield.mp3" 300
+#	MinimapIcon 2 Yellow Triangle
 
 #### 4 LINK ####
 
@@ -2054,7 +2343,7 @@ Show
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
 	ItemLevel <= 47
 	Sockets < 6
 	LinkedSockets <= 3
@@ -2107,7 +2396,37 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	
+#2-3sockets useable colours on weps
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" "Glass Shank" "Stiletto" "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Whalebone Rapier"
+	AreaLevel < 24	
+	Sockets >= 2
+	Rarity Normal
+	Sockets >= BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 40
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" "Glass Shank" "Stiletto" "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Whalebone Rapier"
+	AreaLevel < 24	
+	Sockets >= 2
+	Rarity Magic
+	Sockets >= BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+Show
+	BaseType "Nailed Fist" "Sharktooth Claw" "Awl" "Cat's Paw" "Blinder" "Glass Shank" "Stiletto" "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Whalebone Rapier"
+	AreaLevel < 24	
+	Sockets >= 2
+	Rarity Rare
+	Sockets >= BB
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0	
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
 	
 Show
 	Class "Body Armour"
@@ -2122,99 +2441,6 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 35	
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 23
-	Sockets < 6
-	Sockets >= 2
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Sword.mp3" 300
-	SetFontSize 45
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 23
-	Sockets < 6
-	Sockets >= 2
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Sword.mp3" 300
-	SetFontSize 45
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 23
-	Sockets < 6
-	Sockets >= 2
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Sword.mp3" 300
-	SetFontSize 45
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 23
-	Sockets < 6
-	Sockets >= 2
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	SetFontSize 45
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 23
-	Sockets < 6
-	Sockets >= 2
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	SetFontSize 45
-Show
-	BaseType "Rusted Hatchet" "Jade Hatchet" "Boarding Axe"
-	AreaLevel < 23
-	Sockets < 6
-	Sockets >= 2
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	SetFontSize 45
-#Show
-#	Class "One Hand Axes"
-#	AreaLevel < 23
-#	Sockets < 6
-#	Sockets >= 2
-#	Rarity Normal Magic Rare
-#	SocketGroup B RG R BB GR 
-#	SetTextColor 200 0 200
-#	SetBorderColor 200 0 200
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	SetFontSize 45
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "One Hand Swords" "One Hand Axes"
-	ItemLevel <= 47
-	Sockets < 6
-	Sockets >= 4
-	Rarity Normal Magic Rare
-	SocketGroup BB BR BBB BBR BBG RG BG
-	SetBorderColor 0 250 250
-	SetBackgroundColor 0 65 65
-	SetFontSize 45
 	
 ### Experimental Normal Bases to Alchemy/Essence past i60 ###
 Show
@@ -2228,7 +2454,7 @@ Show
 	SetFontSize 45
 
 Show	
-	BaseType "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Harlequin Mask" "Vaal Mask" "Deicide Mask" "Sentinel Jacket" "Varnished Coat" "Blood Raiment" "Sovereign Spiked Shield" "Polished Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
+	BaseType "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Harlequin Mask" "Vaal Mask" "Deicide Mask" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Battle Buckler" "Crusader Buckler"
 	ItemLevel >= 60
 	AreaLevel < 69
 	Rarity Normal
@@ -2236,29 +2462,6 @@ Show
 #	SetBorderColor 255 0 0
 	SetBackgroundColor 80 80 80
 	SetFontSize 45
-	
-### Sword for going COCK ###
-#Show
-#	BaseType "Battered Foil" "Burnished Foil"
-#	ItemLevel >= 44
-#	SetBorderColor 240 0 200
-#	SetTextColor 240 0 200
-#	PlayAlertSound 10 250
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Circle
-#	PlayEffect Pink
-#	DisableDropSound
-#	
-#Show
-#	BaseType "Apex Rapier" "Smallsword" "Courtesan Sword" "Thorn Rapier" "Apex Rapier" "Whalebone Rapier" "Jagged Foil" "Elegant Foil" "Serrated Foil" "Fancy Foil"
-#	ItemLevel >= 44
-#	SetBorderColor 240 0 200
-#	SetTextColor 240 0 200
-#	PlayAlertSound 10 250
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Circle
-#	PlayEffect Pink
-#	DisableDropSound
 	
 	
 #### JEWELLERY ####
@@ -2684,7 +2887,7 @@ Show
 
 Show
 	Class "Shield"	
-#	BaseEvasion < 1
+	BaseEvasion < 1
 	BaseArmour < 1
 #	BaseEnergyShield < 1
 	AreaLevel <= 69
@@ -2695,9 +2898,18 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "gucci_sounds/rareshield.mp3" 300
-
 Show
-	Class "Sceptre" 
+	Class "Wand"
+	AreaLevel <= 69
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rarewand.mp3" 300
+Show
+	Class "Rune Dagger" 
 	AreaLevel >= 23
 	Rarity Rare
 	SetTextColor 0 0 0
@@ -2706,6 +2918,15 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+
+Show
+	Class "Wand"
+	AreaLevel <= 12
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 White Circle
 
 
 #Safety Blocks (Don't need to modify these for normal use)
@@ -2777,7 +2998,7 @@ Show
 #Show 
 #	Quality >= 5
 #	Class "Gem"
-#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Reckoning" "Riposte" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Vengeance" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
+#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Swordstorm" "Glacial Shield Swipe" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Crushing Fist" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
 #	SetBackgroundColor 180 0 0
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 0 0
@@ -2874,20 +3095,6 @@ Show
 	PlayEffect Blue Temp
 
 ##### Vendor Items #####
-
-#5l good base
-Show
-	BaseEvasion > 1
-	BaseArmour < 1
-#	BaseEnergyShield > 1
-	LinkedSockets = 5
-	SetBorderColor 250 0 125
-	SetTextColor 250 0 125
-	SetFontSize 45
-	PlayAlertSound 6 250
-	MinimapIcon 0 Red Circle
-	PlayEffect Red
-	DisableDropSound
 
 
 #5l catchall
@@ -3613,7 +3820,7 @@ Show
 #Show 
 #	Quality >= 5
 #	Class "Gem"
-#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Reckoning" "Riposte" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Vengeance" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
+#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Swordstorm" "Glacial Shield Swipe" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Crushing Fist" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
 #	SetBackgroundColor 180 0 0
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 0 0
@@ -4835,7 +5042,7 @@ Show
 	PlayEffect Purple
 	DisableDropSound
 Show
-	BaseType "Orb of Binding" "Veiled" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
+	BaseType "Orb of Binding" "Veiled" "Enkindling Orb" "Instilling Orb"
 	Class "Currency"
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
@@ -5754,7 +5961,7 @@ Show
 	PlayEffect Red
 #orange (2-5c)
 Show
-	BaseType "Prismatic Fossil" "Jagged Fossil" "Perfect Fossil" "Aetheric Fossil" "Perfect Fossil" "Gilded Fossil" "Corroded Fossil" "Fundamental Fossil" "Deft Fossil"
+	BaseType "Prismatic Fossil" "Jagged Fossil" "Opulent Fossil" "Aetheric Fossil" "Opulent Fossil" "Gilded Fossil" "Corroded Fossil" "Fundamental Fossil" "Deft Fossil"
 	Class Currency
 	SetBackgroundColor 100 50 0
 	SetBorderColor 0 0 0
@@ -6034,7 +6241,7 @@ Show
 
 #Blight (v3.8)
 Show
-	BaseType "Golden Oil"
+	BaseType "Golden Oil" "Prismatic Oil"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 50 100 50
 	SetTextColor 75 125 75
@@ -6471,16 +6678,7 @@ Show
 	
 #Trial of the Ancestors (v3.22)
 
-Hide
-	BaseType "Silver Coin"
-	Class Currency
-	SetBackgroundColor 185 185 185
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-#	PlayAlertSound 3 125
-#	MinimapIcon 2 Grey Circle
-#	PlayEffect Grey Temp 
+
 Show
 	BaseType "Hinekora's Lock"
 	Class Currency
@@ -6501,17 +6699,16 @@ Show
 	PlayAlertSound 11 200
 	MinimapIcon 2 Cyan Square
 	PlayEffect Cyan Temp
-	
-#Necropolis (v3.24)
+#Affliction (v3.23)
 Show
-	BaseType "Allflame Ember" "Coffin"
-	SetBackgroundColor 75 75 125
-	SetBorderColor 225 225 225
+	Class "Tincture" "Corpses"
+	SetBackgroundColor 75 50 40
+	SetBorderColor 200 200 200
 	SetTextColor 225 225 225
 	SetFontSize 45
-	PlayAlertSound 11 200
-	MinimapIcon 2 Grey Square
-	PlayEffect Grey Temp
+	PlayAlertSound 11 150
+	PlayEffect Brown
+	MinimapIcon 2 Brown Square
 
 #League Unknowns - Uniques and div cards whose names/basetypes are known before launch but not the details, or if I'm not quite sure how significantly the changes will impact the value. Small green icons.
 Show
@@ -6540,7 +6737,7 @@ Show
 ###################################################################################
 #Invitations & Other Special Atlas Items
 Show
-	BaseType "Maven's Writ" 
+	BaseType "Maven's Writ" "An Audience With The King"
 	SetBackgroundColor 250 175 100
 	SetBorderColor 200 100 200
 	SetTextColor 150 75 150
@@ -7967,7 +8164,7 @@ Show
 	PlayEffect Cyan
 #ritual bases
 Show
-	BaseType "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
+	BaseType "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Thwarting Gauntlets" "Guarding Gauntlets" "Preserving Gauntlets" "Trapsetter Gloves" "Apprentice Gloves" "Tinker Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
 	Rarity Normal Magic Rare
 	SetBackgroundColor 0 75 75
 	SetBorderColor 0 250 250

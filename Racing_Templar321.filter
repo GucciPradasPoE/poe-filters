@@ -3727,7 +3727,7 @@ Show
 	PlayEffect Red
 #red (5-10c)
 Show
-	BaseType "Pristine Fossil" "Serrated Fossil" "Gilded Fossil" "Perfect Fossil" "Dense Fossil" "Aetheric Fossil"
+	BaseType "Pristine Fossil" "Serrated Fossil" "Gilded Fossil" "Opulent Fossil" "Dense Fossil" "Aetheric Fossil"
 	Class Currency
 	SetBackgroundColor 80 0 0
 	SetBorderColor 0 0 0
@@ -3738,7 +3738,7 @@ Show
 	PlayEffect Red
 #orange (2-5c)
 Show
-	BaseType "Prismatic Fossil" "Jagged Fossil" "Perfect Fossil"
+	BaseType "Prismatic Fossil" "Jagged Fossil" "Opulent Fossil"
 	Class Currency
 	SetBackgroundColor 100 50 0
 	SetBorderColor 0 0 0

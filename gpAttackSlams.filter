@@ -182,12 +182,7 @@
 #	SetTextColor 50 175 250
 #	SetFontSize 40
 
-#Ruthless Overrides - work in progress for Ruthless difficulty, mainly just makes sure all support gems show for now. WARNING: the support gem highlights here override some default gem highlighting (i.e. quality)
-#Show
-#	Class "Support Gem"
-#	AreaLevel <= 67
-#	SetFontSize 40
-#	MinimapIcon 2 Green Triangle
+
 #Show
 #	Class "Support Gem"
 #	AreaLevel <= 77
@@ -198,15 +193,49 @@
 ########## Section 0A - Race Overrides ###########
 ##################################################
 
+#Maps
+Show
+	Class Map
+	Rarity Normal Magic Rare
+	HasInfluence None
+	SetBackgroundColor 255 221 153
+	SetBorderColor 0 200 200
+	SetTextColor 0 200 200
+	SetFontSize 40
+	PlayAlertSound 8 150
+	MinimapIcon 0 Cyan Hexagon
+	PlayEffect Cyan
+
+
+
 ##########################################
 ############### CURRENCY #################
 ##########################################
 
 #####General####
+#Settlers of Kalguur
+Show
+	BaseType "Rune"
+	Class Currency
+	SetBackgroundColor 68 98 122
+	SetBorderColor 225 225 225
+	SetTextColor 225 225 225
+	SetFontSize 45
+	PlayAlertSound 11 200
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue Temp
+Show
+	Class Currency
+	BaseType == "Gold"
+	SetTextColor 233 241 55
+	SetBackgroundColor 0 0 0 0
+	SetBorderColor 0 0 0 0
+	SetFontSize 15
+	MinimapIcon 2 Yellow Square
 
 #tink#
 Show
-	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Imprint" "Awakener's Orb" "Orb of Dominance"
+	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Imprint" "Awakener's Orb" "Orb of Dominance" "Hinekora's Lock"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
 	SetTextColor 250 0 0
@@ -217,7 +246,7 @@ Show
 	DisableDropSound
 Show
 	Class Currency
-	BaseType "Divine Orb" 
+	BaseType "Exalted Orb" "Divine Orb" 
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
 	SetFontSize 45
@@ -227,7 +256,7 @@ Show
 	DisableDropSound
 Show
 	Class Currency
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Exalted Orb" 
+	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" 
 	SetBorderColor 240 0 200
 	SetTextColor 240 0 200
 	PlayAlertSound 10 250
@@ -241,7 +270,7 @@ Show
 	BaseType "Orb of Alchemy"
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/alch.mp3" 300
 	MinimapIcon 0 Red Circle
@@ -249,21 +278,21 @@ Show
 	BaseType "Orb of Alchemy"
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Alchemy"
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Alchemy"
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
 
 
 Show
 	BaseType "Orb of Binding"
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/binding.mp3" 300
 	MinimapIcon 0 Red Circle
@@ -271,21 +300,21 @@ Show
 	BaseType "Orb of Binding"
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Binding"
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Binding"
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
 	
 	
 Show
 	BaseType "Orb of Regret" 
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/regret.mp3" 300
 	MinimapIcon 0 Red Circle
@@ -293,21 +322,21 @@ Show
 	BaseType "Orb of Regret" 
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Regret" 
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Regret" 
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
 	
 
 Show
 	BaseType "Regal Orb"
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/regal.mp3" 300
 	MinimapIcon 0 Red Circle
@@ -315,21 +344,21 @@ Show
 	BaseType "Regal Orb"
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Regal Orb"
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
+Hide
+	BaseType "Regal Orb"
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
 
 Show
 	BaseType "Chaos Orb"
 	Class Currency	
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/chaos.mp3" 300
 	MinimapIcon 0 Red Circle
@@ -338,22 +367,22 @@ Show
 	Class Currency	
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Chaos Orb"
-#	Class Currency	
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
+Hide
+	BaseType "Chaos Orb"
+	Class Currency	
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
 
 Show
 	BaseType "Orb of Fusing"
 	Class Currency	
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/fusing.mp3" 300
 	MinimapIcon 0 Red Circle
@@ -362,22 +391,22 @@ Show
 	Class Currency	
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Fusing"
-#	Class Currency	
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Fusing"
+	Class Currency	
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
 
 Show
 	BaseType "Orb of Chance"
 	Class Currency	
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/chance.mp3" 300
 	MinimapIcon 0 Red Circle
@@ -386,22 +415,22 @@ Show
 	Class Currency	
 	SetBorderColor 250 0 125
 	SetTextColor 250 0 125
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Chance"
-#	Class Currency	
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Chance"
+	Class Currency	
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
 
 Show
 	BaseType "Orb of Alteration" 
 	Class Currency	
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
-	AreaLevel < 69
+	AreaLevel < 99
 	CustomAlertSound "gucci_sounds/alt.mp3" 300
 	SetFontSize 45
 	MinimapIcon 0 Green Circle
@@ -410,22 +439,22 @@ Show
 	Class Currency	
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Alteration" 
-#	Class Currency	
-#	SetBorderColor 0 180 130
-#	SetTextColor 0 180 130
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Alteration" 
+	Class Currency	
+	SetBorderColor 0 180 130
+	SetTextColor 0 180 130
+	SetFontSize 45
 
 Show
 	BaseType "Orb of Transmutation"
 	Class Currency
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/trans.mp3" 300
 	MinimapIcon 0 Green Circle
@@ -434,15 +463,15 @@ Show
 	Class Currency
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Transmutation"
-#	Class Currency
-#	SetBorderColor 0 180 130
-#	SetTextColor 0 180 130
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Transmutation"
+	Class Currency
+	SetBorderColor 0 180 130
+	SetTextColor 0 180 130
+	SetFontSize 45
 
 	
 
@@ -451,7 +480,7 @@ Show
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/scouring.mp3" 300
 	MinimapIcon 0 Green Circle
@@ -460,22 +489,22 @@ Show
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Scouring"
-#	Class Currency
-#	SetTextColor 100 150 200
-#	SetBorderColor 100 150 200
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Scouring"
+	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	SetFontSize 45
 
 Show
 	BaseType "Vaal Orb" 
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/vaal.mp3" 300
 	MinimapIcon 2 Blue Circle
@@ -484,15 +513,15 @@ Show
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Vaal Orb" 
-#	Class Currency
-#	SetTextColor 100 150 200
-#	SetBorderColor 100 150 200
-#	SetFontSize 45
+Hide
+	BaseType "Vaal Orb" 
+	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	SetFontSize 45
 
 Show
 	BaseType "Chromatic Orb"
@@ -509,7 +538,7 @@ Show
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
 	StackSize >= 2
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/chrome.mp3" 300
 	MinimapIcon 0 Blue Circle
@@ -518,22 +547,22 @@ Show
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Chromatic Orb"
-#	Class Currency
-#	SetTextColor 100 150 200
-#	SetBorderColor 100 150 200
-#	SetFontSize 45
+Hide
+	BaseType "Chromatic Orb"
+	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	SetFontSize 45
 
 Show
 	BaseType "Jeweller's Orb"
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/jeweller.mp3" 300
 	MinimapIcon 0 Blue Circle
@@ -543,7 +572,7 @@ Show
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
 	StackSize >= 2
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/jeweller.mp3" 300
 	MinimapIcon 0 Blue Circle
@@ -552,15 +581,15 @@ Show
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Jeweller's Orb"
-#	Class Currency
-#	SetTextColor 100 150 200
-#	SetBorderColor 100 150 200
-#	SetFontSize 45
+Hide
+	BaseType "Jeweller's Orb"
+	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	SetFontSize 45
 
 Show
 	BaseType "Orb of Augmentation"
@@ -577,7 +606,7 @@ Show
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
 	StackSize >= 2
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/augment.mp3" 300
 	MinimapIcon 0 Blue Circle
@@ -586,15 +615,15 @@ Show
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound
-#Hide
-#	BaseType "Orb of Augmentation"
-#	Class Currency
-#	SetTextColor 100 150 200
-#	SetBorderColor 100 150 200
-#	SetFontSize 45
+Hide
+	BaseType "Orb of Augmentation"
+	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	SetFontSize 45
 
 Show
 	BaseType "Portal Scroll"
@@ -611,7 +640,7 @@ Show
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
 	StackSize >= 2
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/portal.mp3" 300
 	MinimapIcon 0 Blue Circle
@@ -620,79 +649,85 @@ Show
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
-	AreaLevel < 69
+	AreaLevel < 99
 	SetFontSize 45
 	DisableDropSound	
-#Hide
-#	BaseType "Portal Scroll"
-#	Class Currency
-#	SetTextColor 100 150 200
-#	SetBorderColor 100 150 200
-#	SetFontSize 45
+Hide
+	BaseType "Portal Scroll"
+	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	SetFontSize 45
 
 Show
 	BaseType "Blacksmith's Whetstone" 
-	AreaLevel < 46
+	AreaLevel < 99
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/whetstone.mp3" 300
 Show
 	BaseType "Blacksmith's Whetstone" 
 	StackSize >= 2
-	AreaLevel < 69
+	AreaLevel < 99
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/whetstone.mp3" 300
 Show
 	BaseType "Blacksmith's Whetstone" 
 	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
+	SetFontSize 45
+	MinimapIcon 0 Blue Circle
+	DisableDropSound
+Hide
+	BaseType "Blacksmith's Whetstone" 
+	Class Currency
 	SetBorderColor 170 158 130
 	SetTextColor 170 158 130
-	AreaLevel < 69
 	SetFontSize 45
-	DisableDropSound
-#Hide
-#	BaseType "Blacksmith's Whetstone" 
-#	Class Currency
-#	SetBorderColor 170 158 130
-#	SetTextColor 170 158 130
-#	SetFontSize 45
 	
 Show
 	BaseType "Armourer's Scrap"
-	AreaLevel < 46
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/scrap.mp3" 300
 Show
 	BaseType "Armourer's Scrap"
 	StackSize >= 2
-	AreaLevel < 69
 	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
+	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/scrap.mp3" 300
 Show
 	BaseType "Armourer's Scrap"
-	AreaLevel < 69
+	Class Currency
+	SetTextColor 100 150 200
+	SetBorderColor 100 150 200
+	AreaLevel < 99
+	SetFontSize 45
+	MinimapIcon 0 Blue Circle
+	DisableDropSound
+Hide
+	BaseType "Armourer's Scrap"
 	Class Currency
 	SetBorderColor 170 158 130
 	SetTextColor 170 158 130
 	SetFontSize 45
-	DisableDropSound
-#Hide
-#	BaseType "Armourer's Scrap"
-#	Class Currency
-#	SetBorderColor 170 158 130
-#	SetTextColor 170 158 130
-#	SetFontSize 45
 	
 Show
 	BaseType "Scroll of Wisdom"
@@ -705,7 +740,7 @@ Show
 Show
 	BaseType "Scroll of Wisdom"
 	Class Currency
-	AreaLevel < 69
+	AreaLevel < 99
 	StackSize >= 3
 	SetFontSize 45
 	SetBorderColor 170 158 130
@@ -714,22 +749,21 @@ Show
 Show
 	BaseType "Scroll of Wisdom"
 	Class Currency
-	AreaLevel < 69
+	AreaLevel < 34
 	SetFontSize 45
 	SetBorderColor 170 158 130
 	SetTextColor 170 158 130
 	DisableDropSound
-#Hide
-#	BaseType "Scroll of Wisdom"
-#	Class Currency
-#	SetFontSize 45
-#	SetBorderColor 170 158 130
-#	SetTextColor 170 158 130
+Hide
+	BaseType "Scroll of Wisdom"
+	Class Currency
+	SetFontSize 45
+	SetBorderColor 170 158 130
+	SetTextColor 170 158 130
 	
 	
 Show
 	BaseType "Essence"
-	AreaLevel < 69
 	Class Currency
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -738,21 +772,29 @@ Show
 	CustomAlertSound "gucci_sounds/essence.mp3" 
 	MinimapIcon 2 Green Circle
 
-
+#marker
+Show
+	BaseType "Rogue's Marker"
+	SetBackgroundColor 65 10 0
+	SetBorderColor 225 225 225
+	SetTextColor 225 225 225
+	SetFontSize 42
+#	PlayAlertSound 3 150
+	MinimapIcon 2 Grey Circle
 
 
 	
 	
 #####FLASKS#####
-#Show
-#	BaseType "Small Life Flask"
-#	AreaLevel <= 5
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 250 250
-#	SetBackgroundColor 250 0 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/LifeFlask.mp3" 300
-#	MinimapIcon 2 Red Kite
+Show
+	BaseType "Small Life Flask"
+	AreaLevel <= 5
+	SetBorderColor 0 0 0
+	SetTextColor 0 250 250
+	SetBackgroundColor 250 0 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/LifeFlask.mp3" 300
+	MinimapIcon 2 Red Kite
 Show
 	BaseType "Medium Life Flask"
 	AreaLevel <= 11
@@ -834,7 +876,16 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/LifeFlask.mp3" 300
 	MinimapIcon 2 Red Kite
-
+	
+Show
+	BaseType "Small Mana Flask"
+	AreaLevel <= 5
+	SetBorderColor 0 0 0
+	SetTextColor 0 250 250
+	SetBackgroundColor 0 0 250
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/ManaFlask.mp3" 300
+	MinimapIcon 2 Blue Kite	
 Show
 	BaseType "Medium Mana Flask"
 	AreaLevel <= 6
@@ -924,15 +975,15 @@ Show
 
 # # # # TWILIGHT STRAND ITEMS # # # # 
 Show
-	Class "Sceptre" "Wand"
+	Class "One Hand Sword" "One Hand Mace"
 	LinkedSockets = 2
-	SocketGroup RB BB
+	SocketGroup RG RR
 	SetTextColor 200 0 200
 	SetBorderColor 200 0 200
 	AreaLevel = 1
 	SetFontSize 45
 
-# # # #    C A S T E R    # # # #
+# # # #    MELEE   # # # #
 
 
 
@@ -951,67 +1002,950 @@ Show
 	SetFontSize 45
 	MinimapIcon 2 Red Triangle
 Show
-	BaseType "Goat's Horn"
+	BaseType "Granite Flask"
+	SetTextColor 250 0 125
+	ItemLevel <= 67
+	CustomAlertSound "gucci_sounds/graniteflask.mp3" 300
+	SetFontSize 40
+	MinimapIcon 2 Red Triangle
+Show
+	BaseType "Granite Flask" "Jade Flask" "Quartz Flask"
+	SetTextColor 250 0 125
+	ItemLevel <= 99
+	MinimapIcon 2 Orange Raindrop
+	SetFontSize 45
+	PlayAlertSound 14 200	
+
+
+	
+#One Hand Desperation#
+Show
+	BaseType "Rusted Hatchet"
+	AreaLevel < 7	
+	Rarity Normal Magic Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle	
+	
+Show
+	BaseType "Jade Hatchet"
+	AreaLevel < 11	
+	Rarity Normal Magic Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle	
+	
+Show
+	BaseType "Boarding Axe"
 	AreaLevel < 13	
+	Rarity Normal Magic Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle	
+	
+	
+Show
+	BaseType "Rusted Spike"
+	AreaLevel < 7	
+	Rarity Normal Magic Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle	
+
+Show
+	BaseType "Copper Sword"
+	AreaLevel < 10
+	Rarity Normal Magic Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle	
+	
+Show
+	BaseType "Sabre" "Whalebone Rapier"
+	AreaLevel < 13	
+	Rarity Normal Magic Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle		
+	
+	
+## Axes ##
+
+Show
+	BaseType "Stone Axe"
+	AreaLevel < 9	
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/goathorn.mp3" 300
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
 	MinimapIcon 2 White Circle
 Show
-	BaseType "Goat's Horn"
-	AreaLevel < 13	
+	BaseType "Stone Axe"
+	AreaLevel < 9	
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/magicgoat.mp3" 300
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
 	MinimapIcon 2 Blue Circle
 Show
-	BaseType "Goat's Horn"
+	BaseType "Stone Axe"
 	AreaLevel < 13	
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 225 225 110
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/raregoat.mp3" 300
 	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+
 
 Show
-	BaseType "Faun's Horn"
-	AreaLevel < 41	
+	BaseType "Jade Chopper"
+	AreaLevel < 13	
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/goathorn.mp3" 300
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
 	MinimapIcon 2 White Circle
 Show
-	BaseType "Faun's Horn"
-	AreaLevel < 41	
+	BaseType "Jade Chopper"
+	AreaLevel < 13	
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/magicgoat.mp3" 300
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
 	MinimapIcon 2 Blue Circle
 Show
-	BaseType "Faun's Horn"
-	AreaLevel < 56	
+	BaseType "Jade Chopper"
+	AreaLevel < 18	
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 225 225 110
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/raregoat.mp3" 300
 	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+	
+	
+Show
+	BaseType "Woodsplitter"
+	AreaLevel < 18	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Woodsplitter"
+	AreaLevel < 18	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Woodsplitter"
+	AreaLevel < 23	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+	
+Show
+	BaseType "Poleaxe"
+	AreaLevel < 23	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Poleaxe"
+	AreaLevel < 23	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Poleaxe"
+	AreaLevel < 28	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+#Show
+#	BaseType "Double Axe"
+#	AreaLevel < 28	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Double Axe"
+#	AreaLevel < 28	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Double Axe"
+	AreaLevel < 33	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+Show
+	BaseType "Gilded Axe"
+	AreaLevel < 28	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Gilded Axe"
+	AreaLevel < 28	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Gilded Axe"
+	AreaLevel < 41	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+	
+	
+Show
+	BaseType "Shadow Axe"
+	AreaLevel < 33	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Shadow Axe"
+	AreaLevel < 33	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Shadow Axe"
+	AreaLevel < 41	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+	
+	
+#Show
+#	BaseType "Dagger Axe"
+#	AreaLevel < 41	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Dagger Axe"
+#	AreaLevel < 41	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Dagger Axe"
+	AreaLevel < 45	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+#Show
+#	BaseType "Jasper Chopper"
+#	AreaLevel < 41	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Jasper Chopper"
+#	AreaLevel < 41	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Jasper Chopper"
+	AreaLevel < 45	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+	
+Show
+	BaseType "Timber Axe"
+	AreaLevel < 45	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Timber Axe"
+	AreaLevel < 45	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Timber Axe"
+	AreaLevel < 52	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300		
+	
+Show
+	BaseType "Headsman Axe"
+	AreaLevel < 49	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Headsman Axe"
+	AreaLevel < 49	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Headsman Axe"
+	AreaLevel < 55	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
 
+
+#Show
+#	BaseType "Labrys"
+#	AreaLevel < 52	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Labrys"
+#	AreaLevel < 52	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Labrys"
+	AreaLevel < 55	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300		
+	
+	
+Show
+	BaseType "Noble Axe"
+	AreaLevel < 55	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Noble Axe"
+	AreaLevel < 55	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Noble Axe"
+	AreaLevel < 62	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+Show
+	BaseType "Abyssal Axe"
+	AreaLevel < 59	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Abyssal Axe"
+	AreaLevel < 59	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Abyssal Axe"
+	AreaLevel < 62	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+
+#Show
+#	BaseType "Karui Chopper"
+#	AreaLevel < 60	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Karui Chopper"
+#	AreaLevel < 60	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+#Show
+#	BaseType "Karui Chopper"
+#	AreaLevel < 70	
+#	Rarity Rare
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 225 225 110
+#	SetFontSize 45
+#	MinimapIcon 2 Yellow Circle
+#	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+	
+	
+#Show
+#	BaseType "Talon Axe"
+#	AreaLevel < 60	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Talon Axe"
+#	AreaLevel < 60	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Talon Axe"
+	AreaLevel < 70	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+#Show
+#	BaseType "Sundering Axe"
+#	AreaLevel < 62	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+Show
+	BaseType "Sundering Axe"
+	AreaLevel < 62	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Sundering Axe"
+	AreaLevel < 70	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+	
+Show
+	BaseType "Ezomyte Axe"
+	AreaLevel < 70	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+Show
+	BaseType "Ezomyte Axe"
+	AreaLevel < 70	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Ezomyte Axe"
+	AreaLevel < 70	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+	
+#Show
+#	BaseType "Vaal Axe"
+#	AreaLevel < 66	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Vaal Axe"
+#	AreaLevel < 66	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Vaal Axe"
+	AreaLevel < 70	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+Show
+	BaseType "Despot Axe"
+	AreaLevel < 70	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+Show
+	BaseType "Despot Axe"
+	AreaLevel < 70	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Despot Axe"
+	AreaLevel < 70	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+#Show
+#	BaseType "Void Axe"
+#	AreaLevel < 70	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Void Axe"
+#	AreaLevel < 70	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Void Axe"
+	AreaLevel < 70	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+	
+	
+## SWORDS ##
+#Show
+#	BaseType "Corroded Blade"
+#	AreaLevel < 7	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Sword.mp3"
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Corroded Blade"
+#	AreaLevel < 7	
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/Sword.mp3"
+#	MinimapIcon 2 Blue Circle
+#Show
+#	BaseType "Corroded Blade"
+#	AreaLevel < 12	
+#	Rarity Rare
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 225 225 110
+#	SetFontSize 45
+#	MinimapIcon 2 Yellow Circle
+#	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+	
+	
+Show
+	BaseType "Tribal Maul"
+	AreaLevel < 12	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Tribal Maul"
+	AreaLevel < 12	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Tribal Maul"
+	AreaLevel < 17	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+	
+Show
+	BaseType "Mallet"
+	AreaLevel < 17	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Mallet"
+	AreaLevel < 17	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Mallet"
+	AreaLevel < 22	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+	
+	
+Show
+	BaseType "Sledgehammer"
+	AreaLevel < 22	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Sledgehammer"
+	AreaLevel < 22	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Sledgehammer"
+	AreaLevel < 23	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+	
+	
+Show
+	BaseType "Jagged Maul"
+	AreaLevel < 27	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Jagged Maul"
+	AreaLevel < 27
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Jagged Maul"
+	AreaLevel < 32
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
+	
+#Show
+#	BaseType "Brass Maul"
+#	AreaLevel < 32	
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/mace.mp3" 300
+#	MinimapIcon 2 White Circle
+#Show
+#	BaseType "Brass Maul"
+#	AreaLevel < 32
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/mace.mp3" 300
+#	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Brass Maul"
+	AreaLevel < 32
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300		
+	
 
 #### 2 LINK #### (no sound/icon by default)
 
@@ -1020,11 +1954,10 @@ Show
 	ItemLevel <= 25
 	LinkedSockets = 2
 	Rarity Normal Magic Rare	
-	SocketGroup BB BR GR
+	SocketGroup GR RG RR
 	SetBorderColor 75 75 250
 	SetBackgroundColor 0 0 75
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/bb.mp3" 300 
 #	MinimapIcon 2 Yellow Triangle 
 #Show
 #	Class "Gloves" "Helm" "Boots" "Wand"
@@ -1086,287 +2019,194 @@ Show
 	CustomAlertSound "gucci_sounds/chestrgb.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 	
-	
-
-	
-
-	
 Show
 	Class "Gloves" 
-	AreaLevel < 33	
+	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBB
+	SocketGroup RRR
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/glove3b.mp3" 300
+	CustomAlertSound "gucci_sounds/glove3r.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Helm" 
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBB
+	SocketGroup RRR
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/helm3b.mp3" 300
+	CustomAlertSound "gucci_sounds/helm3r.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Boots" 
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBB
+	SocketGroup RRR
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/boots3b.mp3" 300
+	CustomAlertSound "gucci_sounds/boots3r.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Body Armour"
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBB
+	SocketGroup RRR
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/chest3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-#Show
-#	Class "Wand"
-#	BaseType "Carved Wand"
-#	AreaLevel < 33
-#	LinkedSockets = 3	
-#	Rarity Normal Magic Rare
-#	SocketGroup BBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/wand3b.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/chest3r.mp3" 300
+	MinimapIcon 2 Yellow Triangle	
 
-
-
-#Show
-#	Class "Wand"
-#	BaseType "Carved Wand"
-#	AreaLevel < 33
-#	Rarity Normal Magic Rare
-#	SocketGroup BBG BGB GBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/wand2b1g.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	
 Show
 	Class "Gloves" 
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
+	SocketGroup GGR
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/glove2b1g.mp3" 300
+#	CustomAlertSound "gucci_sounds/glove2g1r.mp3" 300
+#	MinimapIcon 2 Yellow Triangle
+Show
+	Class "Helm" 
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGR
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/helm2g1r.mp3" 300
+#	MinimapIcon 2 Yellow Triangle
+Show
+	Class "Boots" 
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGR
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/boots2g1r.mp3" 300
+#	MinimapIcon 2 Yellow Triangle
+Show
+	Class "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGR
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/chest2g1r.mp3" 300
+#	MinimapIcon 2 Yellow Triangle
+	
+
+
+Show
+	Class "Gloves" 
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup RRG
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/glove2r1g.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Helm"
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
+	SocketGroup RRG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/helm2b1g.mp3" 300
+	CustomAlertSound "gucci_sounds/helm2r1g.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Boots"
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
+	SocketGroup RRG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/boots2b1g.mp3" 300
+	CustomAlertSound "gucci_sounds/boots2r1g.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Body Armour" 
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
+	SocketGroup RRG
 	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
+	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/chest2b1g.mp3" 300
+	CustomAlertSound "gucci_sounds/chest2r1g.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 	
 	
 	
-	
-#Show
-#	Class "Wand"
-#	BaseType "Carved Wand"
-#	AreaLevel < 33
-#	LinkedSockets = 3	
-#	Rarity Normal Magic Rare
-#	SocketGroup BBR BRB RBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/wand2b1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-
-	
 Show
-	Class "Gloves" 
-	AreaLevel < 33
+	Class "Gloves" "Helm" "Boots" "Body Armour" 
+	AreaLevel < 46
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
+	SocketGroup GGR 
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/glove2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Helm"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/helm2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Body Armour"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/chest2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "boots"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/boots2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
 
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	AreaLevel < 46
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBB
+	SocketGroup RRG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/bbb.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/bbg.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/bbr.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RGB GRB BRG
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/bbr.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
 
 
 
-Show
-	Class "Shield"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup GGR GRG RGG
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/shield2g1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-
-
-Show
-	Class "Shield"
-#	BaseEvasion < 1
-	BaseArmour < 1
-	BaseEnergyShield < 1
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/3linkshield.mp3" 300
-	MinimapIcon 2 Yellow Triangle
 
 #### 4 LINK ####
 
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 47
+	AreaLevel < 46
 	LinkedSockets = 4
 	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup BBBB
+	SocketGroup RRGG RGRG GGRR GRGR GRRG RGGR
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/bbbb.mp3" 300
+	CustomAlertSound "gucci_sounds/RRGG.mp3" 300
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
+	AreaLevel < 46
 	LinkedSockets = 4
 	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup BBBG BBGB BGBB GBBB
+	SocketGroup RRRG RRGR RGRR GRRR
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/bbbg.mp3" 300
+	CustomAlertSound "gucci_sounds/RRRG.mp3" 300
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
@@ -1374,47 +2214,20 @@ Show
 	LinkedSockets = 4
 	Sockets < 6 
 	Rarity Normal Magic Rare
-	SocketGroup BBBR BBRB BRBB RBBB
+	SocketGroup RRRR
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/bbbr.mp3" 300
+	CustomAlertSound "gucci_sounds/rrrr.mp3" 300
 	MinimapIcon 2 Red Hexagon
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
-	LinkedSockets = 4
-	Sockets < 6 
-	Rarity Normal Magic Rare
-	SocketGroup BBGG GGBB BGBG GBGB BGGB GBBG
-	SetBorderColor 0 250 250
-	SetBackgroundColor 0 65 65
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/bbgg.mp3" 300
-	MinimapIcon 2 Red Hexagon
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
-	LinkedSockets = 4
-	Sockets < 6 
-	Rarity Normal Magic Rare
-	SocketGroup GGBR BRGG GBRG RGGB BGGR
-	SetBorderColor 0 250 250
-	SetBackgroundColor 0 65 65
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/rgbg.mp3" 300
-	MinimapIcon 2 Red Hexagon
-
-
-
 	
-#PURE ES#
+#Armour+Armour/Evasion#
 Show
-	Class "Gloves"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
+	Class "Gloves" 
+#	BaseEvasion > 1
+	BaseArmour > 1
+	BaseEnergyShield < 1 
+	AreaLevel <= 52
 	LinkedSockets = 4
 	Sockets < 6 
 	Rarity Normal Magic Rare
@@ -1425,10 +2238,10 @@ Show
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Helm"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
+#	BaseEvasion > 1
+	BaseArmour > 1
+	BaseEnergyShield < 1
+	AreaLevel <= 52
 	LinkedSockets = 4
 	Sockets < 6 
 	Rarity Normal Magic Rare
@@ -1437,12 +2250,12 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/fourlinkhelmet.mp3" 300
 	MinimapIcon 2 Red Hexagon
-Show
+#Show
 	Class "Boots"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
+#	BaseEvasion > 1
+	BaseArmour > 1
+	BaseEnergyShield < 1 
+	AreaLevel <= 52
 	LinkedSockets = 4
 	Sockets < 6 
 	Rarity Normal Magic Rare
@@ -1453,10 +2266,10 @@ Show
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Body Armour"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
+#	BaseEvasion > 1
+	BaseArmour > 1
+	BaseEnergyShield < 1 
+	AreaLevel <= 52
 	LinkedSockets = 4
 	Sockets < 6 
 	Rarity Normal Magic Rare
@@ -1467,7 +2280,7 @@ Show
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
+	AreaLevel <= 52 
 	LinkedSockets = 4
 	Sockets < 6
 	Rarity Normal Magic Rare
@@ -1480,7 +2293,7 @@ Show
 #### Boots ####
 Show
 	Class "Boots"
-	AreaLevel <= 45
+	AreaLevel <= 36
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1502,13 +2315,13 @@ Show
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
+	Class "Gloves" "Helm" "Boots" "Body Armour"
 	ItemLevel <= 47
 	Sockets < 6
 	LinkedSockets <= 3
 	Sockets >= 3
 	Rarity Normal Magic Rare
-	SocketGroup BB BBB BBG RG BRB
+	SocketGroup RRG GGR RRR RG 
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
@@ -1525,36 +2338,36 @@ Show
 
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour" 
-	ItemLevel <= 47
+	ItemLevel <= 99
 	Sockets < 6
 	LinkedSockets <= 3
 	Sockets >= 4
 	Rarity Normal Magic Rare
-	SocketGroup BB BR BBB BBR BBG RG BG
+	SocketGroup RRG RRR RG 
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
 	
-#this block shows 1 b items pre ledge#	
+#this block shows 1 r items pre ledge#	
 Show
 	Class "Gloves" "Helm" "Boots" 
 	AreaLevel < 6
 	Rarity Normal Magic Rare
-	SocketGroup B
+	SocketGroup R
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45	
 	
-#this block shows bb br bg 2 sockets items pre a2#	
+#this block shows gr gb gg 2 sockets items pre a2#	
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
 	AreaLevel < 13
-	Sockets >= "2BR" "2BB" "2BG"
+	Sockets >= "2RB" "2RG" "2RR"
 	Rarity Normal Magic Rare
 	SocketGroup G
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
-	SetFontSize 45
+	SetFontSize 45	
 	
 	
 Show
@@ -1570,12 +2383,54 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 35	
-	
-### Experimental Normal Bases to Alchemy/Essence past i60 ###
+
+#EXPERIMENTAL BLOCK TO GET OFF COLOURS#
 Show
-	BaseType "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Carnal Mitts" "Assassin's Mitts" "Murder Mitts" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Carnal Boots" "Assassin's Boots" "Murder Boots"
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	ItemLevel <= 13
+	Sockets >= 2
+#	BaseEvasion > 1
+#	BaseArmour < 1
+#	BaseEnergyShield < 1 
+	Rarity Normal Magic Rare
+	SocketGroup R G
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+
+
+Show
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	ItemLevel <= 47
+	Sockets < 6
+	Sockets >= 3
+	BaseEvasion > 1
+	BaseArmour < 1
+#	BaseEnergyShield < 1 
+	Rarity Normal Magic Rare
+	SocketGroup R 
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+	
+Show
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	ItemLevel <= 99
+	Sockets < 6
+	Sockets >= 4
+	BaseEvasion > 1
+	BaseArmour < 1
+#	BaseEnergyShield < 1 
+	Rarity Normal Magic Rare
+	SocketGroup R 
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+
+#EXPERIMENTAL BLOCK TO GET BASES TO ALC#
+Show
+	BaseType "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Titan Gauntlets" "Goliath Gauntlets" "Vaal Gauntlets" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Goliath Greaves" "Vaal Greaves" "Titan Greaves"
 	ItemLevel >= 60
-	AreaLevel < 69
 	Rarity Normal
 	SetTextColor 0 0 0
 #	SetBorderColor 255 0 0
@@ -1583,22 +2438,20 @@ Show
 	SetFontSize 45
 
 Show	
-	BaseType "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Harlequin Mask" "Vaal Mask" "Deicide Mask" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Battle Buckler" "Crusader Buckler"
+	BaseType "Lacquered Helmet" "Fluted Bascinet" "Pig-Faced Bascinet" "Samnite Helmet" "Ezomyte Burgonet" "Royal Burgonet" "Dragonscale Doublet" "Desert Brigandine" "Full Dragonscale" "General's Brigandine"
 	ItemLevel >= 60
-	AreaLevel < 69
 	Rarity Normal
 	SetTextColor 0 0 0
 #	SetBorderColor 255 0 0
 	SetBackgroundColor 80 80 80
 	SetFontSize 45
 	
-	
 #### JEWELLERY ####
 
 Show
 	Class "Amulet"
 	BaseType "Jade Amulet"
-	ItemLevel <= 20
+	AreaLevel < 13
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1609,7 +2462,7 @@ Show
 Show
 	Class "Amulet"
 	BaseType "Jade Amulet"
-	ItemLevel <= 20
+	AreaLevel < 13
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1620,7 +2473,7 @@ Show
 Show
 	Class "Amulet"
 	BaseType "Jade Amulet"
-	ItemLevel <= 20
+	AreaLevel < 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1628,6 +2481,40 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/jade.mp3" 300
 	MinimapIcon 2 Yellow Circle
+	
+Show
+	Class "Amulet"
+	BaseType "Lapis Amulet"
+	AreaLevel < 19
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/lapis.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	Class "Amulet"
+	BaseType "Lapis Amulet"
+	AreaLevel < 19
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/lapis.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	Class "Amulet"
+	BaseType "Lapis Amulet"
+	AreaLevel < 99
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/lapis.mp3" 300
+	MinimapIcon 2 Yellow Circle	
 	
 Show
 	Class "Belt"
@@ -1643,14 +2530,14 @@ Show
 Show
 	Class "Belt"
 	BaseType "Leather Belt"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
 #	CustomAlertSound "gucci_sounds/leatherbelt.mp3" 300
-#	MinimapIcon 2 White Circle
+	MinimapIcon 2 White Circle
 Show
 	Class "Belt"
 	BaseType "Leather Belt"
@@ -1665,7 +2552,7 @@ Show
 Show
 	Class "Belt"
 	BaseType "Leather Belt"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1690,7 +2577,7 @@ Show
 #Show
 #	Class "Belt"
 #	BaseType "Chain Belt"
-#	ItemLevel <= 69
+#	ItemLevel <= 99
 #	Rarity Normal
 #	SetTextColor 0 0 0
 #	SetBorderColor 255 0 0
@@ -1709,62 +2596,85 @@ Show
 #	SetFontSize 45
 #	CustomAlertSound "gucci_sounds/chainbelt.mp3" 300
 #	MinimapIcon 2 Blue Circle
+Show
+	Class "Belt"
+	BaseType "Chain Belt"
+	ItemLevel <= 99
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/rarechain.mp3" 300
+	MinimapIcon 2 Yellow Circle
+
 #Show
 #	Class "Belt"
-#	BaseType "Chain Belt"
-#	ItemLevel <= 69
+#	BaseType "Heavy Belt"
+#	ItemLevel <= 33
+#	Rarity Normal
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 255 255 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/heavybelt.mp3" 300
+#	MinimapIcon 2 Brown Circle
+#Show
+#	Class "Belt"
+#	BaseType "Heavy Belt"
+#	ItemLevel <= 20
+#	Rarity Magic
+#	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+#	SetBackgroundColor 50 50 255
+#	SetFontSize 45
+#	CustomAlertSound "gucci_sounds/heavybelt.mp3" 300
+#	MinimapIcon 2 Brown Circle
+#Show
+#	Class "Belt"
+#	BaseType "Heavy Belt"
+#	ItemLevel <= 99
 #	Rarity Rare
 #	SetTextColor 0 0 0
 #	SetBorderColor 255 0 0
 #	SetBackgroundColor 225 225 110
 #	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/rarechain.mp3" 300
-#	MinimapIcon 2 Yellow Circle
-
-Show
-	Class "Belt"
-	BaseType "Heavy Belt"
-	ItemLevel <= 33
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/heavybelt.mp3" 300
-	MinimapIcon 2 Brown Circle
-Show
-	Class "Belt"
-	BaseType "Heavy Belt"
-	ItemLevel <= 69
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
 #	CustomAlertSound "gucci_sounds/heavybelt.mp3" 300
 #	MinimapIcon 2 Brown Circle
 Show
 	Class "Belt"
-	BaseType "Heavy Belt"
-	ItemLevel <= 20
+	BaseType "Rustic Sash"
+	ItemLevel <= 31
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
+	SetBackgroundColor 255 255 255
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/heavybelt.mp3" 300
-#	MinimapIcon 2 Brown Circle
+	CustomAlertSound "gucci_sounds/rustic.mp3" 300
+	MinimapIcon 2 Brown Circle	
 Show
 	Class "Belt"
-	BaseType "Heavy Belt"
-	ItemLevel <= 69
+	BaseType "Rustic Sash"
+	ItemLevel <= 31
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/rustic.mp3" 300
+	MinimapIcon 2 Brown Circle	
+Show
+	Class "Belt"
+	BaseType "Rustic Sash"
+	ItemLevel <= 65
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
+	SetBackgroundColor 255 255 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/heavybelt.mp3" 300
-	MinimapIcon 2 Brown Circle
+	CustomAlertSound "gucci_sounds/rustic.mp3" 300
+	MinimapIcon 2 Brown Circle		
+
 Show
 	Class "Ring"
 	BaseType "Iron Ring"
@@ -1823,7 +2733,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Coral Ring"
-	ItemLevel <= 69
+	ItemLevel <= 17
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1857,7 +2767,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Sapphire Ring"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1891,7 +2801,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Topaz Ring"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1925,7 +2835,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Ruby Ring"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1937,7 +2847,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Two-Stone Ring"
-	ItemLevel <= 33
+	ItemLevel <= 45
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1948,7 +2858,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Two-Stone Ring"
-	ItemLevel <= 33
+	ItemLevel <= 45
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1959,7 +2869,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Two-Stone Ring"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1983,7 +2893,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Amethyst Ring"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2005,7 +2915,7 @@ Show
 Show
 	Class "Ring"
 	BaseType "Amethyst Ring"
-	ItemLevel <= 69
+	ItemLevel <= 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2014,39 +2924,8 @@ Show
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "gucci_sounds/amethystring.mp3" 300
 
-Show
-	Class "Shield"	
-#	BaseEvasion < 1
-	BaseArmour < 1
-	BaseEnergyShield < 1
-	AreaLevel <= 69
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareshield.mp3" 300
-Show
-	Class "Wand"
-	AreaLevel <= 69
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rarewand.mp3" 300
-Show
-	Class "Sceptre" 
-	AreaLevel >= 23
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+
+
 
 
 #Safety Blocks (Don't need to modify these for normal use)
@@ -2088,43 +2967,8 @@ Show
 ##### Gems #####
 ## Strand ##
 
-	
-### +1 cold recipe####
-#Show
-#	Class Gem
-#	Quality >= 5
-#	BaseType == "Added Cold Damage Support" "Arctic Armour" "Bonechill Support" "Cold Penetration Support" "Cold Snap" "Cold to Fire Support" "Creeping Frost" "Discharge" "Elemental Hit" "Elemental Proliferation Support" "Explosive Concoction" "Eye of Winter" "Freezing Pulse" "Frost Blades" "Frost Bomb" "Frost Shield" "Frost Wall" "Frostbite" "Frostblink" "Frostbolt" "Frozen Legion" "Glacial Cascade" "Glacial Hammer" "Hatred" "Herald of Ice" "Hydrosphere" "Hypothermia Support" "Ice Bite Support" "Ice Crash" "Ice Nova" "Ice Shot" "Ice Spear" "Ice Trap" "Icicle Mine" "Prismatic Burst Support" "Purity of Ice" "Siphoning Trap" "Summon Ice Golem" "Summon Skitterbots" "Vaal Arctic Armour" "Vaal Cold Snap" "Vaal Glacial Hammer" "Vaal Ice Nova" "Vaal Ice Shot" "Vaal Impurity of Ice" "Vortex" "Wild Strike" "Winter Orb" "Wintertide Brand"
-#	SetBackgroundColor 180 0 0
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 0 0
-#	SetFontSize 45
-#	PlayAlertSound 16 200
-#	MinimapIcon 0 Blue Moon
 
 
-### +1 fire recipe###
-#Show  
-#	Quality >= 5
-#	Class "Gem"
-#	BaseType == "Added Fire Damage Support" "Alchemist's Mark" "Anger" "Armageddon Brand" "Artillery Ballista" "Blast Rain" "Blazing Salvo" "Bodyswap" "Burning Arrow" "Burning Damage Support" "Cold to Fire Support" "Combustion Support" "Consecrated Path" "Controlled Blaze Support" "Cremation" "Detonate Dead" "Discharge" "Elemental Hit" "Elemental Proliferation Support" "Explosive Arrow" "Explosive Concoction" "Explosive Trap" "Fire Penetration Support" "Fireball" "Firestorm" "Flame Dash" "Flame Link" "Flame Surge" "Flame Wall" "Flameblast" "Flamethrower Trap" "Flamewood Support" "Flammability" "Herald of Ash" "Holy Flame Totem" "Ignite Proliferation Support" "Immolate Support" "Incinerate" "Infernal Blow" "Infernal Cry" "Infernal Legion Support" "Molten Shell" "Molten Strike" "Prismatic Burst Support" "Purifying Flame" "Purity of Fire" "Pyroclast Mine" "Righteous Fire" "Rolling Magma" "Scorching Ray" "Searing Bond" "Summon Flame Golem" "Summon Raging Spirit" "Tectonic Slam" "Vaal Burning Arrow" "Vaal Fireball" "Vaal Firestorm" "Vaal Flameblast" "Vaal Impurity of Fire" "Vaal Molten Shell" "Vaal Molten Strike" "Vaal Righteous Fire" "Vaal Volcanic Fissure" "Volatile Dead" "Volcanic Fissure" "Wave of Conviction" "Wild Strike"
-#	SetBackgroundColor 180 0 0
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 0 0
-#	SetFontSize 45
-#	PlayAlertSound 16 200
-#	MinimapIcon 0 Blue Moon
-#
-#### +1 phys recipe###
-#Show 
-#	Quality >= 5
-#	Class "Gem"
-#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Reckoning" "Riposte" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Vengeance" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
-#	SetBackgroundColor 180 0 0
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 0 0
-#	SetFontSize 45
-#	PlayAlertSound 16 200
-#	MinimapIcon 0 Blue Moon
 	
 ## Zones ##
 Show
@@ -2135,21 +2979,18 @@ Show
 Show
     Class Gem
     Quality >= 1
-	AreaLevel < 69
 	SetBorderColor 150 120 60
 	SetFontSize 45
 	
 Show
 	Class "Gem"
 	GemLevel >= 2
-	AreaLevel < 69
 	SetFontSize 45
 	
 	
 Show
 	Class Gem
 	BaseType "Vaal"
-	AreaLevel < 69
 	Corrupted True
 	SetBackgroundColor 50 0 0
 	SetFontSize 45
@@ -2193,17 +3034,17 @@ Show
 	PlayAlertSound 5 250
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
-Show
-	BaseType "Goat's Horn" "Carved Wand"
-	Rarity Unique
-	AreaLevel <= 22
-	SetBackgroundColor 225 100 0
-	SetBorderColor 255 255 255
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 5 250
-	MinimapIcon 0 Orange Star
-	PlayEffect Orange
+#Show
+#	BaseType "Goat's Horn" "Carved Wand"
+#	Rarity Unique
+#	AreaLevel <= 22
+#	SetBackgroundColor 225 100 0
+#	SetBorderColor 255 255 255
+#	SetTextColor 0 0 0
+#	SetFontSize 45
+#	PlayAlertSound 5 250
+#	MinimapIcon 0 Orange Star
+#	PlayEffect Orange
 Show
 	Rarity Unique
 	SetBackgroundColor 225 100 0
@@ -2276,42 +3117,42 @@ Show
 Show
 	Class "Body Armour"
 #	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	AreaLevel <= 69
-	Rarity Rare
-#	SetBackgroundColor 127 0 255
-	SetBorderColor 255 0 0
-	SetFontSize 45
-	
-Show #es shield
-	Class "Shield"
-	BaseEvasion < 1
-	BaseArmour < 1
-	BaseEnergyShield > 1
-	AreaLevel <= 69
-	Rarity Rare
-#	SetBackgroundColor 127 0 255
-	SetBorderColor 255 0 0
-	SetFontSize 45
-	
-Show #ev shield
-	Class "Shield"
-	BaseEvasion > 1
-	BaseArmour < 1
+	BaseArmour > 1
 	BaseEnergyShield < 1
-	AreaLevel <= 69
+	AreaLevel <= 99
 	Rarity Rare
 #	SetBackgroundColor 127 0 255
 	SetBorderColor 255 0 0
 	SetFontSize 45
-
-Show #all gear with es 
-	Class "Helmet" "Gloves" "Boots"
+	
+#Show #es shield
+#	Class "Shield"
 #	BaseEvasion < 1
 #	BaseArmour < 1
-	BaseEnergyShield > 1
-	AreaLevel <= 69
+#	BaseEnergyShield > 1
+#	AreaLevel <= 99
+#	Rarity Rare
+#	SetBackgroundColor 127 0 255
+#	SetBorderColor 255 0 0
+#	SetFontSize 45
+	
+#Show #ev shield
+#	Class "Shield"
+#	BaseEvasion > 1
+#	BaseArmour < 1
+#	BaseEnergyShield < 1
+#	AreaLevel <= 99
+#	Rarity Rare
+#	SetBackgroundColor 127 0 255
+#	SetBorderColor 255 0 0
+#	SetFontSize 45
+
+Show #all gear with armr 
+	Class "Helmet" "Gloves" "Boots"
+#	BaseEvasion < 1
+	BaseArmour > 1
+	BaseEnergyShield < 1
+	AreaLevel <= 99
 	Rarity Rare
 #	SetBackgroundColor 127 0 255
 	SetBorderColor 255 0 0
@@ -2319,8 +3160,8 @@ Show #all gear with es
 
 #generic rare
 Show
-	AreaLevel <= 69
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	AreaLevel <= 99
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Rare
 	Width <= 2
 	Height = 1
@@ -2328,26 +3169,26 @@ Show
 	SetBorderColor 127 0 255
 	SetFontSize 45
 Show
-	AreaLevel <= 69
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	AreaLevel <= 99
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Rare
 	Width <= 2
 	Height <= 2
 #	SetBackgroundColor 127 0 255
 	SetBorderColor 127 0 255
-	SetFontSize 45
+	SetFontSize 40
 Show
-	AreaLevel <= 69
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	AreaLevel <= 99
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Rare
 	Width = 1
 	Height = 3
 #	SetBackgroundColor 40 40 40
 	SetBorderColor 127 0 255
-	SetFontSize 45	
+	SetFontSize 40	
 Show
-	AreaLevel <= 69
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	AreaLevel <= 99
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Rare 
 	Width = 2
 	Height = 3
@@ -2355,8 +3196,8 @@ Show
 #	SetBorderColor 127 0 255
 	SetFontSize 30
 Show
-	AreaLevel <= 69
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	AreaLevel <= 99
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Rare
 	Width = 2
 	Height = 4
@@ -2373,19 +3214,19 @@ Show
 	Height <= 2
 #	SetBackgroundColor 127 0 255
 	SetBorderColor 127 0 255
-	SetFontSize 45
+	SetFontSize 40
 Show
 	AreaLevel <= 32
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Magic 
 	Width = 1
 	Height = 3
 #	SetBackgroundColor 40 40 40
 	SetBorderColor 127 0 255
-	SetFontSize 45	
+	SetFontSize 40
 Show
 	AreaLevel <= 32
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Magic 
 	Width = 2
 	Height = 3
@@ -2394,7 +3235,7 @@ Show
 	SetFontSize 30
 Show
 	AreaLevel <= 13
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Magic 
 	Width = 2
 	Height = 4
@@ -2402,7 +3243,37 @@ Show
 #	SetBorderColor 127 0 255
 	SetFontSize 30
 
-
+#Whetstone Recipe#
+Show
+	Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+	AreaLevel < 33	
+	Quality >= 20
+	Rarity Normal
+	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	MinimapIcon 2 Yellow Triangle
+Show
+	Class == "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "Wands"
+	AreaLevel < 23	
+	Quality >= 8
+	Rarity Normal
+	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	MinimapIcon 2 Yellow Triangle
+Show
+	Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	AreaLevel < 13	
+	Quality >= 8
+	Rarity Normal
+	SetTextColor 0 0 0
+#	SetBorderColor 255 0 0
+	SetBackgroundColor 80 80 80
+	SetFontSize 45
+	MinimapIcon 2 Yellow Triangle
 	
 #3CL##
 #smallchromes (always show)
@@ -2459,14 +3330,14 @@ Show
 	MinimapIcon 2 Brown Raindrop
 	
 #maps
-#Show
-#	Class Map
-#	SetTextColor 0 0 0
-#	SetBackgroundColor 255 221 153
-#	SetBorderColor 0 0 0
-#	PlayAlertSound 9 200
-#	SetFontSize 40
-#	MinimapIcon 1 Blue Hexagon
+Show
+	Class Map
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 221 153
+	SetBorderColor 0 0 0
+	PlayAlertSound 9 200
+	SetFontSize 40
+	MinimapIcon 1 Blue Hexagon
 
 #unique maps
 Show
@@ -2511,369 +3382,9 @@ Show
 	PlayAlertSound 4 150
 	SetFontSize 38
 	MinimapIcon 2 Orange Hexagon
-	PlayEffect Orange Temp
+	PlayEffect Orange Temp	
 
-#blighted maps
-Show
-	Class Map
-	UberBlightedMap True
-	SetBackgroundColor 250 250 250
-	SetBorderColor 0 0 0
-	SetTextColor 75 125 75
-	SetFontSize 45
-	PlayAlertSound 6 200
-	MinimapIcon 0 White Hexagon
-	PlayEffect White
-Show
-	Class Map
-	BlightedMap True
-	MapTier >= 11
-	SetBackgroundColor 255 221 153
-	SetBorderColor 250 0 0
-	SetTextColor 75 125 75
-	SetFontSize 45
-	PlayAlertSound 8 200
-	MinimapIcon 0 Yellow Hexagon
-	PlayEffect Red
-Show
-	Class Map
-	BlightedMap True
-	MapTier >= 6
-	SetBackgroundColor 255 221 153
-	SetBorderColor 125 0 250
-	SetTextColor 75 125 75
-	SetFontSize 45
-	PlayAlertSound 9 200
-	MinimapIcon 1 Yellow Hexagon
-	PlayEffect Yellow
-Show
-	Class Map
-	BlightedMap True
-	SetBackgroundColor 255 221 153
-	SetBorderColor 25 75 25
-	SetTextColor 75 125 75
-	SetFontSize 45
-	PlayAlertSound 9 200
-	MinimapIcon 2 Yellow Hexagon
-	PlayEffect Yellow
-	
-#enchanted maps (delirium/blight)
-Show
-	Class Map
-	AnyEnchantment True
-	MapTier >= 11
-	SetBackgroundColor 255 221 153
-	SetBorderColor 250 0 0
-	SetTextColor 125 125 125
-	SetFontSize 45
-	PlayAlertSound 8 200
-	MinimapIcon 0 Red Hexagon
-	PlayEffect Grey
-Show
-	Class Map
-	AnyEnchantment True
-	MapTier >= 6
-	SetBackgroundColor 255 221 153
-	SetBorderColor 125 0 250
-	SetTextColor 125 125 125
-	SetFontSize 45
-	PlayAlertSound 9 200
-	MinimapIcon 0 Purple Hexagon
-	PlayEffect Grey
-Show
-	Class Map
-	AnyEnchantment True
-	SetBackgroundColor 255 221 153
-	SetBorderColor 25 75 25
-	SetTextColor 125 125 125
-	SetFontSize 45
-	PlayAlertSound 9 200
-	MinimapIcon 0 Green Hexagon
-	PlayEffect Grey
-	
-#influenced map special highlight (really just a light/icon color change right now) - as of delirium (3.10) they can only drop shaper/elder and as red tier maps.
-#guardian and elder maps (pink)
-Show
-	Class Map
-	HasInfluence Shaper
-	MapTier >= 16
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 255
-	SetTextColor 240 0 180
-	PlayAlertSound 15 150
-	SetFontSize 45
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Purple
-Show
-	Class Map
-	HasInfluence Elder
-	MapTier >= 16
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 255
-	SetTextColor 240 0 240
-	PlayAlertSound 15 150
-	SetFontSize 45
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Grey
-#top tier (red)
-Show
-	Class Map
-	HasInfluence Shaper
-	MapTier >= 11
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 0
-	SetTextColor 240 0 0	
-	SetFontSize 42
-	PlayAlertSound 8 150
-	MinimapIcon 1 Red Hexagon
-	PlayEffect Purple
-Show
-	Class Map
-	HasInfluence Elder
-	MapTier >= 11
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 0
-	SetTextColor 240 0 0	
-	SetFontSize 42
-	PlayAlertSound 8 150
-	MinimapIcon 1 Red Hexagon
-	PlayEffect Grey
-
-#corrupted map catcher
-Show
-	Class Map
-	Corrupted True
-	MapTier >= 16
-	SetBackgroundColor 255 185 115
-	SetBorderColor 255 0 255
-	SetTextColor 240 0 180
-	PlayAlertSound 15 150
-	SetFontSize 45
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Pink
-Show
-	Class Map
-	Corrupted True
-	MapTier >= 11
-	SetBackgroundColor 255 185 115
-	SetBorderColor 255 0 0
-	SetTextColor 240 0 0
-	SetFontSize 42
-	PlayAlertSound 8 150
-	MinimapIcon 1 Red Hexagon
-	PlayEffect Red
-Show
-	Class Map
-	Corrupted True
-	MapTier >= 9
-	SetBackgroundColor 255 185 115
-	SetBorderColor 150 0 255
-	SetTextColor 150 0 255
-	SetFontSize 40
-	PlayAlertSound 9 150
-	MinimapIcon 2 Purple Hexagon
-Show
-	Class Map
-	Corrupted True
-	MapTier >= 6
-	SetBackgroundColor 255 185 115
-	SetBorderColor 0 150 250
-	SetTextColor 0 150 250
-	PlayAlertSound 9 125
-	SetFontSize 38
-	MinimapIcon 2 Blue Hexagon
-Show
-	Class Map
-	Corrupted True
-	MapTier >= 4
-	SetBackgroundColor 255 185 115
-	SetBorderColor 0 175 0
-	SetTextColor 0 175 0
-	SetFontSize 36
-Show
-	Class Map
-	Corrupted True
-	SetBackgroundColor 255 185 115
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 36
-
-#special map exceptions (just maps with "Vaal" prefix for now, dark red)
-Show
-	Class Map
-	MapTier >= 16
-	HasExplicitMod "Vaal"
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 255
-	SetTextColor 175 0 0
-	PlayAlertSound 15 150
-	SetFontSize 45
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Pink
-Show
-	Class Map
-	MapTier >= 11
-	HasExplicitMod "Vaal"
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 0	
-	SetTextColor 175 0 0
-	SetFontSize 42
-	PlayAlertSound 8 150
-	MinimapIcon 1 Red Hexagon
-	PlayEffect Red
-Show
-	Class Map
-	MapTier >= 9
-	HasExplicitMod "Vaal"
-	SetBackgroundColor 255 221 153
-	SetBorderColor 150 0 255
-	SetTextColor 175 0 0
-	SetFontSize 40
-	PlayAlertSound 9 150
-	MinimapIcon 2 Purple Hexagon
-Show
-	Class Map
-	MapTier >= 6
-	HasExplicitMod "Vaal"
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 150 250
-	SetTextColor 175 0 0
-	PlayAlertSound 9 125
-	SetFontSize 38
-	MinimapIcon 2 Blue Hexagon
-Show
-	Class Map
-	MapTier >= 4
-	HasExplicitMod "Vaal"
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 175 0
-	SetTextColor 175 0 0
-	SetFontSize 36
-Show
-	Class Map
-	HasExplicitMod "Vaal"
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 0 0
-	SetTextColor 175 0 0
-	SetFontSize 36
-
-#guardian and elder maps (pink)
-Show 
-	Class Map
-	ElderMap True
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 250 250
-	SetTextColor 240 0 180
-	PlayAlertSound 15 150
-	SetFontSize 45
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Pink
-Show
-	Class Map
-	MapTier >= 16
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 255
-	SetTextColor 240 0 240
-	PlayAlertSound 15 150
-	SetFontSize 45
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Pink
-#top tier (red)
-Show 
-	Class Map
-	ShapedMap True
-	MapTier >= 11
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 200 200
-	SetTextColor 240 0 0
-	SetFontSize 42
-	PlayAlertSound 8 150
-	MinimapIcon 1 Red Hexagon
-	PlayEffect Red
-Show
-	Class Map
-	MapTier >= 11
-	SetBackgroundColor 255 221 153
-	SetBorderColor 255 0 0
-	SetTextColor 240 0 0	
-	SetFontSize 42
-	PlayAlertSound 8 150
-	MinimapIcon 1 Red Hexagon
-	PlayEffect Red
-#non-top tier shaped maps (teal)
-Show 
-	Class Map
-	ShapedMap True
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 200 200
-	SetTextColor 0 200 200
-	SetFontSize 40
-	PlayAlertSound 9 150
-	MinimapIcon 2 Cyan Hexagon
-#mid tier (t6-t8 blue, t9-t10 purple)
-Show
-	Class Map
-	MapTier >= 9
-	SetBackgroundColor 255 221 153
-	SetBorderColor 150 0 255
-	SetTextColor 150 0 255
-	SetFontSize 40
-	PlayAlertSound 9 150
-	MinimapIcon 2 Purple Hexagon
-Show
-	Class Map
-	MapTier >= 6
-	ItemLevel <= 79
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 150 250
-	SetTextColor 0 150 250
-#	PlayAlertSound 9 125 #SOUND OFF IN UBER FILTER ONLY
-	SetFontSize 38
-	MinimapIcon 2 Blue Hexagon
-Show
-	Class Map
-	MapTier >= 6
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 150 250
-	SetTextColor 0 150 250
-#	PlayAlertSound 9 125 #SOUND OFF IN UBER FILTER ONLY
-	SetFontSize 38
-	MinimapIcon 2 Blue Hexagon
-#bottom tier (t1-t3 black, t4-t5 green)
-Show
-	Class Map
-	MapTier >= 4
-	ItemLevel <= 77
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 175 0
-	SetTextColor 0 175 0
-#	PlayAlertSound 9 100 #SOUND OFF IN UBER FILTER ONLY
-	SetFontSize 38
-	MinimapIcon 2 Green Hexagon
-Show
-	Class Map
-	MapTier >= 4
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 175 0
-	SetTextColor 0 175 0
-	SetFontSize 36
-Show
-	Class Map
-	ItemLevel <= 74
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-#	PlayAlertSound 9 100 #SOUND OFF IN UBER FILTER ONLY
-	SetFontSize 38
-	MinimapIcon 2 Grey Hexagon
-Show
-	Class Map
-	SetBackgroundColor 255 221 153
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 36
-
-##### Quest Section #####
+##### Hide Section #####
 Show
 	Class "Quest Items" 
 	SetBorderColor 0 250 0
@@ -2891,900 +3402,9 @@ Show
 	PlayEffect Green
 
 
-##############################
-#### MAPPING EXPERIMENTAL ####
-##############################
-Show
-	BaseType "Heavy Belt"
-	Rarity Rare
-	HasInfluence None
-	FracturedItem False
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-#Show
-#	BaseType "Basalt Flask"
-#	ItemLevel >= 1
-#	SetBackgroundColor 250 0 125
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 0 0
-#	PlayAlertSound 6 250
-#	SetFontSize 45
-#	MinimapIcon 0 Red Circle
-#	PlayEffect Red
-#	DisableDropSound
-#Show
-#	BaseType "Gold Flask"
-#	ItemLevel >= 80
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
-#	PlayAlertSound 6 250
-#	MinimapIcon 0 Red Circle
-#	PlayEffect Red
-#	DisableDropSound
-### +1 fire recipe###
-#Show  
-#	Quality >= 5
-#	Class "Gem"
-#	BaseType == "Added Fire Damage Support" "Alchemist's Mark" "Anger" "Armageddon Brand" "Artillery Ballista" "Blast Rain" "Blazing Salvo" "Bodyswap" "Burning Arrow" "Burning Damage Support" "Cold to Fire Support" "Combustion Support" "Consecrated Path" "Controlled Blaze Support" "Cremation" "Detonate Dead" "Discharge" "Elemental Hit" "Elemental Proliferation Support" "Explosive Arrow" "Explosive Concoction" "Explosive Trap" "Fire Penetration Support" "Fireball" "Firestorm" "Flame Dash" "Flame Link" "Flame Surge" "Flame Wall" "Flameblast" "Flamethrower Trap" "Flamewood Support" "Flammability" "Herald of Ash" "Holy Flame Totem" "Ignite Proliferation Support" "Immolate Support" "Incinerate" "Infernal Blow" "Infernal Cry" "Infernal Legion Support" "Molten Shell" "Molten Strike" "Prismatic Burst Support" "Purifying Flame" "Purity of Fire" "Pyroclast Mine" "Righteous Fire" "Rolling Magma" "Scorching Ray" "Searing Bond" "Summon Flame Golem" "Summon Raging Spirit" "Tectonic Slam" "Vaal Burning Arrow" "Vaal Fireball" "Vaal Firestorm" "Vaal Flameblast" "Vaal Impurity of Fire" "Vaal Molten Shell" "Vaal Molten Strike" "Vaal Righteous Fire" "Vaal Volcanic Fissure" "Volatile Dead" "Volcanic Fissure" "Wave of Conviction" "Wild Strike"
-#	SetBackgroundColor 180 0 0
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 0 0
-#	SetFontSize 45
-#	PlayAlertSound 16 200
-#	MinimapIcon 0 Blue Moon
-
-### +1 phys recipe###
-#Show 
-#	Quality >= 5
-#	Class "Gem"
-#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Reckoning" "Riposte" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Vengeance" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
-#	SetBackgroundColor 180 0 0
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 0 0
-#	SetFontSize 45
-#	PlayAlertSound 16 200
-#	MinimapIcon 0 Blue Moon
-Show
-	BaseType "Granite Flask" "Quartz Flask"
-	Rarity Normal Magic
-	ItemLevel >= 80
-	SetBackgroundColor 250 0 125
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	MinimapIcon 2 Orange Raindrop
-	SetFontSize 45
-	MinimapIcon 0 Red Circle
-	PlayAlertSound 14 200
-	PlayEffect Red
-	DisableDropSound
-Show
-	BaseType "Jade Flask" "Granite Flask" "Quicksilver Flask" "Quartz Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Silver Flask"
-	Rarity Normal Magic
-	ItemLevel >= 84
-	SetBackgroundColor 250 0 125
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	MinimapIcon 2 Orange Raindrop
-	SetFontSize 45
-	MinimapIcon 0 Red Circle
-	PlayAlertSound 14 200
-	PlayEffect Red
-	DisableDropSound
-Show
-	BaseType "Jade Flask" "Granite Flask" "Quicksilver Flask" "Quartz Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Silver Flask"
-	Rarity Normal Magic
-	ItemLevel >= 1
-	AreaLevel <= 82
-	SetTextColor 200 150 250
-	SetFontSize 38
-	PlayAlertSound 14 200
-	MinimapIcon 2 Orange Raindrop
-	DisableDropSound
 
 Hide
-	BaseType "Jade Flask" "Granite Flask" "Quicksilver Flask" "Quartz Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Silver Flask" "Basalt Flask"
-	Rarity Normal Magic
-	ItemLevel >= 80
-	SetTextColor 200 150 250
-	SetFontSize 38
-	PlayAlertSound 14 200
-	MinimapIcon 2 Orange Raindrop
-Show
-	BaseType "Divine Life Flask"
-	AreaLevel <= 70
-	SetTextColor 200 150 250
-	SetFontSize 38
-	PlayAlertSound 14 200
-	MinimapIcon 2 Orange Raindrop
-Hide
-	BaseType "Divine Life Flask"
-	Rarity Normal Magic
-	ItemLevel <= 100
-	SetTextColor 200 150 250
-	SetFontSize 38
-	DisableDropSound
-
-#Show
-#	BaseType "Eternal Mana Flask"
-#	ItemLevel <= 100
-#	SetTextColor 200 150 250
-#	SetFontSize 38
-#	PlayAlertSound 14 200
-#	MinimapIcon 2 Orange Raindrop
-Hide
-	BaseType "Eternal Mana Flask"
-	ItemLevel <= 100
-	SetTextColor 200 150 250
-	SetFontSize 38
-	DisableDropSound
-
-	
-	
-
-	
-############### RARE HIGHLIGHTING ################
-
-
-
-
-
-### MAPS ###
-
-Show 
-	Class "Ring" "Amulet" "Belt"
-	Rarity Rare
-	HasExplicitMod "Rin's Veil" "Leo's Veil" "Catarina's Veil" "Elreon's Veil" "Vagan's Veil" "Korell's Veil" "Gravicius' Veil" "Of The Veil" "Veiled" "Veil"
-	HasInfluence None
-	FracturedItem False
-	AreaLevel <= 100
-	SetBorderColor 100 150 200
-Show 
-	BaseType "Crystal Belt" "Marble Amulet" "Vermillion Ring" "Stygian Vise" 
-	Rarity Normal Magic Rare
-	SetBackgroundColor 65 0 65
-	SetBorderColor 220 0 220
-	SetFontSize 45
-	PlayAlertSound 13 250
-	MinimapIcon 2 Blue Kite
-	PlayEffect Blue Temp	
-
-
-Hide
-	BaseType "Cloth Belt" "Iron Ring" "Studded Belt" "Bone Ring" "Paua Ring" "Paua Amulet" "Moonstone Ring" "Coral Amulet" "Gold Amulet" "Gold Ring" "Chain Belt" "Rustic Sash"
-	Rarity Rare
-#	AreaLevel >= 76
-	HasInfluence None
-	FracturedItem False
-	
-	
-Show 
-	Class "Ring" "Amulet" "Belt"
-	Rarity Rare
-	HasInfluence None
-	FracturedItem False
-	SetBorderColor 100 150 200
-
-
-
-
-
-Show
-	Class == "Sceptres"
-	Rarity Rare
-	AreaLevel <= 80
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-Show
-	BaseType == "Opal Sceptre" "Void Sceptre" "Carnal Sceptre" "Vaal Sceptre" "Platinum Sceptre" "Abyssal Sceptre" "Crystal Sceptre"
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-
-
-
-
-
-	
-#### SHIELD ####
-#67=t3suppress, 72=t2res, 73=t1life, 77=t2suppress, 81=t1life,84=t1res, 86=t1suppress,t1life#
-
-#Evasion#
-Show
-	Class == "Shields"
-	BaseEvasion > 1
-	BaseArmour < 1
-	BaseEnergyShield < 1
-	Rarity Rare
-	DropLevel >= 50
-	AreaLevel <= 80
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-Show
-	BaseType == "Crusader Buckler" "Lacquered Buckler"
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-
-##Evasion ES"
-#Show
-#	Class "Shield"
-#	BaseEnergyShield > 1
-#	BaseEvasion > 1
-#	Rarity Rare
-#	DropLevel >= 54
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-#
-#Show
-#	BaseType "Supreme Spiked Shield" "Mirrored Spiked Shield" "Sovereign Spiked Shield" "Polished Spiked Shield" "Ornate Spiked Shield"
-#	Rarity Rare
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-##Evasion Armour#
-#Show
-#	BaseType "Elegant Round Shield" "Cardinal Round Shield"
-#	Rarity Rare
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 128 0 0
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-#ES#
-#Show
-#	BaseType "Harmonic Spirit Shield" "Vaal Spirit Shield" "Lacewood Spirit Shield" "Chiming Spirit Shield" "Ancient Spirit Shield" 
-#	Rarity Rare
-#	ItemLevel >= 1
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-#	
-#Show
-#	BaseType "Harmonic Spirit Shield" "Chiming Spirit Shield"
-#	Rarity Rare
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-#Armour#
-#Show #pure armour
-#	Class == "Shields"
-#	Rarity Rare
-#	BaseEvasion < 1
-#	BaseArmour > 1
-#	BaseEnergyShield < 1
-#	Rarity Rare
-#	DropLevel >= 50
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-#
-#Show #any armour
-#	Class == "Shields"
-#	Rarity Rare
-#	BaseArmour > 1
-#	Rarity Rare
-#	DropLevel >= 50
-#	ItemLevel < 82
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-	
-#### HELMET ####
-#68=t3suppress, 72=t2res, 76=t2suppress, 84=t1res, 85=t1suppress#
-
-#Evasion#
-#Show
-#	Class "Helmet"
-#	BaseEvasion > 1
-#	BaseArmour < 1
-#	BaseEnergyShield < 1
-#	Rarity Rare
-#	DropLevel >= 60
-#	ItemLevel >= 1
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-#Evasion ES"
-Show
-	Class "Helmet"
-	BaseEvasion > 1
-	BaseEnergyShield > 1
-	Rarity Rare
-	DropLevel >= 51
-	ItemLevel >= 1
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-
-
-#Armmour#
-#Show
-#	Class "Helmet"
-#	BaseArmour > 1
-#	BaseEvasion < 1
-#	BaseEnergyShield < 1
-#	Rarity Rare
-#	DropLevel >= 51
-#	ItemLevel >= 1
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-#Armmour ES#
-#Show
-#	Class "Helmet"
-#	BaseArmour > 1
-#	BaseEvasion < 1
-#	BaseEnergyShield > 1
-#	Rarity Rare
-#	DropLevel >= 51
-#	ItemLevel >= 1
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-
-#Evasion Armour#
-Show
-	Class "Helmet"
-	BaseArmour > 1
-	BaseEvasion > 1
-	Rarity Rare
-	DropLevel >= 51
-	ItemLevel >= 1
-	AreaLevel <= 100
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-Show
-	BaseType "Nightmare Bascinet" "Pig-Faced Bascinet"
-	Rarity Rare
-	ItemLevel >= 1
-	SetTextColor 0 0 0
-	SetBorderColor 128 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-
-
-
-	
-#### BOOTS ####
-#68=t3suppress, 72=t2res, 76=t2suppress, 84=t1res, 85=t1suppress#
-
-###Armour Anything###
-#Show
-#	Class "Boots"
-#	BaseArmour > 1
-#	Rarity Rare
-#	ItemLevel >= 1
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-
-###Evasion#
-#Show
-#	Class "Boots"
-#	BaseEvasion > 1
-#	BaseArmour < 1
-#	BaseEnergyShield < 1
-#	Rarity Rare
-#	DropLevel >= 60
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-### ES"
-#Show
-#	Class "Boots"
-#	BaseEvasion < 1
-#	BaseEnergyShield > 1
-#	BaseArmour < 1
-#	Rarity Rare
-#	DropLevel >= 51
-#	ItemLevel < 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-####Evasion ES"
-#Show
-#	Class "Boots"
-#	BaseEvasion > 1
-#	BaseEnergyShield > 1
-#	Rarity Rare
-#	DropLevel >= 51
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-###Armour#
-Show
-	Class "Boots"
-	BaseArmour > 1
-	BaseEvasion < 1
-	BaseEnergyShield < 1
-	Rarity Rare
-	DropLevel >= 50
-	ItemLevel >= 1
-	AreaLevel <= 80
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-	
-	
-###Evasion Armour#
-Show
-	Class "Boots"
-	BaseArmour > 1
-	BaseEvasion > 1
-	Rarity Rare
-	DropLevel >= 50
-	ItemLevel >= 1
-	AreaLevel <= 80
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-Show
-	BaseType "Dragonscale Boots" "Hydrascale Boots"
-	Rarity Rare
-	ItemLevel >= 1
-	SetTextColor 0 0 0
-	SetBorderColor 128 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-Show
-	BaseType "Two-Toned Boots"
-	BaseArmour > 1
-	BaseEvasion > 1
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-#### CHEST ####
-#67=t3suppress, 72=t2res, 73=t1life, 77=t2suppress, 81=t1life,84=t1res, 86=t1suppress,t1life#
-
-#Evasion#
-#Show
-#	Class "Body Armour"
-#	BaseEvasion > 1
-#	BaseArmour < 1
-#	BaseEnergyShield < 1
-#	Rarity Rare
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-##Evasion ES"
-#Show
-#	Class "Body Armour"
-#	BaseEvasion > 1
-#	BaseEnergyShield > 1
-#	Rarity Rare
-#	DropLevel >= 51
-#	ItemLevel >= 1
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-#	
-#Show
-#	BaseType "Sadist Garb"
-#	Rarity Rare
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 128 0 0
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-	
-#Evasion Armour#
-Show
-	Class "Body Armour"
-	BaseArmour > 1
-	BaseEvasion > 1
-	Rarity Rare
-	DropLevel >= 59
-	ItemLevel >= 1
-	AreaLevel <= 80
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-Show
-	BaseType "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"
-	Rarity Rare
-	ItemLevel >= 1
-	SetTextColor 0 0 0
-	SetBorderColor 128 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-#ES#
-#Show
-#	Class "Body Armour"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-#	BaseEnergyShield > 1
-#	Rarity Rare
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-#Armour ES#
-Show
-	Class "Body Armour"
-	BaseEvasion < 1
-	BaseArmour > 1
-	BaseEnergyShield > 1
-	Rarity Rare
-	DropLevel >= 55
-	ItemLevel >= 1
-	AreaLevel <= 80
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-
-
-
-#### GLOVES ####
-
-##Evasion#
-#Show
-#	Class "Gloves"
-#	BaseEvasion > 1
-#	BaseArmour < 1
-#	BaseEvasion < 1
-#	Rarity Rare
-#	DropLevel >= 50
-#	ItemLevel >= 1
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-##Evasion ES#
-Show
-	Class "Gloves"
-	BaseEnergyShield > 1
-	BaseEvasion > 1
-	Rarity Rare
-	DropLevel >= 50
-	ItemLevel >= 1
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-
-
-
-#Evasion Armour#
-Show
-	Class "Gloves"
-	BaseArmour > 1
-	BaseEvasion > 1
-	Rarity Rare
-	DropLevel >= 49
-	ItemLevel >= 1
-	AreaLevel <= 80
-	SetTextColor 0 0 0
-	SetBorderColor 150 200 250
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-Show
-	BaseType "Dragonscale Gauntlets" "Hydrascale Gauntlets"
-	Rarity Rare
-	ItemLevel >= 1
-	SetTextColor 0 0 0
-	SetBorderColor 128 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 35
-	MinimapIcon 0 Yellow Star
-	
-	
-#Armour ES#
-#Show
-#	Class "Gloves"
-#	BaseArmour > 1
-#	BaseEnergyShield > 1
-#	BaseEvasion < 1
-#	Rarity Rare
-#	DropLevel >= 50
-#	ItemLevel >= 1
-#	AreaLevel <= 80
-#	SetTextColor 0 0 0
-#	SetBorderColor 150 200 250
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 35
-#	MinimapIcon 0 Yellow Star
-
-
-
-################ CRAFTING BASES ################	
-
-Show
-	BaseType "Pig-Faced Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
-	Rarity Normal Magic Rare
-	ItemLevel >= 85
-	SetTextColor 200 0 200
-	SetBorderColor 200 0 200
-	SetFontSize 35
-Show
-	BaseType "Deicide Mask" "Murder Boots" "Murder Mitts"
-	Rarity Normal Magic Rare
-	ItemLevel >= 85
-	SetTextColor 200 0 200
-	SetBorderColor 200 0 200
-	SetFontSize 35
-Show
-	BaseType "Citrine Amulet" "Amethyst Ring" "Heavy Belt" "Vermillion Ring" "Crusader Buckler" "Full Dragonscale"
-	Rarity Normal Magic Rare
-	ItemLevel >= 84
-	SetTextColor 200 0 200
-	SetBorderColor 200 0 200
-	SetFontSize 35
-Show
-	BaseType "Vermillion Ring"
-	Rarity Normal Magic Rare
-	SetTextColor 200 0 200
-	SetBorderColor 200 0 200
-	SetFontSize 35
-
-##################################################
-########## Section 0A - SSF Overrides ############
-##################################################
-Hide
-	BaseType "Engineer's Orb" 
-
-#Tainted Currencies
-Show
-	BaseType "Tainted"
-	Class Currency
-	SetBackgroundColor 180 0 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 3 100
-	MinimapIcon 1 Brown Circle
-	PlayEffect Brown
-	DisableDropSound
-	
-Show
-	Class Currency
-	BaseType "Divine Orb" "Fracturing Orb" "Fracturing Shard"
-	SetBorderColor 250 0 125
-	SetTextColor 250 0 125
-	SetFontSize 45
-	PlayAlertSound 6 250
-	MinimapIcon 0 Red Circle
-	PlayEffect Red
-	DisableDropSound
-
-Show
-	Class Currency
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Exalted Orb" 
-	SetBorderColor 240 0 200
-	SetTextColor 240 0 200
-	PlayAlertSound 10 250
-	SetFontSize 45
-	MinimapIcon 1 Pink Circle
-	PlayEffect Pink
-	DisableDropSound
-	
-###Sounds Tier### 
-Show
-	BaseType "Eldritch Ichor" "Eldritch Ember" "Orb of Unmaking" "Chaos Orb" "Regal Orb" "Instilling Orb" "Engineer's Orb" "Vaal Orb"
-	SetBorderColor 200 0 250
-	SetTextColor 200 0 250
-	SetFontSize 45
-	PlayAlertSound 2 150
-	MinimapIcon 1 Purple Circle
-	PlayEffect Purple
-	DisableDropSound
-Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Orb of Chance"  "Orb of Alteration" "Orb of Horizon" "Cartographer's Chisel"
-	Class Currency
-	SetBorderColor 0 180 130
-	SetTextColor 0 180 130
-	SetFontSize 45
-	PlayAlertSound 3 100
-	MinimapIcon 2 Green Circle
-Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Glassblower's Bauble" "Chromatic Orb"
-	Class Currency
-	SetBorderColor 0 180 130
-	SetTextColor 0 180 130
-	SetFontSize 45
-	PlayAlertSound 3 100
-	MinimapIcon 2 Green Circle
-Show
-	BaseType "Orb of Chance"  "Orb of Alteration"
-	Class Currency
-	AreaLevel <= 80
-	SetBorderColor 0 180 130
-	SetTextColor 0 180 130
-	SetFontSize 45
-	PlayAlertSound 3 100
-	MinimapIcon 2 Green Circle
-Show
-	BaseType  "Orb of Chance" "Orb of Alteration" "Jeweller's Orb" "Chromatic Orb" "Orb of Transmutation" "Glassblower's Bauble" "Cartographer's Chisel"
-	StackSize >= 3
-	SetBorderColor 0 180 130
-	SetTextColor 0 180 130
-	SetFontSize 45
-	PlayAlertSound 3 100
-	MinimapIcon 2 Green Circle
-
-
-
-###No Sound Tier###
-Show
-	BaseType "Enkindling Orb" "Instilling Orb" "Orb of Alteration" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Glassblower's Bauble" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Cartographer's Chisel" "Orb of Chance"
-	Class Currency
-	SetFontSize 40
-	SetTextColor 100 150 200
-	SetBorderColor 100 150 200
-Show
-	BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Portal Scroll"
-	StackSize >= 20
-	SetFontSize 40
-	SetTextColor 100 150 200
-	SetBorderColor 100 150 200
-Show
-	BaseType "Jeweller's Orb" "Portal Scroll" "Glassblower's Bauble" "Orb of Transmutation" "Orb of Augmentation" "Orb of Chance"
-	StackSize >= 3
-	SetFontSize 40
-	SetTextColor 100 150 200
-	SetBorderColor 100 150 200
-Hide
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Orb of Horizon"
-	Class Currency
-	SetBackgroundColor 0 180 130
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 40
-Hide
-	BaseType "Blacksmith's Whetstone" "Orb of Transmutation" "Glassblower's Bauble" "Orb of Augmentation" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Armourer's Scrap" "Enkindling Orb" "Instilling Orb" "Cartographer's Chisel" "Orb of Chance"
-	Class Currency
-	SetFontSize 35
-	SetTextColor 100 150 200
-	SetBorderColor 100 150 200
-Show
-	BaseType "Scroll of Wisdom" "Portal Scroll"
-	StackSize >= 5
-	SetFontSize 40
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
-Hide
-	BaseType "Scroll of Wisdom" "Portal Scroll"
-	SetFontSize 40
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
-	
-###Shards###
-Show
-	BaseType "Annulment Shard" "Ancient Shard" "Harbinger's Shard"
-	SetBackgroundColor 200 200 200
-	SetBorderColor 0 150 250
-	SetTextColor 0 150 250
-	SetFontSize 45		
-	MinimapIcon 2 Blue Circle
-	PlayEffect Blue Temp
-Show
-	BaseType "Chaos Shard" "Regal Shard"
-	SetBorderColor 0 150 250
-	SetTextColor 0 150 250
-	SetFontSize 42
-	MinimapIcon 2 Blue Circle
-	PlayEffect Blue Temp
-Hide
-	BaseType "Chaos Shard" "Alchemy Shard" "Binding Shard" "Horizon Shard" "Alteration Shard"
-	SetBorderColor 0 150 250
-	SetTextColor 0 150 250
-	SetFontSize 42
-
-Hide
-	BaseType "Engineer's Shard"
-	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
-
-
-
-
-##### HIDE SECTION#####
-Hide
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Normal
 	Width = 2
 	Height = 4
@@ -3801,7 +3421,7 @@ Hide
 	
 	
 Hide
-	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves" "Jewels"
 	Rarity Normal
 	AreaLevel >= 2
 	ItemLevel >= 2
@@ -3824,21 +3444,25 @@ Hide
 	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 	Rarity Magic
 	AreaLevel > 32
+
+
+
+
 ###################################################################################
 ############## Section 1 - Chance, Priority Highlight, Link Options ###############
 ###################################################################################
 #Set your preferred chance basetype(s) here.
-Show
-	BaseType "Branded Kite Shield"
-	Rarity Normal
-	HasInfluence None
-	Corrupted False
-	FracturedItem False
-	Mirrored False
-	Sockets < 6
-	SetBorderColor 200 80 0
-	ItemLevel >= 45
-	SetFontSize 36
+#Show
+#	BaseType "Branded Kite Shield"
+#	Rarity Normal
+#	HasInfluence None
+#	Corrupted False
+#	FracturedItem False
+#	Mirrored False
+#	Sockets < 6
+#	SetBorderColor 200 80 0
+#	ItemLevel >= 45
+#	SetFontSize 36
 	
 #Favorite Maps - replace these with your favorites. Keep in mind this highlighting will be used for shaper/elder maps of those basetypes as well.
 #Show
@@ -3891,42 +3515,42 @@ Show
 
 #Set preferred 4L colors in the SocketGroup lines in the next block and enable the sound. Note that multiple color groups can be entered, i.e. RRG RGG. If no colors are entered then the lines will apply to all 2L/3L/4L that drop.
 #note: melee RRRG, caster BBBG BBBB, ranged GGRR GGGR GGRB, summoner BBBB BBBR. Partial matches work, i.e. "BBB" in the 4L block will flag all 4L's with BBB included in the links
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	AreaLevel <= 67
-	LinkedSockets = 4
-	Sockets < 6
-	Rarity Normal Magic Rare
-	SocketGroup RRR BBB GGG
-	SetBackgroundColor 0 65 65
-	SetBorderColor 0 250 250
-	SetFontSize 45
-	PlayAlertSound 1 100
-	MinimapIcon 0 Cyan Pentagon
-
-#Set your preferred 3L colors in these next blocks. First block is for sounded 3L's in A1/A2, second block is for unsounded through A5.
-#note: melee RGG RRG, caster BBG BGG BBB, ranged GGG GGR, summoner BBB BBR
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	AreaLevel <= 25
-	LinkedSockets = 3
-	Rarity Normal Magic Rare
-	SocketGroup GGG GGR BBG BBB RRG
-	SetBackgroundColor 0 50 0
-	SetBorderColor 0 200 0
-	SetFontSize 45
-	PlayAlertSound 1 100
-	MinimapIcon 0 Green Pentagon
-Show
-	Class "Gloves" "Helm" "Body Armour"
-	AreaLevel <= 47
-	LinkedSockets = 3
-	Rarity Normal Magic Rare
-	SocketGroup GGG GGR BBG BBB RRG
-	SetBackgroundColor 0 50 0
-	SetBorderColor 0 200 0
-	SetFontSize 45
-	MinimapIcon 0 Green Pentagon
+#Show
+#	Class "Gloves" "Helm" "Boots" "Body Armour"
+#	AreaLevel <= 67
+#	LinkedSockets = 4
+#	Sockets < 6
+#	Rarity Normal Magic Rare
+#	SocketGroup RRR BBB GGG
+#	SetBackgroundColor 0 65 65
+#	SetBorderColor 0 250 250
+#	SetFontSize 45
+#	PlayAlertSound 1 100
+#	MinimapIcon 0 Cyan Pentagon
+#
+##Set your preferred 3L colors in these next blocks. First block is for sounded 3L's in A1/A2, second block is for unsounded through A5.
+##note: melee RGG RRG, caster BBG BGG BBB, ranged GGG GGR, summoner BBB BBR
+#Show
+#	Class "Gloves" "Helm" "Boots" "Body Armour"
+#	AreaLevel <= 25
+#	LinkedSockets = 3
+#	Rarity Normal Magic Rare
+#	SocketGroup GGG GGR BBG BBB RRG
+#	SetBackgroundColor 0 50 0
+#	SetBorderColor 0 200 0
+#	SetFontSize 45
+#	PlayAlertSound 1 100
+#	MinimapIcon 0 Green Pentagon
+#Show
+#	Class "Gloves" "Helm" "Body Armour"
+#	AreaLevel <= 47
+#	LinkedSockets = 3
+#	Rarity Normal Magic Rare
+#	SocketGroup GGG GGR BBG BBB RRG
+#	SetBackgroundColor 0 50 0
+#	SetBorderColor 0 200 0
+#	SetFontSize 45
+#	MinimapIcon 0 Green Pentagon
 
 #2L colors go here
 #note: melee RG RR, caster/summoner BB BG, ranger GG RG
@@ -3939,21 +3563,21 @@ Show
 	SetBackgroundColor 0 0 35
 	SetBorderColor 75 75 250
 	SetFontSize 45
-	MinimapIcon 0 Blue Pentagon
+#	MinimapIcon 0 Blue Pentagon
 
 #Archetype-specific blocks
 #caster weapon link colors
-Show
-	Class "Wand" "Sceptre"
-	AreaLevel <= 33
-	LinkedSockets = 3
-	Rarity Normal Magic Rare
-	SocketGroup BBB BBG BGG
-#	SetBackgroundColor 40 50 60
-	SetBackgroundColor 60 70 80
-	SetFontSize 45
-	PlayAlertSound 1 100
-	MinimapIcon 0 Green Pentagon
+#Show
+#	Class "Wand" "Sceptre"
+#	AreaLevel <= 33
+#	LinkedSockets = 3
+#	Rarity Normal Magic Rare
+#	SocketGroup BBB BBG BGG
+##	SetBackgroundColor 40 50 60
+#	SetBackgroundColor 60 70 80
+#	SetFontSize 45
+#	PlayAlertSound 1 100
+#	MinimapIcon 0 Green Pentagon
 #offhand weapon links for shield charge (Disabled by default as of v3.12.0)
 #Show
 #	Class "Shield"
@@ -4031,9 +3655,6 @@ Show
 ######################### Section 2 - Currency & 6L ###############################
 ###################################################################################
 #GENERAL ONLY - leaguestart currency overrides - makes race currency bigger/more dramatic highlights at race levels. next five blocks in general filter only
-Hide
-	BaseType "Engineer's Orb"
-	DisableDropSound
 Show
 	BaseType "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Orb of Chance"
 	AreaLevel <= 67
@@ -4162,8 +3783,8 @@ Show
 	PlayEffect Purple
 	DisableDropSound
 Show
-	BaseType "Orb of Binding" "Veiled" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
-	Class "Currency"
+	BaseType "Orb of Binding" "Engineer's Orb" "Veiled" "Enkindling Orb" "Instilling Orb" 
+	Class Currency
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
@@ -5081,7 +4702,7 @@ Show
 	PlayEffect Red
 #orange (2-5c)
 Show
-	BaseType "Prismatic Fossil" "Jagged Fossil" "Perfect Fossil" "Aetheric Fossil" "Perfect Fossil" "Gilded Fossil" "Corroded Fossil" "Fundamental Fossil" "Deft Fossil"
+	BaseType "Prismatic Fossil" "Jagged Fossil" "Opulent Fossil" "Aetheric Fossil" "Gilded Fossil" "Corroded Fossil" "Fundamental Fossil" "Deft Fossil"
 	Class Currency
 	SetBackgroundColor 100 50 0
 	SetBorderColor 0 0 0
@@ -5361,7 +4982,7 @@ Show
 
 #Blight (v3.8)
 Show
-	BaseType "Golden Oil"
+	BaseType "Golden Oil" "Prismatic Oil"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 50 100 50
 	SetTextColor 75 125 75
@@ -5530,7 +5151,7 @@ Show
 	SetFontSize 45
 	PlayAlertSound 5 150
 	MinimapIcon 0 Orange Hexagon
-#PlayEffect Orange
+	PlayEffect Orange
 Show
 	BaseType "Contract"
 	SetBackgroundColor 255 221 153
@@ -5539,7 +5160,7 @@ Show
 	SetFontSize 45
 	PlayAlertSound 9 150
 	MinimapIcon 0 Brown Hexagon
-#PlayEffect Brown Temp
+	PlayEffect Brown Temp
 #Blueprint
 Show
 	BaseType "Blueprint"
@@ -5610,7 +5231,25 @@ Show
 	PlayAlertSound 16 200
 	MinimapIcon 0 Blue Moon
 	PlayEffect Blue
-
+#alternate quality gems
+Show
+	Class Gem
+	AlternateQuality True
+	SetBorderColor 0 225 225
+	SetFontSize 45
+	PlayAlertSound 12 200
+	MinimapIcon 1 Cyan Triangle
+	PlayEffect Cyan Temp
+#new currency that GGG added at the last ducking second lmao
+Show
+	BaseType "Regrading Lens" "Tempering Orb" "Tailoring Orb"
+	SetBackgroundColor 240 0 200
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	PlayAlertSound 10 250
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	PlayEffect Pink
 	
 #Ritual (v3.13) / Echoes of the Atlas
 Show
@@ -5797,17 +5436,6 @@ Show
 #	PlayEffect Yellow
 	
 #Trial of the Ancestors (v3.22)
-
-Hide
-	BaseType "Silver Coin"
-	Class Currency
-	SetBackgroundColor 185 185 185
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-#	PlayAlertSound 3 125
-#	MinimapIcon 2 Grey Circle
-#	PlayEffect Grey Temp 
 Show
 	BaseType "Hinekora's Lock"
 	Class Currency
@@ -5828,17 +5456,16 @@ Show
 	PlayAlertSound 11 200
 	MinimapIcon 2 Cyan Square
 	PlayEffect Cyan Temp
-#Necropolis (v3.24)
+#Affliction (v3.23)
 Show
-	BaseType "Allflame Ember" "Coffin"
-	Class Currency
-	SetBackgroundColor 75 75 125
-	SetBorderColor 225 225 225
+	Class "Tincture" "Corpses"
+	SetBackgroundColor 75 50 40
+	SetBorderColor 200 200 200
 	SetTextColor 225 225 225
 	SetFontSize 45
-	PlayAlertSound 11 200
-	MinimapIcon 2 Grey Square
-	PlayEffect Grey Temp
+	PlayAlertSound 11 150
+	PlayEffect Brown
+	MinimapIcon 2 Brown Square
 
 #League Unknowns - Uniques and div cards whose names/basetypes are known before launch but not the details, or if I'm not quite sure how significantly the changes will impact the value. Small green icons.
 Show
@@ -5867,7 +5494,7 @@ Show
 ###################################################################################
 #Invitations & Other Special Atlas Items
 Show
-	BaseType "Maven's Writ" 
+	BaseType "Maven's Writ" "Invitation"
 	SetBackgroundColor 250 175 100
 	SetBorderColor 200 100 200
 	SetTextColor 150 75 150
@@ -7294,7 +6921,7 @@ Show
 	PlayEffect Cyan
 #ritual bases
 Show
-	BaseType "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
+	BaseType "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Thwarting Gauntlets" "Guarding Gauntlets" "Preserving Gauntlets" "Trapsetter Gloves" "Apprentice Gloves" "Tinker Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
 	Rarity Normal Magic Rare
 	SetBackgroundColor 0 75 75
 	SetBorderColor 0 250 250
