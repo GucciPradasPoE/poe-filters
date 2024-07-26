@@ -4,6 +4,7 @@
 
 # How To Use
 Video Explanation: https://clips.twitch.tv/FitHeadstrongLadiesTTours-3Gn7TZTxjf0pNpw1
+Video on how to check if filter will work: https://youtu.be/jtAEeyhWpzE
 
 Download whichever you intend to use and sounds folder. 
 
