@@ -225,7 +225,6 @@ Show
 	MinimapIcon 1 Blue Triangle
 	PlayEffect Blue Temp
 Show
-	Class Currency
 	BaseType == "Gold"
 	SetTextColor 233 241 55
 	SetBackgroundColor 0 0 0 0
