@@ -2921,9 +2921,20 @@ Show
 Show
 	Class "Wand"
 	AreaLevel <= 12
+	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	MinimapIcon 2 White Circle
+	
+Show
+	Class "Wand"
+	AreaLevel <= 12
+	Rarity Normal 
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
 	SetFontSize 45
 	MinimapIcon 2 White Circle
 
@@ -6701,6 +6712,19 @@ Show
 #Affliction (v3.23)
 Show
 	Class "Tincture" "Corpses"
+	ItemLevel >= 85
+	Rarity == "Unique"
+	SetBackgroundColor 75 50 40
+	SetBorderColor 200 200 200
+	SetTextColor 225 225 225
+	SetFontSize 45
+	PlayAlertSound 11 150
+	PlayEffect Brown
+	MinimapIcon 2 Brown Square
+Show
+	Class "Tincture" "Corpses"
+	ItemLevel >= 85
+	Rarity == "Normal" "Magic"
 	SetBackgroundColor 75 50 40
 	SetBorderColor 200 200 200
 	SetTextColor 225 225 225
