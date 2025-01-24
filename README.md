@@ -11,7 +11,7 @@ Download whichever you intend to use and sounds folder.
 
 Put both in Documents > My Games > Path of Exile
 
-Alternatively you can also follow my public filters list https://www.pathofexile.com/account/view-profile/GucciPradas/item-filters . You still need to download the sounds folder from here even if you follow on the pathofexile website
+Alternatively you can also follow my public filters list https://www.pathofexile.com/account/view-profile/GucciPradas-3875/item-filters . You still need to download the sounds folder from here even if you follow on the pathofexile website
 
 Check back before league start for potential updates
 
