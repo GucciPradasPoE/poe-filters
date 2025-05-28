@@ -2112,7 +2112,32 @@ Show
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 
+Show
+	Class "Shield"
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SocketGroup GGR GRG RGG
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/shield2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 
+
+Show
+	Class "Shield"
+#	BaseEvasion < 1
+	BaseArmour < 1
+	BaseEnergyShield < 1
+	AreaLevel < 33
+	LinkedSockets = 3	
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/3linkshield.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 
 
 #### 4 LINK ####
@@ -2248,7 +2273,7 @@ Show
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
 	ItemLevel <= 47
 	Sockets < 6
 	LinkedSockets <= 3
@@ -2857,8 +2882,39 @@ Show
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "gucci_sounds/amethystring.mp3" 300
 
+Show
+	Class "Shield"	
+#	BaseEvasion < 1
+#	BaseArmour < 1
+#	BaseEnergyShield < 1
+	AreaLevel <= 69
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareshield.mp3" 300
+	
+Show
+	Class "Shield"
+	AreaLevel <= 12
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 40
+	MinimapIcon 2 White Circle
 
-
+Show
+	Class "Shield"
+	AreaLevel <= 12
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 40
+	MinimapIcon 2 White Circle
 
 
 #Safety Blocks (Don't need to modify these for normal use)
