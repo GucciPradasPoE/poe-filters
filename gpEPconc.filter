@@ -207,7 +207,6 @@ Show
 	PlayEffect Cyan
 
 
-
 ##########################################
 ############### CURRENCY #################
 ##########################################
@@ -231,7 +230,6 @@ Show
 	SetBorderColor 0 0 0 0
 	SetFontSize 15
 	MinimapIcon 2 Yellow Square
-
 #tink#
 Show
 	BaseType "Eternal Orb" "Mirror of Kalandra" "Fishing Rod" "Albino Rhoa Feather" "Mirror Shard" "Imprint" "Awakener's Orb" "Orb of Dominance" "Hinekora's Lock"
@@ -660,20 +658,20 @@ Hide
 
 Show
 	BaseType "Blacksmith's Whetstone" 
-	AreaLevel < 99
-	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
 	MinimapIcon 0 Blue Circle
+	SetFontSize 45
 	CustomAlertSound "gucci_sounds/whetstone.mp3" 300
 Show
 	BaseType "Blacksmith's Whetstone" 
 	StackSize >= 2
-	AreaLevel < 99
 	Class Currency
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
+	AreaLevel < 99
 	SetFontSize 45
 	MinimapIcon 0 Blue Circle
 	CustomAlertSound "gucci_sounds/whetstone.mp3" 300
@@ -974,9 +972,9 @@ Show
 
 # # # # TWILIGHT STRAND ITEMS # # # # 
 Show
-	Class "One Hand Sword" "One Hand Mace"
+	Class "One Hand Sword" "One Hand Mace" "Bow"
 	LinkedSockets = 2
-	SocketGroup RG RR
+	SocketGroup RG RR GG
 	SetTextColor 200 0 200
 	SetBorderColor 200 0 200
 	AreaLevel = 1
@@ -1152,664 +1150,65 @@ Show
 	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
 	
 	
-Show
-	BaseType "Woodsplitter"
-	AreaLevel < 18	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Woodsplitter"
-	AreaLevel < 18	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Woodsplitter"
-	AreaLevel < 23	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
-	
-Show
-	BaseType "Poleaxe"
-	AreaLevel < 23	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Poleaxe"
-	AreaLevel < 23	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Poleaxe"
-	AreaLevel < 28	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-#Show
-#	BaseType "Double Axe"
-#	AreaLevel < 28	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Double Axe"
-#	AreaLevel < 28	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Double Axe"
-	AreaLevel < 33	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-Show
-	BaseType "Gilded Axe"
-	AreaLevel < 28	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Gilded Axe"
-	AreaLevel < 28	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Gilded Axe"
-	AreaLevel < 41	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-	
-	
-Show
-	BaseType "Shadow Axe"
-	AreaLevel < 33	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Shadow Axe"
-	AreaLevel < 33	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Shadow Axe"
-	AreaLevel < 41	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-	
-	
-#Show
-#	BaseType "Dagger Axe"
-#	AreaLevel < 41	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Dagger Axe"
-#	AreaLevel < 41	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Dagger Axe"
-	AreaLevel < 45	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-#Show
-#	BaseType "Jasper Chopper"
-#	AreaLevel < 41	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Jasper Chopper"
-#	AreaLevel < 41	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Jasper Chopper"
-	AreaLevel < 45	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-	
-Show
-	BaseType "Timber Axe"
-	AreaLevel < 45	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Timber Axe"
-	AreaLevel < 45	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Timber Axe"
-	AreaLevel < 52	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300		
-	
-Show
-	BaseType "Headsman Axe"
-	AreaLevel < 49	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Headsman Axe"
-	AreaLevel < 49	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Headsman Axe"
-	AreaLevel < 55	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
 
-
-#Show
-#	BaseType "Labrys"
-#	AreaLevel < 52	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Labrys"
-#	AreaLevel < 52	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Labrys"
-	AreaLevel < 55	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300		
-	
-	
-Show
-	BaseType "Noble Axe"
-	AreaLevel < 55	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Noble Axe"
-	AreaLevel < 55	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Noble Axe"
-	AreaLevel < 62	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-Show
-	BaseType "Abyssal Axe"
-	AreaLevel < 59	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Abyssal Axe"
-	AreaLevel < 59	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Abyssal Axe"
-	AreaLevel < 62	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-
-#Show
-#	BaseType "Karui Chopper"
-#	AreaLevel < 60	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Karui Chopper"
-#	AreaLevel < 60	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-#Show
-#	BaseType "Karui Chopper"
-#	AreaLevel < 70	
-#	Rarity Rare
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 45
-#	MinimapIcon 2 Yellow Circle
-#	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-	
-	
-#Show
-#	BaseType "Talon Axe"
-#	AreaLevel < 60	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Talon Axe"
-#	AreaLevel < 60	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Talon Axe"
-	AreaLevel < 70	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-#Show
-#	BaseType "Sundering Axe"
-#	AreaLevel < 62	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-Show
-	BaseType "Sundering Axe"
-	AreaLevel < 62	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Sundering Axe"
-	AreaLevel < 70	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-	
-Show
-	BaseType "Ezomyte Axe"
-	AreaLevel < 70	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-Show
-	BaseType "Ezomyte Axe"
-	AreaLevel < 70	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Ezomyte Axe"
-	AreaLevel < 70	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-	
-#Show
-#	BaseType "Vaal Axe"
-#	AreaLevel < 66	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Vaal Axe"
-#	AreaLevel < 66	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Vaal Axe"
-	AreaLevel < 70	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-Show
-	BaseType "Despot Axe"
-	AreaLevel < 70	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-Show
-	BaseType "Despot Axe"
-	AreaLevel < 70	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Despot Axe"
-	AreaLevel < 70	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-#Show
-#	BaseType "Void Axe"
-#	AreaLevel < 70	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Void Axe"
-#	AreaLevel < 70	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Axe.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Void Axe"
-	AreaLevel < 70	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
 	
 	
 	
 ## SWORDS ##
-#Show
-#	BaseType "Corroded Blade"
-#	AreaLevel < 7	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Sword.mp3"
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Corroded Blade"
-#	AreaLevel < 7	
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/Sword.mp3"
-#	MinimapIcon 2 Blue Circle
-#Show
-#	BaseType "Corroded Blade"
-#	AreaLevel < 12	
-#	Rarity Rare
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 225 225 110
-#	SetFontSize 45
-#	MinimapIcon 2 Yellow Circle
-#	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
+Show
+	BaseType "Corroded Blade"
+	AreaLevel < 7	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Sword.mp3"
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Corroded Blade"
+	AreaLevel < 7	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/Sword.mp3"
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Corroded Blade"
+	AreaLevel < 12	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
 	
 	
 Show
-	BaseType "Tribal Maul"
+	BaseType "Longsword"
 	AreaLevel < 12	
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	CustomAlertSound "gucci_sounds/Sword.mp3"
 	MinimapIcon 2 White Circle
 Show
-	BaseType "Tribal Maul"
+	BaseType "Longsword"
 	AreaLevel < 12	
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	CustomAlertSound "gucci_sounds/Sword.mp3"
 	MinimapIcon 2 Blue Circle
 Show
-	BaseType "Tribal Maul"
+	BaseType "Longsword"
 	AreaLevel < 17	
 	Rarity Rare
 	SetTextColor 0 0 0
@@ -1819,132 +1218,7 @@ Show
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
 	
-Show
-	BaseType "Mallet"
-	AreaLevel < 17	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Mallet"
-	AreaLevel < 17	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Mallet"
-	AreaLevel < 22	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
-	
-	
-Show
-	BaseType "Sledgehammer"
-	AreaLevel < 22	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Sledgehammer"
-	AreaLevel < 22	
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Sledgehammer"
-	AreaLevel < 23	
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
-	
-	
-Show
-	BaseType "Jagged Maul"
-	AreaLevel < 27	
-	Rarity Normal
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
-	MinimapIcon 2 White Circle
-Show
-	BaseType "Jagged Maul"
-	AreaLevel < 27
-	Rarity Magic
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/mace.mp3" 300
-	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Jagged Maul"
-	AreaLevel < 32
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
-	
-#Show
-#	BaseType "Brass Maul"
-#	AreaLevel < 32	
-#	Rarity Normal
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 255 255 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/mace.mp3" 300
-#	MinimapIcon 2 White Circle
-#Show
-#	BaseType "Brass Maul"
-#	AreaLevel < 32
-#	Rarity Magic
-#	SetTextColor 0 0 0
-#	SetBorderColor 255 0 0
-#	SetBackgroundColor 50 50 255
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/mace.mp3" 300
-#	MinimapIcon 2 Blue Circle
-Show
-	BaseType "Brass Maul"
-	AreaLevel < 32
-	Rarity Rare
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	MinimapIcon 2 Yellow Circle
-	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300		
-	
+
 
 #### 2 LINK #### (no sound/icon by default)
 
@@ -1953,7 +1227,7 @@ Show
 	ItemLevel <= 25
 	LinkedSockets = 2
 	Rarity Normal Magic Rare	
-	SocketGroup GR RG RR
+	SocketGroup GG GR RG RR
 	SetBorderColor 75 75 250
 	SetBackgroundColor 0 0 75
 	SetFontSize 45
@@ -2023,44 +1297,44 @@ Show
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup RRR
+	SocketGroup GGG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/glove3r.mp3" 300
+	CustomAlertSound "gucci_sounds/glove3g.mp3"
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Helm" 
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup RRR
+	SocketGroup GGG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/helm3r.mp3" 300
+	CustomAlertSound "gucci_sounds/helm3g.mp3"
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Boots" 
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup RRR
+	SocketGroup GGG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/boots3r.mp3" 300
+	CustomAlertSound "gucci_sounds/boots3g.mp3"
 	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Body Armour"
 	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup RRR
+	SocketGroup GGG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/chest3r.mp3" 300
+	CustomAlertSound "gucci_sounds/chest3g.mp3"
 	MinimapIcon 2 Yellow Triangle	
 
 	
@@ -2073,8 +1347,8 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/glove2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/glove2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Helm" 
 	AreaLevel < 33
@@ -2084,8 +1358,8 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/helm2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/helm2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Boots" 
 	AreaLevel < 33
@@ -2095,8 +1369,8 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/boots2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/boots2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Body Armour"
 	AreaLevel < 33
@@ -2106,55 +1380,12 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/chest2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/chest2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 	
 
 
-Show
-	Class "Gloves" 
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RRG
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/glove2r1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Helm"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RRG
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/helm2r1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Boots"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RRG
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/boots2r1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Body Armour" 
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RRG
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/chest2r1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
+
 	
 	
 	
@@ -2178,10 +1409,9 @@ Show
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 
-
 Show
 	Class "Shield"
-	AreaLevel < 12
+	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
 	SocketGroup GGR GRG RGG
@@ -2197,7 +1427,7 @@ Show
 #	BaseEvasion < 1
 	BaseArmour < 1
 	BaseEnergyShield < 1
-	AreaLevel < 12
+	AreaLevel < 33
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
 	SetBorderColor 0 200 0
@@ -2205,6 +1435,7 @@ Show
 	SetFontSize 45
 	CustomAlertSound "gucci_sounds/3linkshield.mp3" 300
 	MinimapIcon 2 Yellow Triangle
+
 
 #### 4 LINK ####
 
@@ -2226,11 +1457,11 @@ Show
 	LinkedSockets = 4
 	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup RRRG RRGR RGRR GRRR
+	SocketGroup GGGG
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/RRRG.mp3" 300
+	CustomAlertSound "gucci_sounds/gggg.mp3" 300
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
@@ -2238,18 +1469,18 @@ Show
 	LinkedSockets = 4
 	Sockets < 6 
 	Rarity Normal Magic Rare
-	SocketGroup RRRR
+	SocketGroup GGGR GGRG GRGG RGGG
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/rrrr.mp3" 300
+	CustomAlertSound "gucci_sounds/GGGR.mp3" 300
 	MinimapIcon 2 Red Hexagon
 	
-#Armour+Armour/Evasion#
+#Evasion+Armour/Evasion#
 Show
 	Class "Gloves" 
-#	BaseEvasion > 1
-	BaseArmour > 1
+	BaseEvasion > 1
+#	BaseArmour > 1
 	BaseEnergyShield < 1 
 	AreaLevel <= 52
 	LinkedSockets = 4
@@ -2258,12 +1489,12 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/fourlinkgloves.mp3" 300
+	CustomAlertSound "gucci_sounds/fourlinkgloves.mp3"
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Helm"
-#	BaseEvasion > 1
-	BaseArmour > 1
+	BaseEvasion > 1
+#	BaseArmour > 1
 	BaseEnergyShield < 1
 	AreaLevel <= 52
 	LinkedSockets = 4
@@ -2272,12 +1503,12 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/fourlinkhelmet.mp3" 300
+	CustomAlertSound "gucci_sounds/fourlinkhelmet.mp3"
 	MinimapIcon 2 Red Hexagon
 #Show
 	Class "Boots"
-#	BaseEvasion > 1
-	BaseArmour > 1
+	BaseEvasion > 1
+#	BaseArmour > 1
 	BaseEnergyShield < 1 
 	AreaLevel <= 52
 	LinkedSockets = 4
@@ -2286,12 +1517,12 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/fourlinkboots.mp3" 300
+	CustomAlertSound "gucci_sounds/fourlinkboots.mp3"
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Body Armour"
-#	BaseEvasion > 1
-	BaseArmour > 1
+	BaseEvasion > 1
+#	BaseArmour > 1
 	BaseEnergyShield < 1 
 	AreaLevel <= 52
 	LinkedSockets = 4
@@ -2300,7 +1531,7 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/fourlinkchest.mp3" 300
+	CustomAlertSound "gucci_sounds/fourlinkchest.mp3"
 	MinimapIcon 2 Red Hexagon
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
@@ -2311,7 +1542,7 @@ Show
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	CustomAlertSound "gucci_sounds/fourlink.mp3" 300
+	CustomAlertSound "gucci_sounds/fourlink.mp3"
 	MinimapIcon 2 Green Hexagon
 
 #### Boots ####
@@ -2339,16 +1570,17 @@ Show
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
+	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
 	ItemLevel <= 47
 	Sockets < 6
 	LinkedSockets <= 3
 	Sockets >= 3
 	Rarity Normal Magic Rare
-	SocketGroup RRG GGR RRR RG 
+	SocketGroup GGG GGR RRG RG 
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
+	
 #Show
 #	Class "Gloves" "Helm" "Boots"
 #	AreaLevel < 10
@@ -2367,7 +1599,7 @@ Show
 	LinkedSockets <= 3
 	Sockets >= 4
 	Rarity Normal Magic Rare
-	SocketGroup RRG RRR RG 
+	SocketGroup GGG GGR RRG RG 
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
@@ -2386,7 +1618,7 @@ Show
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
 	AreaLevel < 13
-	Sockets >= "2RB" "2RG" "2RR"
+	Sockets >= "2RB" "2RG" "2GG"
 	Rarity Normal Magic Rare
 	SocketGroup G
 	SetBorderColor 0 250 250
@@ -2432,7 +1664,7 @@ Show
 	BaseArmour < 1
 #	BaseEnergyShield < 1 
 	Rarity Normal Magic Rare
-	SocketGroup R 
+	SocketGroup G
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
@@ -2446,7 +1678,7 @@ Show
 	BaseArmour < 1
 #	BaseEnergyShield < 1 
 	Rarity Normal Magic Rare
-	SocketGroup R 
+	SocketGroup G
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
@@ -2948,13 +2180,12 @@ Show
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "gucci_sounds/amethystring.mp3" 300
 
-
 Show
 	Class "Shield"	
 #	BaseEvasion < 1
 #	BaseArmour < 1
 #	BaseEnergyShield < 1
-	AreaLevel <= 10
+	AreaLevel <= 69
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2963,9 +2194,23 @@ Show
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "gucci_sounds/rareshield.mp3" 300
 	
+	
 Show
 	Class "Shield"
-	AreaLevel <= 10
+	ItemLevel <= 47
+#	BaseEvasion < 1
+	BaseArmour < 1
+	BaseEnergyShield < 1
+	Sockets >= 3
+	Rarity Normal Magic Rare
+	SocketGroup GGG GGR RRG RG 
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+	
+Show
+	Class "Shield"
+	AreaLevel <= 12
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2975,7 +2220,7 @@ Show
 
 Show
 	Class "Shield"
-	AreaLevel <= 10
+	AreaLevel <= 12
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -3839,7 +3084,7 @@ Show
 	PlayEffect Purple
 	DisableDropSound
 Show
-	BaseType "Orb of Binding" "Engineer's Orb" "Veiled" "Enkindling Orb" "Instilling Orb" 
+	BaseType "Orb of Binding" "Engineer's Orb" "Veiled" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
 	Class Currency
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
@@ -4758,7 +4003,7 @@ Show
 	PlayEffect Red
 #orange (2-5c)
 Show
-	BaseType "Prismatic Fossil" "Jagged Fossil" "Opulent Fossil" "Aetheric Fossil" "Gilded Fossil" "Corroded Fossil" "Fundamental Fossil" "Deft Fossil"
+	BaseType "Prismatic Fossil" "Jagged Fossil" "Opulent Fossil" "Aetheric Fossil" "Opulent Fossil" "Gilded Fossil" "Corroded Fossil" "Fundamental Fossil" "Deft Fossil"
 	Class Currency
 	SetBackgroundColor 100 50 0
 	SetBorderColor 0 0 0

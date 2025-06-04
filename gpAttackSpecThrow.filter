@@ -2273,7 +2273,7 @@ Show
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
+	Class "Gloves" "Helm" "Boots" "Body Armour"
 	ItemLevel <= 47
 	Sockets < 6
 	LinkedSockets <= 3
@@ -2887,7 +2887,7 @@ Show
 #	BaseEvasion < 1
 #	BaseArmour < 1
 #	BaseEnergyShield < 1
-	AreaLevel <= 69
+	AreaLevel <= 10
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2898,17 +2898,17 @@ Show
 	
 Show
 	Class "Shield"
-	AreaLevel <= 12
-	Rarity Normal
+	AreaLevel <= 10
+	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
-	SetBackgroundColor 255 255 255
+	SetBackgroundColor 0 0 255
 	SetFontSize 40
 	MinimapIcon 2 White Circle
 
 Show
 	Class "Shield"
-	AreaLevel <= 12
+	AreaLevel <= 10
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
