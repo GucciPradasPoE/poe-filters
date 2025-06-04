@@ -1,6 +1,5 @@
-# Do not use LeagueStart filters past a10.
-# Do not use Racing_ filters past act 5. 
 
+https://www.patreon.com/c/guccipradas if you wanna fund some fancy meals
 
 # How To Use
 Video Explanation: https://clips.twitch.tv/FitHeadstrongLadiesTTours-3Gn7TZTxjf0pNpw1
