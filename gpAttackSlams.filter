@@ -2475,7 +2475,7 @@ Show
 Show
 	Class "Amulet"
 	BaseType "Jade Amulet"
-	AreaLevel < 13
+	AreaLevel < 19
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2486,7 +2486,7 @@ Show
 Show
 	Class "Amulet"
 	BaseType "Jade Amulet"
-	AreaLevel < 13
+	AreaLevel < 19
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
