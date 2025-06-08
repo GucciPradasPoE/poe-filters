@@ -2303,8 +2303,42 @@ Show
 
 Show
 	Class "Amulet"
+	BaseType "Amber Amulet"
+	ItemLevel <= 23
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/amber.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	Class "Amulet"
+	BaseType "Amber Amulet"
+	ItemLevel <= 23
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/amber.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	Class "Amulet"
+	BaseType "Amber Amulet"
+	ItemLevel <= 99
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/amber.mp3" 300
+	MinimapIcon 2 Yellow Circle
+
+Show
+	Class "Amulet"
 	BaseType "Jade Amulet"
-	ItemLevel <= 20
+	ItemLevel <= 23
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2315,7 +2349,7 @@ Show
 Show
 	Class "Amulet"
 	BaseType "Jade Amulet"
-	ItemLevel <= 20
+	ItemLevel <= 23
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2326,7 +2360,7 @@ Show
 Show
 	Class "Amulet"
 	BaseType "Jade Amulet"
-	ItemLevel <= 20
+	ItemLevel <= 99
 	Rarity Rare
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
