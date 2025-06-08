@@ -2181,7 +2181,7 @@ Show
 
 Show
 	Class "Shield"
-	AreaLevel < 12
+	AreaLevel < 13
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
 	SocketGroup GGR GRG RGG
@@ -2195,9 +2195,9 @@ Show
 Show
 	Class "Shield"
 #	BaseEvasion < 1
-	BaseArmour < 1
+#	BaseArmour < 1
 	BaseEnergyShield < 1
-	AreaLevel < 12
+	AreaLevel < 13
 	LinkedSockets = 3	
 	Rarity Normal Magic Rare
 	SetBorderColor 0 200 0
@@ -2965,7 +2965,8 @@ Show
 	
 Show
 	Class "Shield"
-	AreaLevel <= 10
+	BaseEnergyShield < 1
+	AreaLevel <= 12
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2975,7 +2976,28 @@ Show
 
 Show
 	Class "Shield"
-	AreaLevel <= 10
+	BaseEnergyShield < 1
+	AreaLevel <= 12
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 40
+	MinimapIcon 2 White Circle
+	
+Show
+	Class "Shield"
+	AreaLevel <= 8
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 0 0 255
+	SetFontSize 40
+	MinimapIcon 2 White Circle
+
+Show
+	Class "Shield"
+	AreaLevel <= 8
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
