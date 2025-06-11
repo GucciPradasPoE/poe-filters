@@ -1,4 +1,4 @@
-
+# THESE FILTERS ARE CAMPAIGN ONLY DO NOT USE IN MAP
 https://www.patreon.com/c/guccipradas if you wanna fund some fancy meals
 
 # How To Use
