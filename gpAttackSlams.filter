@@ -1786,7 +1786,36 @@ Show
 #	SetFontSize 45
 #	MinimapIcon 2 Yellow Circle
 #	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300
-	
+Show
+	BaseType "Driftwood Maul"
+	AreaLevel < 8
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Driftwood Maul"
+	AreaLevel < 8	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/mace.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Driftwood Maul"
+	AreaLevel < 8	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "gucci_sounds/rareweapon.mp3" 300	
 	
 Show
 	BaseType "Tribal Maul"
