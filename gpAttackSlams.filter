@@ -2102,8 +2102,8 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/glove2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/glove2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Helm" 
 	AreaLevel < 33
@@ -2113,8 +2113,8 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/helm2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/helm2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Boots" 
 	AreaLevel < 33
@@ -2124,8 +2124,8 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/boots2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/boots2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 Show
 	Class "Body Armour"
 	AreaLevel < 33
@@ -2135,8 +2135,8 @@ Show
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/chest2g1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/chest2g1r.mp3" 300
+	MinimapIcon 2 Yellow Triangle
 	
 
 
