@@ -981,6 +981,17 @@ Show
 	SetBorderColor 200 0 200
 	AreaLevel = 1
 	SetFontSize 45
+	
+Show
+	LinkedSockets >= 5
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	PlayAlertSound 6 250
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+	DisableDropSound
 
 # # # #    MELEE   # # # #
 
