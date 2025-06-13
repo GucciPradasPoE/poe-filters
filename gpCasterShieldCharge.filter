@@ -219,8 +219,8 @@ Show
 
 #####General####
 #Settlers of Kalguur
-Show
-	BaseType "Rune"
+Show # 3.26 rename Rune to Runegraft
+	BaseType "Runegraft"
 	Class Currency
 	SetBackgroundColor 68 98 122
 	SetBorderColor 225 225 225
@@ -229,6 +229,16 @@ Show
 	PlayAlertSound 11 200
 	MinimapIcon 1 Blue Triangle
 	PlayEffect Blue Temp
+Show
+	BaseType "Reliquary Key" "Valdo's Puzzle"
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 0 200 0
+	SetFontSize 45
+	PlayAlertSound 6 250
+	MinimapIcon 0 Green Diamond
+	PlayEffect Green	
+	
 Show
 	BaseType == "Gold"
 	SetTextColor 233 241 55
@@ -260,6 +270,17 @@ Show
 Show
 	Class Currency
 	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Exalted Orb" 
+	SetBorderColor 240 0 200
+	SetTextColor 240 0 200
+	PlayAlertSound 10 250
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	PlayEffect Pink
+	DisableDropSound
+
+Show # 3.26 ENABLE
+	Class Currency
+	BaseType "Veiled Chaos Orb" "Veiled Exalted Orb"
 	SetBorderColor 240 0 200
 	SetTextColor 240 0 200
 	PlayAlertSound 10 250
@@ -2247,6 +2268,7 @@ Show
 #	MinimapIcon 0 Red Circle
 #	PlayEffect Red
 #	DisableDropSound
+
 	
 ##### Uniques #####
 
@@ -5953,15 +5975,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Pink Raindrop
 	PlayEffect Pink
-Show
-	Class Memory
-	SetBackgroundColor 255 221 153
-	SetBorderColor 100 80 50
-	SetTextColor 150 100 60
-	SetFontSize 40
-	PlayAlertSound 9 150
-	MinimapIcon 0 Brown Hexagon
-	PlayEffect Brown
+
 
 #Voidstones
 Show
