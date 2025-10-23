@@ -1311,7 +1311,7 @@ Show
 	
 Show
 	BaseType "Shadow Axe"
-	AreaLevel < 33	
+	AreaLevel < 35	
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1321,7 +1321,7 @@ Show
 	MinimapIcon 2 White Circle
 Show
 	BaseType "Shadow Axe"
-	AreaLevel < 33	
+	AreaLevel < 35	
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
