@@ -217,7 +217,36 @@ Show
 ##########################################
 
 #####General####
-
+#3.27
+Show #3.27
+	BaseType "Augmentation Implant" "Regal Implant" "Exalted Implant" "Unstable Implant" "Foulborn Orb of Augmentation" "Foulborn Regal Orb" "Foulborn Exalted Orb"
+	SetBackgroundColor 250 0 125
+	SetBorderColor 255 255 155
+	SetTextColor 255 255 155
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue Temp
+	
+Show #3.27
+	Class == "Grafts"
+	SetBackgroundColor 0 0 0 
+	SetBorderColor 160 32 240
+	SetFontSize 45
+	PlayAlertSound 3 125
+	
+Show #3.27
+	Class == "Wombgifts"
+	SetBackgroundColor 250 0 125
+	SetBorderColor 255 255 155
+	SetTextColor 255 255 155
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue Temp
+Show #3.27
+	BaseType "Cryonic Ring" "Enthalpic Ring" "Synaptic Ring" "Organic Ring" "Fugitive Ring" "Formless Ring"												
+	SetFontSize 40
 #Settlers of Kalguur
 Show # 3.26 rename Rune to Runegraft
 	BaseType "Runegraft"
@@ -2079,22 +2108,7 @@ Show
 	MinimapIcon 2 Yellow Triangle
 	
 	
-	
-	
-#Show
-#	Class "Wand"
-#	BaseType "Carved Wand"
-#	AreaLevel < 33
-#	LinkedSockets = 3	
-#	Rarity Normal Magic Rare
-#	SocketGroup BBR BRB RBB
-#	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/wand2b1r.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
 
-	
 Show
 	Class "Gloves" 
 	AreaLevel < 33
@@ -3117,7 +3131,7 @@ Show
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 Show
-	BaseType "Goat's Horn" "Carved Wand"
+	BaseType "Goat's Horn"
 	Rarity Unique
 	AreaLevel <= 22
 	SetBackgroundColor 225 100 0
@@ -5703,14 +5717,7 @@ Show
 	SetTextColor 50 150 0
 	SetFontSize 34
 	DisableDropSound
-Show
-	BaseType "Bestiary Orb" "Imprinted Bestiary Orb"
-	SetBackgroundColor 175 200 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	PlayAlertSound 2 150
-	SetFontSize 45
-	MinimapIcon 1 Green Moon
+
 Show
 	HasExplicitMod "Craiceann" "Fenumus"
 	Class Ring Amulet Belt
@@ -7395,7 +7402,7 @@ Show
 	PlayEffect White
 #malevolence/hatred aura effect
 Show
-	BaseType "Opal Wand" "Imbued Wand" "Void Sceptre" "Opal Sceptre"
+	BaseType "Opal Wand"  "Void Sceptre" "Opal Sceptre"
 	HasInfluence Hunter Redeemer
 	ItemLevel >= 80
 	SetBackgroundColor 100 100 100
@@ -7564,7 +7571,7 @@ Show
 
 #catchalls for good basetypes
 Show
-	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Saintly Chainmail" "Astral Plate" "Assassin's Garb" "Vaal Regalia" "Sambar Sceptre" "Copper Kris" "Platinum Kris" "Profane Wand" "Eclipse Staff" "Imbued Wand" "Prophecy Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Crusader Buckler" "Copper Tower Shield" "Bronze Tower Shield" "Ezomyte Tower Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ceremonial Kite Shield" "Supreme Spiked Shield"
+	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Saintly Chainmail" "Astral Plate" "Assassin's Garb" "Vaal Regalia" "Sambar Sceptre" "Copper Kris" "Platinum Kris" "Profane Wand" "Eclipse Staff"  "Prophecy Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Crusader Buckler" "Copper Tower Shield" "Bronze Tower Shield" "Ezomyte Tower Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ceremonial Kite Shield" "Supreme Spiked Shield"
 	HasInfluence Crusader Hunter Shaper Elder
 	ItemLevel >= 85
 	SetBackgroundColor 100 100 100
@@ -7574,7 +7581,7 @@ Show
 	MinimapIcon 1 White Cross
 	PlayEffect White
 Show
-	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Saintly Chainmail" "Astral Plate" "Assassin's Garb" "Vaal Regalia" "Sambar Sceptre" "Copper Kris" "Platinum Kris" "Profane Wand" "Eclipse Staff" "Imbued Wand" "Prophecy Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Crusader Buckler" "Copper Tower Shield" "Bronze Tower Shield" "Ezomyte Tower Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ceremonial Kite Shield" "Supreme Spiked Shield"
+	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Saintly Chainmail" "Astral Plate" "Assassin's Garb" "Vaal Regalia" "Sambar Sceptre" "Copper Kris" "Platinum Kris" "Profane Wand" "Eclipse Staff"  "Prophecy Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Crusader Buckler" "Copper Tower Shield" "Bronze Tower Shield" "Ezomyte Tower Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ceremonial Kite Shield" "Supreme Spiked Shield"
 	HasInfluence Redeemer Warlord
 	ItemLevel >= 83
 	SetBackgroundColor 100 100 100
@@ -8257,7 +8264,7 @@ Show
 	MinimapIcon 1 Pink Triangle
 	PlayEffect Pink
 Show
-	BaseType "Void Sceptre" "Opal Sceptre" "Sambar Sceptre" "Harmonic Spirit Shield" "Profane Wand" "Prophecy Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Imbued Wand"
+	BaseType "Void Sceptre" "Opal Sceptre" "Sambar Sceptre" "Harmonic Spirit Shield" "Profane Wand" "Prophecy Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" 
 	HasExplicitMod "Glyphic" "Runic" "Heartstopping" "Gelid" "Fanatical" "Zealous" "Tul's" "Cryomancer's" "Esh's" "Ionising" "Xoph's" "Pyroclastic"
 	Corrupted False
 	Mirrored False
@@ -8822,7 +8829,7 @@ Show
 
 #Upper Variable Value - 20c+ value on at least one unique from the basetype. Teal border.
 Show
-	BaseType "Ebony Tower Shield" "Imperial Bow" "Sadist Garb" "Lacquered Garb" "Carved Wand" "Goathide Boots" "Sorcerer Boots" "Fiend Dagger" "Ezomyte Staff" "Nightmare Bascinet" "Prophet Crown" "Archon Kite Shield" "Elegant Round Shield" "Imperial Skean" "Stealth Boots" "Sage's Robe" "Saint's Hauberk" "Spidersilk Robe" "Colossal Tower Shield" "Necromancer Silks" "Murder Mitts" "Spine Bow" "Sage Wand" "Gavel" "Iron Flask"
+	BaseType "Ebony Tower Shield" "Imperial Bow" "Sadist Garb" "Lacquered Garb" "Goathide Boots" "Sorcerer Boots" "Fiend Dagger" "Ezomyte Staff" "Nightmare Bascinet" "Prophet Crown" "Archon Kite Shield" "Elegant Round Shield" "Imperial Skean" "Stealth Boots" "Sage's Robe" "Saint's Hauberk" "Spidersilk Robe" "Colossal Tower Shield" "Necromancer Silks" "Murder Mitts" "Spine Bow" "Sage Wand" "Gavel" "Iron Flask"
 	Rarity Unique
 	SetBackgroundColor 225 100 0
 	SetBorderColor 0 250 250
@@ -8857,7 +8864,7 @@ Show
 
 #Variable Value Tier - 5c to 20c on at least one unique from the basetype, rest have shit value. Same highlighting as SV but with a temporary light. 
 Show
-	BaseType "Spike-Point Arrow Quiver" "Citrine Amulet" "Titan Gauntlets" "Imbued Wand" "Iron Circlet" "Mirrored Spiked Shield" "Solaris Circlet" "Vaal Claw" "Shadow Sceptre" "Assassin Bow" "Vaal Blade" "Sapphire Ring" "Paua Ring" "Agate Amulet" "Stibnite Flask" "Crude Bow"
+	BaseType "Spike-Point Arrow Quiver" "Citrine Amulet" "Titan Gauntlets"  "Iron Circlet" "Mirrored Spiked Shield" "Solaris Circlet" "Vaal Claw" "Shadow Sceptre" "Assassin Bow" "Vaal Blade" "Sapphire Ring" "Paua Ring" "Agate Amulet" "Stibnite Flask" "Crude Bow"
 	Rarity Unique
 	SetBackgroundColor 225 100 0
 	SetBorderColor 0 0 0
@@ -8916,7 +8923,7 @@ Show
 #Uber Only Trash Unique Hide Block - hides commonly dropping uniques with consistently low value. Should only ever be enabled in the Uber filter. 
 #Hide
 #	Rarity Unique
-#	BaseType "Ambusher" "Antique Greaves" "Antique Rapier" "Assassin's Mitts" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Circlet" "Boot Blade" "Boot Knife" "Brass Maul" "Brass Spirit Shield" "Bronze Gauntlets" "Bronze Sceptre" "Buckskin Tunic" "Carnal Armour" "Chain Gloves" "Chiming Spirit Shield" "Clasped Boots" "Cleaver" "Compound Spiked Shield" "Conquest Chainmail" "Copper Plate" "Crusader Chainmail" "Crystal Sceptre" "Crystal Wand" "Cutthroat's Garb" "Death Bow" "Decorative Axe" "Deerskin Boots" "Dread Maul" "Dream Mace" "Eelskin Boots" "Elder Sword" "Elegant Foil" "Elegant Sword" "Engraved Wand" "Estoc" "Ezomyte Axe" "Ezomyte Blade" "Fire Arrow Quiver" "Flaying Knife" "Fright Claw" "Gilded Sallet" "Gnarled Branch" "Goat's Horn" "Gut Ripper" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Ancient Spirit Shield" "Iron Hat" "Iron Mask" "Ironscale Boots" "Jade Hatchet" "Jagged Foil" "Jagged Maul" "Lacquered Helmet" "Latticed Ringmail" "Leather Hood" "Long Bow" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Ornate Sword" "Painted Buckler" "Plague Mask" "Plank Kite Shield" "Plate Vest" "Platinum Kris" "Primordial Staff" "Poleaxe" "Quicksilver Flask" "Ranger Bow" "Recurve Bow" "Rock Breaker" "Rotted Round Shield" "Royal Staff" "Rusted Sword" "Sabre" "Sage's Robe" "Samite Gloves" "Samnite Helmet" "Sanctified Life Flask" "Sanctified Mana Flask" "Secutor Helm" "Scholar Boots" "Serpentine Staff" "Serrated Arrow Quiver" "Shadow Axe" "Sharktooth Arrow Quiver" "Silk Slippers" "Silver Flask" "Simple Robe" "Skinning Knife" "Sledgehammer" "Soldier Boots" "Spiked Club" "Spiraled Wand" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Strapped Leather" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Tarnished Spirit Shield" "Terror Maul" "Thresher Claw" "Throat Stabber" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "War Buckler" "Wild Leather" "Woodsplitter" "Wool Gloves" "Wrapped Mitts" "Wyrmscale Gauntlets" "Vaal Buckler" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "Visored Sallet"
+#	BaseType "Ambusher" "Antique Greaves" "Antique Rapier" "Assassin's Mitts" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Circlet" "Boot Blade" "Boot Knife" "Brass Maul" "Brass Spirit Shield" "Bronze Gauntlets" "Bronze Sceptre" "Buckskin Tunic" "Carnal Armour" "Chain Gloves" "Chiming Spirit Shield" "Clasped Boots" "Cleaver" "Compound Spiked Shield" "Conquest Chainmail" "Copper Plate" "Crusader Chainmail" "Crystal Sceptre" "Crystal Wand" "Cutthroat's Garb" "Death Bow" "Decorative Axe" "Deerskin Boots" "Dread Maul" "Dream Mace" "Eelskin Boots" "Elder Sword" "Elegant Foil" "Elegant Sword" "Estoc" "Ezomyte Axe" "Ezomyte Blade" "Fire Arrow Quiver" "Flaying Knife" "Fright Claw" "Gilded Sallet" "Gnarled Branch" "Goat's Horn" "Gut Ripper" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade"  "Infernal Axe" "Ancient Spirit Shield" "Iron Hat" "Iron Mask" "Ironscale Boots" "Jade Hatchet" "Jagged Foil" "Jagged Maul" "Lacquered Helmet" "Latticed Ringmail" "Leather Hood" "Long Bow" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Ornate Sword" "Painted Buckler" "Plague Mask" "Plank Kite Shield" "Plate Vest" "Platinum Kris" "Primordial Staff" "Poleaxe" "Quicksilver Flask" "Ranger Bow" "Recurve Bow" "Rock Breaker" "Rotted Round Shield" "Royal Staff" "Rusted Sword" "Sabre" "Sage's Robe" "Samite Gloves" "Samnite Helmet" "Sanctified Life Flask" "Sanctified Mana Flask" "Secutor Helm" "Scholar Boots" "Serpentine Staff" "Serrated Arrow Quiver" "Shadow Axe" "Sharktooth Arrow Quiver" "Silk Slippers" "Silver Flask" "Simple Robe" "Skinning Knife" "Sledgehammer" "Soldier Boots" "Spiked Club" "Spiraled Wand" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Strapped Leather" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Tarnished Spirit Shield" "Terror Maul" "Thresher Claw" "Throat Stabber" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "War Buckler" "Wild Leather" "Woodsplitter" "Wool Gloves" "Wrapped Mitts" "Wyrmscale Gauntlets" "Vaal Buckler" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "Visored Sallet"
 #	SetBackgroundColor 200 75 0
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 0 0
@@ -9103,21 +9110,21 @@ Show
 #Main filtering blocks
 #as of 3.11.5, have cut almost all non-meta bases. List of cuts: Imperial Bow, Sambar Sceptre, Copper/Golden/Platinum Kris, Profane Wand, Maelstrom Staff, Judgement Staff, Eclipse Staff, Lacquered Buckler, Assassin's Garb, Penetrating Arrow Quiver, Moonstone Ring. 3.18.1 re-added Profane
 Show
-	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Vaal Axe" "Karui Chopper" "Siege Axe" "Royal Axe" "Citadel Bow" "Spine Bow" "Convoking Wand" "Imbued Wand" "Prophecy Wand" "Profane Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Heavy Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Triumphant Lamellar" "Nightmare Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
+	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Vaal Axe" "Karui Chopper" "Siege Axe" "Royal Axe" "Citadel Bow" "Spine Bow" "Convoking Wand"  "Prophecy Wand" "Profane Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Heavy Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Triumphant Lamellar" "Nightmare Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
 	ItemLevel >= 86
 	Corrupted False
 	Mirrored False
 	SetBorderColor 250 200 150
 	SetFontSize 38
 Show
-	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Vaal Axe" "Karui Chopper" "Siege Axe" "Royal Axe" "Citadel Bow" "Spine Bow" "Convoking Wand" "Imbued Wand" "Prophecy Wand" "Profane Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Heavy Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Triumphant Lamellar" "Nightmare Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
+	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Vaal Axe" "Karui Chopper" "Siege Axe" "Royal Axe" "Citadel Bow" "Spine Bow" "Convoking Wand"  "Prophecy Wand" "Profane Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Heavy Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Triumphant Lamellar" "Nightmare Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
 	ItemLevel = 85
 	Corrupted False
 	Mirrored False
 	SetBorderColor 200 150 0
 	SetFontSize 36
 Show
-	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Vaal Axe" "Karui Chopper" "Siege Axe" "Royal Axe" "Citadel Bow" "Spine Bow" "Convoking Wand" "Imbued Wand" "Prophecy Wand" "Profane Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Heavy Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Triumphant Lamellar" "Nightmare Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
+	BaseType "Sorcerer Boots" "Hubris Circlet" "Sorcerer Gloves" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Astral Plate" "Vaal Regalia" "Sadist Garb" "Vaal Axe" "Karui Chopper" "Siege Axe" "Royal Axe" "Citadel Bow" "Spine Bow" "Convoking Wand"  "Prophecy Wand" "Profane Wand" "Demon's Horn" "Tornado Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre" "Heavy Arrow Quiver" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Ezomyte Tower Shield" "Colossal Tower Shield" "Agate Amulet" "Turquoise Amulet" "Citrine Amulet" "Two-Stone Ring" "Prismatic Ring" "Unset Ring" "Triumphant Lamellar" "Nightmare Bascinet" "Dragonscale Boots" "Dragonscale Gauntlets"
 	ItemLevel = 84
 	Corrupted False
 	Mirrored False
@@ -9417,7 +9424,7 @@ Show
 ###################################################################################
 #light blue borders on caster weapons
 Show
-	BaseType "Sambar Sceptre" "Opal Sceptre" "Void Sceptre" "Profane Wand" "Imbued Wand" "Prophecy Wand" "Opal Wand" "Tornado Wand" "Demon's Horn"
+	BaseType "Sambar Sceptre" "Opal Sceptre" "Void Sceptre" "Profane Wand"  "Prophecy Wand" "Opal Wand" "Tornado Wand" "Demon's Horn"
 	Rarity Rare
 	SetBorderColor 150 200 250
 	SetFontSize 36
@@ -9949,29 +9956,15 @@ Show
 	SetBorderColor 150 200 250
 	SetFontSize 36
 #spelldmg wands. shows both the 1.5 speed and the max spelldmg lines. naturally alternates
-Show
-	BaseType "Carved Wand"
-	AreaLevel <= 29
-	SetBorderColor 100 150 200
-	SetFontSize 36
+
 Show
 	BaseType "Sage Wand"
 	AreaLevel <= 39
 	SetBorderColor 100 150 200
 	SetFontSize 36
 Show
-	BaseType "Engraved Wand"
-	AreaLevel <= 52
-	SetBorderColor 100 150 200
-	SetFontSize 36
-Show
 	BaseType "Omen Wand"
 	AreaLevel <= 58
-	SetBorderColor 100 150 200
-	SetFontSize 36
-Show
-	BaseType "Imbued Wand"
-	AreaLevel <= 67
 	SetBorderColor 100 150 200
 	SetFontSize 36
 Show

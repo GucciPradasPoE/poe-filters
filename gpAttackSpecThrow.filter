@@ -109,6 +109,7 @@
 #	CustomAlertSound "gucci_sounds/StopUsingNow.mp3" 300
 #	AreaLevel >= 69
 
+	
 ##################################################
 ##### Section 0 - Racing Options & Overrides #####
 ##################################################
@@ -212,6 +213,36 @@ Show
 ##########################################
 
 #####General####
+#3.27
+Show #3.27
+	BaseType "Augmentation Implant" "Regal Implant" "Exalted Implant" "Unstable Implant" "Foulborn Orb of Augmentation" "Foulborn Regal Orb" "Foulborn Exalted Orb"
+	SetBackgroundColor 250 0 125
+	SetBorderColor 255 255 155
+	SetTextColor 255 255 155
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue Temp
+	
+Show #3.27
+	Class == "Grafts"
+	SetBackgroundColor 0 0 0 
+	SetBorderColor 160 32 240
+	SetFontSize 45
+	PlayAlertSound 3 125
+	
+Show #3.27
+	Class == "Wombgifts"
+	SetBackgroundColor 250 0 125
+	SetBorderColor 255 255 155
+	SetTextColor 255 255 155
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue Temp
+Show #3.27
+	BaseType "Cryonic Ring" "Enthalpic Ring" "Synaptic Ring" "Organic Ring" "Fugitive Ring" "Formless Ring"												
+	SetFontSize 40
 #Settlers of Kalguur
 Show # 3.26 rename Rune to Runegraft
 	BaseType "Runegraft"
@@ -3079,7 +3110,7 @@ Show
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 #Show
-#	BaseType "Goat's Horn" "Carved Wand"
+#	BaseType "Goat's Horn"
 #	Rarity Unique
 #	AreaLevel <= 22
 #	SetBackgroundColor 225 100 0
@@ -4445,14 +4476,7 @@ Show
 	SetTextColor 50 150 0
 	SetFontSize 34
 	DisableDropSound
-Show
-	BaseType "Bestiary Orb" "Imprinted Bestiary Orb"
-	SetBackgroundColor 175 200 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	PlayAlertSound 2 150
-	SetFontSize 45
-	MinimapIcon 1 Green Moon
+
 Show
 	HasExplicitMod "Craiceann" "Fenumus"
 	Class Ring Amulet Belt
@@ -7567,7 +7591,7 @@ Show
 
 #Upper Variable Value - 20c+ value on at least one unique from the basetype. Teal border.
 Show
-	BaseType "Ebony Tower Shield" "Imperial Bow" "Sadist Garb" "Lacquered Garb" "Carved Wand" "Goathide Boots" "Sorcerer Boots" "Fiend Dagger" "Ezomyte Staff" "Nightmare Bascinet" "Prophet Crown" "Archon Kite Shield" "Elegant Round Shield" "Imperial Skean" "Stealth Boots" "Sage's Robe" "Saint's Hauberk" "Spidersilk Robe" "Colossal Tower Shield" "Necromancer Silks" "Murder Mitts" "Spine Bow" "Sage Wand" "Gavel" "Iron Flask"
+	BaseType "Ebony Tower Shield" "Imperial Bow" "Sadist Garb" "Lacquered Garb" "Goathide Boots" "Sorcerer Boots" "Fiend Dagger" "Ezomyte Staff" "Nightmare Bascinet" "Prophet Crown" "Archon Kite Shield" "Elegant Round Shield" "Imperial Skean" "Stealth Boots" "Sage's Robe" "Saint's Hauberk" "Spidersilk Robe" "Colossal Tower Shield" "Necromancer Silks" "Murder Mitts" "Spine Bow" "Sage Wand" "Gavel" "Iron Flask"
 	Rarity Unique
 	SetBackgroundColor 225 100 0
 	SetBorderColor 0 250 250
@@ -7661,7 +7685,7 @@ Show
 #Uber Only Trash Unique Hide Block - hides commonly dropping uniques with consistently low value. Should only ever be enabled in the Uber filter. 
 #Hide
 #	Rarity Unique
-#	BaseType "Ambusher" "Antique Greaves" "Antique Rapier" "Assassin's Mitts" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Circlet" "Boot Blade" "Boot Knife" "Brass Maul" "Brass Spirit Shield" "Bronze Gauntlets" "Bronze Sceptre" "Buckskin Tunic" "Carnal Armour" "Chain Gloves" "Chiming Spirit Shield" "Clasped Boots" "Cleaver" "Compound Spiked Shield" "Conquest Chainmail" "Copper Plate" "Crusader Chainmail" "Crystal Sceptre" "Crystal Wand" "Cutthroat's Garb" "Death Bow" "Decorative Axe" "Deerskin Boots" "Dread Maul" "Dream Mace" "Eelskin Boots" "Elder Sword" "Elegant Foil" "Elegant Sword" "Engraved Wand" "Estoc" "Ezomyte Axe" "Ezomyte Blade" "Fire Arrow Quiver" "Flaying Knife" "Fright Claw" "Gilded Sallet" "Gnarled Branch" "Goat's Horn" "Gut Ripper" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Ancient Spirit Shield" "Iron Hat" "Iron Mask" "Ironscale Boots" "Jade Hatchet" "Jagged Foil" "Jagged Maul" "Lacquered Helmet" "Latticed Ringmail" "Leather Hood" "Long Bow" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Ornate Sword" "Painted Buckler" "Plague Mask" "Plank Kite Shield" "Plate Vest" "Platinum Kris" "Primordial Staff" "Poleaxe" "Quicksilver Flask" "Ranger Bow" "Recurve Bow" "Rock Breaker" "Rotted Round Shield" "Royal Staff" "Rusted Sword" "Sabre" "Sage's Robe" "Samite Gloves" "Samnite Helmet" "Sanctified Life Flask" "Sanctified Mana Flask" "Secutor Helm" "Scholar Boots" "Serpentine Staff" "Serrated Arrow Quiver" "Shadow Axe" "Sharktooth Arrow Quiver" "Silk Slippers" "Silver Flask" "Simple Robe" "Skinning Knife" "Sledgehammer" "Soldier Boots" "Spiked Club" "Spiraled Wand" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Strapped Leather" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Tarnished Spirit Shield" "Terror Maul" "Thresher Claw" "Throat Stabber" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "War Buckler" "Wild Leather" "Woodsplitter" "Wool Gloves" "Wrapped Mitts" "Wyrmscale Gauntlets" "Vaal Buckler" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "Visored Sallet"
+#	BaseType "Ambusher" "Antique Greaves" "Antique Rapier" "Assassin's Mitts" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Circlet" "Boot Blade" "Boot Knife" "Brass Maul" "Brass Spirit Shield" "Bronze Gauntlets" "Bronze Sceptre" "Buckskin Tunic" "Carnal Armour" "Chain Gloves" "Chiming Spirit Shield" "Clasped Boots" "Cleaver" "Compound Spiked Shield" "Conquest Chainmail" "Copper Plate" "Crusader Chainmail" "Crystal Sceptre" "Crystal Wand" "Cutthroat's Garb" "Death Bow" "Decorative Axe" "Deerskin Boots" "Dread Maul" "Dream Mace" "Eelskin Boots" "Elder Sword" "Elegant Foil" "Elegant Sword" "Estoc" "Ezomyte Axe" "Ezomyte Blade" "Fire Arrow Quiver" "Flaying Knife" "Fright Claw" "Gilded Sallet" "Gnarled Branch" "Goat's Horn" "Gut Ripper" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Infernal Axe" "Ancient Spirit Shield" "Iron Hat" "Iron Mask" "Ironscale Boots" "Jade Hatchet" "Jagged Foil" "Jagged Maul" "Lacquered Helmet" "Latticed Ringmail" "Leather Hood" "Long Bow" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Ornate Sword" "Painted Buckler" "Plague Mask" "Plank Kite Shield" "Plate Vest" "Platinum Kris" "Primordial Staff" "Poleaxe" "Quicksilver Flask" "Ranger Bow" "Recurve Bow" "Rock Breaker" "Rotted Round Shield" "Royal Staff" "Rusted Sword" "Sabre" "Sage's Robe" "Samite Gloves" "Samnite Helmet" "Sanctified Life Flask" "Sanctified Mana Flask" "Secutor Helm" "Scholar Boots" "Serpentine Staff" "Serrated Arrow Quiver" "Shadow Axe" "Sharktooth Arrow Quiver" "Silk Slippers" "Silver Flask" "Simple Robe" "Skinning Knife" "Sledgehammer" "Soldier Boots" "Spiked Club" "Spiraled Wand" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Strapped Leather" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Tarnished Spirit Shield" "Terror Maul" "Thresher Claw" "Throat Stabber" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "War Buckler" "Wild Leather" "Woodsplitter" "Wool Gloves" "Wrapped Mitts" "Wyrmscale Gauntlets" "Vaal Buckler" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "Visored Sallet"
 #	SetBackgroundColor 200 75 0
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 0 0
@@ -8694,31 +8718,19 @@ Show
 	SetBorderColor 150 200 250
 	SetFontSize 36
 #spelldmg wands. shows both the 1.5 speed and the max spelldmg lines. naturally alternates
-Show
-	BaseType "Carved Wand"
-	AreaLevel <= 29
-	SetBorderColor 100 150 200
-	SetFontSize 36
+
 Show
 	BaseType "Sage Wand"
 	AreaLevel <= 39
 	SetBorderColor 100 150 200
 	SetFontSize 36
-Show
-	BaseType "Engraved Wand"
-	AreaLevel <= 52
-	SetBorderColor 100 150 200
-	SetFontSize 36
+
 Show
 	BaseType "Omen Wand"
 	AreaLevel <= 58
 	SetBorderColor 100 150 200
 	SetFontSize 36
-Show
-	BaseType "Imbued Wand"
-	AreaLevel <= 67
-	SetBorderColor 100 150 200
-	SetFontSize 36
+
 Show
 	BaseType "Prophecy Wand"
 	AreaLevel <= 68
