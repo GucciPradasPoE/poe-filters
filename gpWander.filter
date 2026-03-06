@@ -1,4 +1,4 @@
-#Sovereign Filter by StupidFatHobbit updated 4/24/23 | Crucible League | v3.21.1 | GENERAL VERSION
+#Sovereign Filter by StupidFatHobbit updated 3/6/26 | 3.28 Update | GENERAL VERSION
 #Update Notes: Long Overdue Economy Update (Crucible League Update I)
 
 #defaultcolors:
@@ -2240,7 +2240,7 @@ Show
 #Show 
 #	Quality >= 5
 #	Class "Gem"
-#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Swordstorm" "Glacial Shield Swipe" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Crushing Fist" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
+#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Swordstorm" "Glacial Shield Swipe" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Holy Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Crushing Fist" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
 #	SetBackgroundColor 180 0 0
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 0 0
@@ -3063,7 +3063,7 @@ Show
 #Show 
 #	Quality >= 5
 #	Class "Gem"
-#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Swordstorm" "Glacial Shield Swipe" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Crushing Fist" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
+#	BaseType == "Absolution" "Added Fire Damage Support" "Animate Guardian" "Animate Weapon" "Bear Trap" "Blade Blast" "Blade Flurry" "Bladefall" "Blood Rage" "Bloodlust Support" "Bloodthirst Support" "Boneshatter" "Brutality Support" "Chance to Bleed Support" "Cleave" "Corrupting Cry Support" "Corrupting Fever" "Cyclone" "Defiance Banner" "Determination" "Divine Ire" "Double Strike" "Dread Banner" "Ethereal Knives" "Explosive Trap" "Exsanguinate" "Glacial Cascade" "Herald of Agony" "Herald of Purity" "Holy Flame Totem" "Hydrosphere" "Impale Support" "Intimidating Cry" "Iron Grip Support" "Lacerate" "Lancing Steel" "Maim Support" "Melee Physical Damage Support" "Molten Shell" "Penance Brand" "Perforate" "Phase Run" "Physical to Lightning Support" "Pride" "Puncture" "Punishment" "Purifying Flame" "Reap" "Swordstorm" "Glacial Shield Swipe" "Seismic Trap" "Shattering Steel" "Shield Charge" "Shield Crush" "Shockwave Totem" "Shrapnel Ballista" "Snipe" "Spectral Shield Throw" "Split Arrow" "Splitting Steel" "Storm Burst" "Summon Carrion Golem" "Summon Reaper" "Summon Stone Golem" "Holy Sweep" "Tornado" "Trauma Support" "Unearth" "Vaal Absolution" "Vaal Animate Weapon" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Cleave" "Vaal Cyclone" "Vaal Double Strike" "Vaal Molten Shell" "Vaal Reap" "Crushing Fist" "Vicious Projectiles Support" "Void Sphere" "Vulnerability" "War Banner" "Wave of Conviction" "Withering Touch Support"
 #	SetBackgroundColor 180 0 0
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 0 0
@@ -4268,6 +4268,16 @@ Show
 	DisableDropSound
 
 Show
+	BaseType "Volatile Vaal Orb" "Flesh of Xesht"
+	SetBackgroundColor 240 0 200
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	PlayAlertSound 10 250
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	PlayEffect Pink
+	DisableDropSound
+Show
 	BaseType "Orb of Binding" "Veiled" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
 	Class "Currency"
 	SetBackgroundColor 0 225 125
@@ -4344,6 +4354,68 @@ Show
 	SetFontSize 38
 	AreaLevel <= 78
 	
+
+#3.28 New Currencies
+Show
+	BaseType "Coin of Knowledge" "Coin of Power" "Coin of Skill" "Coin of Restoration" "Coin of Desecration"
+	Class Currency
+	SetBackgroundColor 0 225 125
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 100
+	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
+	DisableDropSound
+Show
+	BaseType "Refracting Fog" "Essence of Desolation" "Crystallised Rancour"
+	Class Currency
+	SetBackgroundColor 0 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 2 Cyan Circle
+	DisableDropSound
+Show
+	BaseType "Sinistral Catalyst" "Dextral Catalyst"
+	Class Currency
+	SetBackgroundColor 0 225 125
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 100
+	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
+	DisableDropSound
+Show
+	BaseType "Memory of Trauma" "Memory of Reverence" "Memory of Loneliness"
+	Class Currency
+	SetBackgroundColor 0 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 2 Cyan Circle
+	DisableDropSound
+Show
+	BaseType "Runegraft"
+	Class Currency
+	SetBackgroundColor 170 158 130
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+Show
+	BaseType "Astrolabe"
+	Class Currency
+	SetBackgroundColor 0 225 125
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 100
+	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
+	DisableDropSound
 #6L Blocks - located up here due to code priority issues. 5L and 6S blocks are in the Sockets section (7)
 #corrupted catcher
 Show
@@ -5558,15 +5630,6 @@ Show
 	PlayAlertSound 11 200
 	MinimapIcon 1 Cyan Raindrop
 	PlayEffect Cyan Temp
-Show
-	BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
-	SetBackgroundColor 250 40 0
-	SetBorderColor 250 250 250
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 2 200
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
 Show
 	BaseType "Facetor's Lens"
 	SetBackgroundColor 0 200 240
@@ -8155,7 +8218,7 @@ Show
 
 #Dogshit Tier: Hidden in all filters, waste of a click to pick up. Same highlight as trash tier. Only the very worst get added here.
 Hide
-	BaseType == "The Carrion Crow" "The Surgeon" "The King's Blade" "The Lunaris Priestess" "The Metalsmith's Gift" "Lantador's Lost Love" "The Scholar" "The Sigil" "The Lover" "The Puzzle" "The Warden" "Rain Tempter" "Rain of Chaos" "Prosperity" "Struck By Lightning" "The Inoculated" "The Opulent" "The Scarred Meadow" "Destined to Crumble" "Thirst for Knowledge" "The Witch" "The Visionary" "The Sword King's Salute" "The Harvester" "Rats" "Might is Right" "The Adventuring Spirit"
+	BaseType == "The Carrion Crow" "The Surgeon" "The King's Blade" "The Lunaris Priestess" "The Metalsmith's Gift" "Lantador's Lost Love" "The Scholar" "The Sigil" "The Lover" "The Warden" "Rain Tempter" "Rain of Chaos" "Prosperity" "Struck By Lightning" "The Inoculated" "The Opulent" "The Scarred Meadow" "Destined to Crumble" "Thirst for Knowledge" "The Witch" "The Visionary" "The Sword King's Salute" "The Harvester" "Rats" "Might is Right" "The Adventuring Spirit"
 	Class "Divination Card"
 	SetBackgroundColor 110 160 210
 	SetBorderColor 0 0 0
@@ -12436,7 +12499,7 @@ Show
 ###################################################################################
 #top and rare gems
 Show
-	BaseType "Item Quantity" "Awakened"
+	BaseType "Item Quantity" "Awakened" "Exceptional"
 	Class "Gem"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
