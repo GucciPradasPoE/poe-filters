@@ -1524,6 +1524,29 @@ Show
 	CustomAlertSound "gucci_sounds/fourlink.mp3" 300
 	MinimapIcon 2 Green Hexagon
 
+##### WANDS ####
+Show
+	Class "Wands"
+	AreaLevel <= 100
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	AreaLevel < 33
+	SetFontSize 45
+
+
+Show
+	Class "Wands"
+	AreaLevel <= 100
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	AreaLevel < 33
+	SetFontSize 45
+
+
 #### Boots ####
 Show
 	Class "Boots"
