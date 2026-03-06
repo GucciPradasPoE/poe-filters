@@ -113,7 +113,7 @@
 ##### Section 0 - Racing Options & Overrides #####
 ##################################################
 #Show
-#	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Chance" "Cartographer's Chisel"
+#	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Chance"
 #	Class Currency
 #	AreaLevel >= 67
 #	SetTextColor 0 0 0
@@ -131,7 +131,7 @@
 #	SetBorderColor 0 0 0
 #	SetFontSize 45
 #Show
-#	BaseType "Armourer's Scrap" "Alchemy Shard" "Binding Shard" "Jeweller's Orb"
+#	BaseType "Armourer's Scrap" "Alchemy Shard" "Jeweller's Orb"
 #	Class Currency
 #	AreaLevel >= 67
 #	SetFontSize 40
@@ -217,23 +217,6 @@ Show
 ##########################################
 
 #####General####
-#3.27
-Show #3.27
-	BaseType "Augmentation Implant" "Regal Implant" "Exalted Implant" "Unstable Implant" "Foulborn Orb of Augmentation" "Foulborn Regal Orb" "Foulborn Exalted Orb"
-	SetBackgroundColor 250 0 125
-	SetBorderColor 255 255 155
-	SetTextColor 255 255 155
-	SetFontSize 45
-	PlayAlertSound 3 125
-	MinimapIcon 1 Blue Triangle
-	PlayEffect Blue Temp
-	
-Show #3.27
-	Class == "Grafts"
-	SetBackgroundColor 0 0 0 
-	SetBorderColor 160 32 240
-	SetFontSize 45
-	PlayAlertSound 3 125
 	
 Show #3.27
 	Class == "Wombgifts"
@@ -298,7 +281,7 @@ Show
 	DisableDropSound
 Show
 	Class Currency
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Exalted Orb" 
+	BaseType "Orb of Annulment" "Ancient Orb" "Exalted Orb" 
 	SetBorderColor 240 0 200
 	SetTextColor 240 0 200
 	PlayAlertSound 10 250
@@ -1596,85 +1579,7 @@ Show
 	CustomAlertSound "gucci_sounds/swordrgb.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 	
-Show
-	BaseType "Whalebone Rapier" 
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Normal
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/whalerg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Whalebone Rapier" 
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Magic
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/whalerg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Whalebone Rapier" 
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Rare
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/whalerg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-	
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Normal
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 80 80 80
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/swordrg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Magic
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 50 50 255
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/swordrg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
-	AreaLevel < 24	
-	Sockets = 3
-	LinkedSockets >= 2	
-	Rarity Rare
-	SocketGroup RG
-	SetTextColor 0 0 0
-	SetBorderColor 255 0 0
-	SetBackgroundColor 225 225 110
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/swordrg.mp3" 300
-	MinimapIcon 2 Yellow Triangle
+
 Show
 	BaseType "Rusted Sword" "Copper Sword" "Sabre" "Rusted Spike" "Broad Sword" "Whalebone Rapier" 
 	AreaLevel < 24	
@@ -2548,7 +2453,7 @@ Show
 Show
 	Class "Belt"
 	BaseType "Leather Belt"
-	ItemLevel <= 20
+	ItemLevel <= 25
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -2570,7 +2475,7 @@ Show
 Show
 	Class "Belt"
 	BaseType "Leather Belt"
-	ItemLevel <= 20
+	ItemLevel <= 25
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -3418,7 +3323,7 @@ Show
 	MinimapIcon 0 White Hexagon
 	PlayEffect White
 Show
-	BaseType "Synthesised Map" "Museum" "Harbinger" "Moon Temple"
+	BaseType "Synthesised Map" "Museum" "Moon Temple"
 	Class Map
 	Rarity Unique
 	SetBackgroundColor 225 100 0
@@ -4560,8 +4465,7 @@ Show
 ##################################################
 ########## Section 0A - SSF Overrides ############
 ##################################################
-Hide
-	BaseType "Engineer's Orb" 
+
 
 #Tainted Currencies
 Show
@@ -4589,7 +4493,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Exalted Orb" 
+	BaseType "Orb of Annulment" "Ancient Orb" "Exalted Orb" 
 	SetBorderColor 240 0 200
 	SetTextColor 240 0 200
 	PlayAlertSound 10 250
@@ -4600,7 +4504,7 @@ Show
 	
 ###Sounds Tier### 
 Show
-	BaseType "Eldritch Ichor" "Eldritch Ember" "Orb of Unmaking" "Chaos Orb" "Regal Orb" "Instilling Orb" "Engineer's Orb" "Vaal Orb"
+	BaseType "Eldritch Ichor" "Eldritch Ember" "Orb of Unmaking" "Chaos Orb" "Regal Orb" "Instilling Orb" "Vaal Orb"
 	SetBorderColor 200 0 250
 	SetTextColor 200 0 250
 	SetFontSize 45
@@ -4609,7 +4513,7 @@ Show
 	PlayEffect Purple
 	DisableDropSound
 Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Orb of Chance"  "Orb of Alteration" "Orb of Horizon" "Cartographer's Chisel"
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Orb of Chance"  "Orb of Alteration" 
 	Class Currency
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
@@ -4634,7 +4538,7 @@ Show
 	PlayAlertSound 3 100
 	MinimapIcon 2 Green Circle
 Show
-	BaseType  "Orb of Chance" "Orb of Alteration" "Jeweller's Orb" "Chromatic Orb" "Orb of Transmutation" "Glassblower's Bauble" "Cartographer's Chisel"
+	BaseType  "Orb of Chance" "Orb of Alteration" "Jeweller's Orb" "Chromatic Orb" "Orb of Transmutation" "Glassblower's Bauble"
 	StackSize >= 3
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
@@ -4646,7 +4550,7 @@ Show
 
 ###No Sound Tier###
 Show
-	BaseType "Enkindling Orb" "Instilling Orb" "Orb of Alteration" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Glassblower's Bauble" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Cartographer's Chisel" "Orb of Chance"
+	BaseType "Enkindling Orb" "Instilling Orb" "Orb of Alteration" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Glassblower's Bauble" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Chance"
 	Class Currency
 	SetFontSize 40
 	SetTextColor 100 150 200
@@ -4664,14 +4568,14 @@ Show
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
 Hide
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Orb of Horizon"
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" 
 	Class Currency
 	SetBackgroundColor 0 180 130
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
 	SetFontSize 40
 Hide
-	BaseType "Blacksmith's Whetstone" "Orb of Transmutation" "Glassblower's Bauble" "Orb of Augmentation" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Armourer's Scrap" "Enkindling Orb" "Instilling Orb" "Cartographer's Chisel" "Orb of Chance"
+	BaseType "Blacksmith's Whetstone" "Orb of Transmutation" "Glassblower's Bauble" "Orb of Augmentation" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Armourer's Scrap" "Enkindling Orb" "Instilling Orb" "Orb of Chance"
 	Class Currency
 	SetFontSize 35
 	SetTextColor 100 150 200
@@ -4690,7 +4594,7 @@ Hide
 	
 ###Shards###
 Show
-	BaseType "Annulment Shard" "Ancient Shard" "Harbinger's Shard"
+	BaseType "Annulment Shard" 
 	SetBackgroundColor 200 200 200
 	SetBorderColor 0 150 250
 	SetTextColor 0 150 250
@@ -4705,16 +4609,12 @@ Show
 	MinimapIcon 2 Blue Circle
 	PlayEffect Blue Temp
 Hide
-	BaseType "Chaos Shard" "Alchemy Shard" "Binding Shard" "Horizon Shard" "Alteration Shard"
+	BaseType "Chaos Shard" "Alchemy Shard" "Alteration Shard"
 	SetBorderColor 0 150 250
 	SetTextColor 0 150 250
 	SetFontSize 42
 
-Hide
-	BaseType "Engineer's Shard"
-	Class Currency
-	SetBorderColor 170 158 130
-	SetTextColor 170 158 130
+
 
 
 
@@ -4968,9 +4868,7 @@ Show
 ######################### Section 2 - Currency & 6L ###############################
 ###################################################################################
 #GENERAL ONLY - leaguestart currency overrides - makes race currency bigger/more dramatic highlights at race levels. next five blocks in general filter only
-Hide
-	BaseType "Engineer's Orb"
-	DisableDropSound
+
 Show
 	BaseType "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Orb of Chance"
 	AreaLevel <= 67
@@ -5078,7 +4976,7 @@ Show
 	PlayEffect Red
 	DisableDropSound
 Show
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Sacred Orb" "Fracturing Orb"
+	BaseType "Orb of Annulment" "Ancient Orb" "Sacred Orb" "Fracturing Orb"
 	SetBackgroundColor 240 0 200
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
@@ -5087,17 +4985,7 @@ Show
 	MinimapIcon 1 Pink Circle
 	PlayEffect Pink
 	DisableDropSound
-Show
-	BaseType "Orb of Horizons" "Scouting Report"
-	SetBackgroundColor 200 0 250
-#	SetBackgroundColor 150 0 250
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 2 150
-	MinimapIcon 1 Purple Circle
-	PlayEffect Purple
-	DisableDropSound
+
 Show
 	BaseType "Orb of Binding" "Veiled" "Enkindling Orb" "Instilling Orb"
 	Class "Currency"
@@ -5129,7 +5017,7 @@ Show
 	MinimapIcon 2 Green Circle
 	DisableDropSound
 Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Cartographer's Chisel"
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" 
 #	SetBackgroundColor 0 175 0
 	SetBackgroundColor 0 165 0
 	SetBorderColor 0 0 0
@@ -5141,21 +5029,18 @@ Show
 
 #Shards
 Show
-	BaseType "Exalted Shard" "Annulment Shard" "Ancient Shard" "Harbinger's Shard" "Fracturing Shard"
+	BaseType "Exalted Shard" "Annulment Shard" "Fracturing Shard"
 	SetBorderColor 0 150 250
 	SetFontSize 42
 	MinimapIcon 2 Blue Circle
 	PlayEffect Blue Temp
 Show
-	BaseType "Chaos Shard" "Regal Shard" "Horizon Shard"
+	BaseType "Chaos Shard" "Regal Shard" 
 	SetBorderColor 0 200 200
 	SetFontSize 40
-Hide #Strict+ Filters
-	BaseType "Engineer's Shard"
-	SetBorderColor 170 158 130
-	SetFontSize 40
+
 Show
-	BaseType "Binding Shard" "Alchemy Shard"
+	BaseType "Alchemy Shard"
 	SetBorderColor 170 158 130
 	SetFontSize 40
 
@@ -5670,16 +5555,6 @@ Show
 	MinimapIcon 2 Green Triangle
 	PlayEffect Green Temp
 
-#Harbinger (v3.0) / Fall of Oriath (Harbinger Currency moved to Section #2 - Currency)
-Show
-	Class "Piece"
-	SetBackgroundColor 100 50 0
-	SetBorderColor 250 250 250
-	SetTextColor 250 150 0
-	SetFontSize 45
-	PlayAlertSound 4 100
-	MinimapIcon 0 Blue Star
-	PlayEffect Blue
 
 #Abyss (v3.1)
 #note: Abyss Jewels are now part of the Jewel section, and Stygian Vises have been moved into the Atlas Bases section as they share the same highlighting as the valuable Atlas jewellery bases
@@ -6900,7 +6775,7 @@ Show
 	MinimapIcon 0 White Hexagon
 	PlayEffect White
 Show
-	BaseType "Synthesised Map" "Museum" "Harbinger" "Moon Temple"
+	BaseType "Synthesised Map" "Museum" "Moon Temple"
 	Class Map
 	Rarity Unique
 	SetBackgroundColor 225 100 0
@@ -8991,7 +8866,7 @@ Show
 	PlayEffect Purple
 #Single Turn In - cards with a stack size of 1. Same highlight as mid tier. Exception made for Acclimatisation (stack size 2)
 Show
-	BaseType == "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Cartographer" "The Heroic Shot" "The Shortcut" "The Void" "Acclimatisation"
+	BaseType == "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Heroic Shot" "The Shortcut" "The Void" "Acclimatisation"
 	Class "Divination Card"
 	SetBackgroundColor 200 150 250
 	SetBorderColor 0 0 0
@@ -13708,11 +13583,6 @@ Show
 	ItemLevel <= 25
 	Rarity Magic
 	
-#Chisel recipe - off by default
-#Hide
-#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-#	ItemLevel > 66
-#	Rarity Normal
 
 #Chaos Recipe 2x2's: faint yellow borders on low droplevel 2x2 items (this must be placed below Section 18 - Armour or it takes priority on rares)
 Show

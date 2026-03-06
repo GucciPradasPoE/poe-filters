@@ -113,7 +113,7 @@
 ##### Section 0 - Racing Options & Overrides #####
 ##################################################
 #Show
-#	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Chance" "Cartographer's Chisel"
+#	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Chance"
 #	Class Currency
 #	AreaLevel >= 67
 #	SetTextColor 0 0 0
@@ -131,7 +131,7 @@
 #	SetBorderColor 0 0 0
 #	SetFontSize 45
 #Show
-#	BaseType "Armourer's Scrap" "Alchemy Shard" "Binding Shard" "Jeweller's Orb"
+#	BaseType "Armourer's Scrap" "Alchemy Shard" "Jeweller's Orb"
 #	Class Currency
 #	AreaLevel >= 67
 #	SetFontSize 40
@@ -212,23 +212,6 @@ Show
 ##########################################
 
 #####General####
-#3.27
-Show #3.27
-	BaseType "Augmentation Implant" "Regal Implant" "Exalted Implant" "Unstable Implant" "Foulborn Orb of Augmentation" "Foulborn Regal Orb" "Foulborn Exalted Orb"
-	SetBackgroundColor 250 0 125
-	SetBorderColor 255 255 155
-	SetTextColor 255 255 155
-	SetFontSize 45
-	PlayAlertSound 3 125
-	MinimapIcon 1 Blue Triangle
-	PlayEffect Blue Temp
-	
-Show #3.27
-	Class == "Grafts"
-	SetBackgroundColor 0 0 0 
-	SetBorderColor 160 32 240
-	SetFontSize 45
-	PlayAlertSound 3 125
 	
 Show #3.27
 	Class == "Wombgifts"
@@ -293,7 +276,7 @@ Show
 	DisableDropSound
 Show
 	Class Currency
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" 
+	BaseType "Orb of Annulment" "Ancient Orb" 
 	SetBorderColor 240 0 200
 	SetTextColor 240 0 200
 	PlayAlertSound 10 250
@@ -2716,7 +2699,7 @@ Show
 	MinimapIcon 0 White Hexagon
 	PlayEffect White
 Show
-	BaseType "Synthesised Map" "Museum" "Harbinger" "Moon Temple"
+	BaseType "Synthesised Map" "Museum" "Moon Temple"
 	Class Map
 	Rarity Unique
 	SetBackgroundColor 225 100 0
@@ -3126,7 +3109,7 @@ Show
 	PlayEffect Red
 	DisableDropSound
 Show
-	BaseType "Orb of Annulment" "Harbinger's Orb" "Ancient Orb" "Sacred Orb" "Fracturing Orb"
+	BaseType "Orb of Annulment" "Ancient Orb" "Sacred Orb" "Fracturing Orb"
 	SetBackgroundColor 240 0 200
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
@@ -3135,19 +3118,9 @@ Show
 	MinimapIcon 1 Pink Circle
 	PlayEffect Pink
 	DisableDropSound
+
 Show
-	BaseType "Orb of Horizons" "Scouting Report"
-	SetBackgroundColor 200 0 250
-#	SetBackgroundColor 150 0 250
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 2 150
-	MinimapIcon 1 Purple Circle
-	PlayEffect Purple
-	DisableDropSound
-Show
-	BaseType "Orb of Binding" "Engineer's Orb" "Veiled" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
+	BaseType "Orb of Binding" "Veiled" "Enkindling Orb" "Instilling Orb" "Oil Extractor"
 	Class Currency
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
@@ -3177,7 +3150,7 @@ Show
 	MinimapIcon 2 Green Circle
 	DisableDropSound
 Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Cartographer's Chisel"
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing"
 #	SetBackgroundColor 0 175 0
 	SetBackgroundColor 0 165 0
 	SetBorderColor 0 0 0
@@ -3189,21 +3162,18 @@ Show
 
 #Shards
 Show
-	BaseType "Exalted Shard" "Annulment Shard" "Ancient Shard" "Harbinger's Shard" "Fracturing Shard"
+	BaseType "Exalted Shard" "Annulment Shard" "Fracturing Shard"
 	SetBorderColor 0 150 250
 	SetFontSize 42
 	MinimapIcon 2 Blue Circle
 	PlayEffect Blue Temp
 Show
-	BaseType "Chaos Shard" "Regal Shard" "Horizon Shard"
+	BaseType "Chaos Shard" "Regal Shard" 
 	SetBorderColor 0 200 200
 	SetFontSize 40
-Hide #Strict+ Filters
-	BaseType "Engineer's Shard"
-	SetBorderColor 170 158 130
-	SetFontSize 40
+
 Show
-	BaseType "Binding Shard" "Alchemy Shard"
+	BaseType "Alchemy Shard"
 	SetBorderColor 170 158 130
 	SetFontSize 40
 
@@ -3718,16 +3688,6 @@ Show
 	MinimapIcon 2 Green Triangle
 	PlayEffect Green Temp
 
-#Harbinger (v3.0) / Fall of Oriath (Harbinger Currency moved to Section #2 - Currency)
-Show
-	Class "Piece"
-	SetBackgroundColor 100 50 0
-	SetBorderColor 250 250 250
-	SetTextColor 250 150 0
-	SetFontSize 45
-	PlayAlertSound 4 100
-	MinimapIcon 0 Blue Star
-	PlayEffect Blue
 
 #Abyss (v3.1)
 #note: Abyss Jewels are now part of the Jewel section, and Stygian Vises have been moved into the Atlas Bases section as they share the same highlighting as the valuable Atlas jewellery bases
@@ -4951,7 +4911,7 @@ Show
 	MinimapIcon 0 White Hexagon
 	PlayEffect White
 Show
-	BaseType "Synthesised Map" "Museum" "Harbinger" "Moon Temple"
+	BaseType "Synthesised Map" "Museum" "Moon Temple"
 	Class Map
 	Rarity Unique
 	SetBackgroundColor 225 100 0
@@ -7042,7 +7002,7 @@ Show
 	PlayEffect Purple
 #Single Turn In - cards with a stack size of 1. Same highlight as mid tier. Exception made for Acclimatisation (stack size 2)
 Show
-	BaseType == "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Cartographer" "The Heroic Shot" "The Shortcut" "The Void" "Acclimatisation"
+	BaseType == "Chaotic Disposition" "Divine Justice" "Society's Remorse" "The Heroic Shot" "The Shortcut" "The Void" "Acclimatisation"
 	Class "Divination Card"
 	SetBackgroundColor 200 150 250
 	SetBorderColor 0 0 0
@@ -11760,11 +11720,6 @@ Show
 	ItemLevel <= 25
 	Rarity Magic
 	
-#Chisel recipe - off by default
-#Hide
-#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-#	ItemLevel > 66
-#	Rarity Normal
 
 #Chaos Recipe 2x2's: faint yellow borders on low droplevel 2x2 items (this must be placed below Section 18 - Armour or it takes priority on rares)
 Show
