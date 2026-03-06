@@ -1,4 +1,4 @@
-#Sovereign Filter by StupidFatHobbit updated 3/30/20 | Delirium League | v3.10.2 | GENERAL VERSION
+#Sovereign Filter by StupidFatHobbit updated 3/6/26 | 3.28 Update | GENERAL VERSION
 #Update Notes: Delirium League Update II: Economy, New Highlights, Uberstrict Improvements
 
 #defaultcolors:
@@ -142,7 +142,7 @@
 #	MinimapIcon 2 Green Triangle
 #Show
 #	Class Gem
-#	BaseType "Animate Guardian" "Cleave" "Determination" "Dread Banner" "Exsanguinate" "Herald of Purity" "Holy Flame Totem" "Intimidating Cry" "Molten Shell" "Perforate" "Pride" "Punishment" "Reckoning" "Shockwave Totem" "Summon Stone Golem" "Sweep" "Vaal Molten Shell" "Vengeance" "Vulnerability" "War Banner" "Added Fire Damage Support" "Bloodlust Support" "Bloodthirst Support" "Brutality Support" "Chance to Bleed Support" "Iron Grip Support" "Maim Support" "Melee Physical Damage Support"
+#	BaseType "Animate Guardian" "Cleave" "Determination" "Dread Banner" "Exsanguinate" "Herald of Purity" "Holy Flame Totem" "Intimidating Cry" "Molten Shell" "Perforate" "Pride" "Punishment" "Reckoning" "Shockwave Totem" "Summon Stone Golem" "Holy Sweep" "Vaal Molten Shell" "Vengeance" "Vulnerability" "War Banner" "Added Fire Damage Support" "Bloodlust Support" "Bloodthirst Support" "Brutality Support" "Chance to Bleed Support" "Iron Grip Support" "Maim Support" "Melee Physical Damage Support"
 #	Quality >= 1
 #	SetBorderColor 255 204 102
 #	SetFontSize 40
@@ -655,7 +655,7 @@ Show
 	
 #####non map races very tryhard do not enable unless you dont intend to map#####
 #Hide
-#	BaseType "Cartographer's Chisel" "Gemcutter's Prism" "Blessed Orb"
+#	BaseType "Gemcutter's Prism" "Blessed Orb"
 #	Class Currency
 #	DisableDropSound
 
@@ -2394,7 +2394,7 @@ Show
 ## Zones ##
 Show
 	Class "Gem"
-	BaseType "Summon Skitterbots" "Herald of Thunder" "Herald of Ash" "Herald of Ice" "Lesser Multiple Projectiles" "Volley Support" "Elemental Focus" "Faster Casting" "Cruelty" "Leap Slam" "Anger" "Determination" "Cremation"
+	BaseType "Summon Skitterbots" "Herald of Thunder" "Herald of Ash" "Herald of Ice" "Multiple Projectiles Support" "Volley Support" "Elemental Focus" "Faster Casting" "Cruelty" "Leap Slam" "Anger" "Determination" "Cremation"
 	SetFontSize 45
 Show
 	Class "Gem"
@@ -2851,7 +2851,7 @@ Show
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 Show
-	BaseType "Divine Orb" "Orb of Annulment" "Harbinger's Orb" "Ancient Orb"
+	BaseType "Divine Orb" "Orb of Annulment" "Ancient Orb" "Volatile Vaal Orb" "Flesh of Xesht"
 	SetBackgroundColor 240 0 200
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
@@ -2860,7 +2860,7 @@ Show
 	MinimapIcon 1 Pink Circle
 	PlayEffect Pink
 Show
-	BaseType "Sextant" "Orb of Horizons" "Exalted Shard" "Cartographer's Seal" "Unshaping Orb"
+	BaseType "Sextant" "Exalted Shard"
 	SetBackgroundColor 200 0 250
 #	SetBackgroundColor 150 0 250
 	SetBorderColor 0 0 0
@@ -2878,7 +2878,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Cyan Circle
 Show
-	BaseType "Orb of Binding" "Engineer's Orb"
+	BaseType "Orb of Binding"
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
@@ -2938,7 +2938,7 @@ Show
 	PlayAlertSound 3 100
 	MinimapIcon 2 Green Circle
 Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Cartographer's Chisel"
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing"
 #	SetBackgroundColor 0 175 0
 	SetBackgroundColor 0 165 0
 	SetBorderColor 0 0 0
@@ -2949,7 +2949,7 @@ Show
 
 #Shards
 Show
-	BaseType "Annulment Shard" "Ancient Shard" "Harbinger's Shard" "Horizon Shard"
+	BaseType "Annulment Shard"
 	SetBackgroundColor 0 150 250
 	SetBorderColor 0 0 0
 	SetTextColor 0 0 0
@@ -2959,14 +2959,6 @@ Show
 Show
 	BaseType "Chaos Shard" "Regal Shard"
 	SetBorderColor 0 200 200
-	SetFontSize 40
-Show
-	BaseType "Engineer's Shard"
-	SetBorderColor 170 158 130
-	SetFontSize 40
-Show
-	BaseType "Binding Shard"
-	SetBorderColor 170 158 130
 	SetFontSize 40
 #Minor Currency, Scrolls, Etc
 Show
@@ -2987,6 +2979,68 @@ Show
 	SetFontSize 38
 	AreaLevel <= 78
 	
+
+#3.28 New Currencies
+Show
+	BaseType "Coin of Knowledge" "Coin of Power" "Coin of Skill" "Coin of Restoration" "Coin of Desecration"
+	Class Currency
+	SetBackgroundColor 0 225 125
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 100
+	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
+	DisableDropSound
+Show
+	BaseType "Refracting Fog" "Essence of Desolation" "Crystallised Rancour"
+	Class Currency
+	SetBackgroundColor 0 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 2 Cyan Circle
+	DisableDropSound
+Show
+	BaseType "Sinistral Catalyst" "Dextral Catalyst"
+	Class Currency
+	SetBackgroundColor 0 225 125
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 100
+	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
+	DisableDropSound
+Show
+	BaseType "Memory of Trauma" "Memory of Reverence" "Memory of Loneliness"
+	Class Currency
+	SetBackgroundColor 0 185 185
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 125
+	MinimapIcon 2 Cyan Circle
+	DisableDropSound
+Show
+	BaseType "Runegraft"
+	Class Currency
+	SetBackgroundColor 170 158 130
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+Show
+	BaseType "Astrolabe"
+	Class Currency
+	SetBackgroundColor 0 225 125
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetFontSize 45
+	PlayAlertSound 3 100
+	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
+	DisableDropSound
 #6L Blocks - located up here due to code priority issues. 5L and 6S blocks are in the Sockets section (7)
 #tabula exception so it doesn't show with white bg and top sound
 Show
@@ -4226,12 +4280,6 @@ Show
 #	SetBackgroundColor 0 100 140
 #	SetBorderColor 225 225 225
 #	SetTextColor 225 225 225
-#	SetFontSize 45
-#	MinimapIcon 2 Cyan Raindrop
-#	PlayEffect Cyan Temp
-#Show
-#	BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
-#	SetTextColor 0 200 240
 #	SetFontSize 45
 #	MinimapIcon 2 Cyan Raindrop
 #	PlayEffect Cyan Temp
@@ -6272,7 +6320,7 @@ Show
 	PlayEffect Blue Temp
 #Maximum Tier: Extreme Value only (100c+). White. Mainly HH and mirror cards. Immortal Resolve is usually the low-end cutoff
 Show
-	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Immortal Resolve" "The Demon" "Nook's Crown" "Beauty Through Death" "The Samurai's Eye" "Succor of the Sinless" "The Cheater"
+	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Immortal Resolve" "The Demon" "Nook's Crown" "Beauty Through Death" "The Samurai's Eye" "Succor of the Sinless"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
 	SetTextColor 240 0 240
@@ -6304,7 +6352,7 @@ Show
 	PlayEffect Purple
 #Low Tier: Shit or Very Common Div Cards: No sounds on these, darker blue color. More about removing cards that drop a lot to remove sound spam than removing low value cards. Everything here should be <1 chaos.
 Show
-	BaseType "The Gambler" "The Scholar" "The Lover" "Emperor's Luck" "Flora's Gift" "Her Mask" "The Catalyst" "Destined to Crumble" "The Inoculated" "The Road to Power" "The Sigil" "The Spoiled Prince" "Rain of Chaos" "Thunderous Skies" "The Twins" "Light and Truth" "Prosperity" "The Mercenary" "The Warden" "The Calling" "The Gemcutter" "The Lord in Black" "Struck by Lightning" "The Metalsmith's Gift" "Lantador's Lost Love" "The Scarred Meadow" "The Visionary" "The Incantation" "Dying Anguish" "Cartographer's Delight" "The Pack Leader" "The Gentleman" "The Opulent" "A Mother's Parting Gift" "The Sun" "The Conduit" "The Fox" "The Realm" "The Web" "Turn the Other Cheek" "Lysah's Respite" "The Lich" "The Feast" "The Witch" "Ruthless Ceinture" "The Siren" "Death" "Call to the First Ones" "The Hermit" "The Puzzle" "The Fathomless Depths" "Audacity" "Doedre's Madness" "Rain Tempter" "Anarchy's Price" "The Watcher" "The Coming Storm" "Dark Temptation" "Blazing Fire" "Tranquillity"
+	BaseType "The Gambler" "The Scholar" "The Lover" "Emperor's Luck" "Flora's Gift" "Her Mask" "The Catalyst" "Destined to Crumble" "The Inoculated" "The Road to Power" "The Sigil" "The Spoiled Prince" "Rain of Chaos" "Thunderous Skies" "The Twins" "Light and Truth" "Prosperity" "The Mercenary" "The Warden" "The Calling" "The Gemcutter" "The Lord in Black" "Struck by Lightning" "The Metalsmith's Gift" "Lantador's Lost Love" "The Scarred Meadow" "The Visionary" "The Incantation" "Dying Anguish" "Cartographer's Delight" "The Pack Leader" "The Gentleman" "The Opulent" "A Mother's Parting Gift" "The Sun" "The Conduit" "The Fox" "The Realm" "The Web" "Turn the Other Cheek" "Lysah's Respite" "The Lich" "The Feast" "The Witch" "Ruthless Ceinture" "The Siren" "Death" "Call to the First Ones" "The Hermit" "The Fathomless Depths" "Audacity" "Doedre's Madness" "Rain Tempter" "Anarchy's Price" "The Watcher" "The Coming Storm" "Dark Temptation" "Blazing Fire" "Tranquillity"
 	Class "Divination Card"
 #	SetBackgroundColor 150 200 250
 #	SetBackgroundColor 125 175 225
@@ -8418,7 +8466,7 @@ Show
 ###################################################################################
 #top and rare gems
 Show
-	BaseType "Item Quantity" "Awakened"
+	BaseType "Item Quantity" "Awakened" "Exceptional"
 	Class "Gem"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
