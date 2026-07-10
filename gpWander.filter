@@ -1391,6 +1391,23 @@ Show
 
 #### 4 LINK ####
 
+#FIX PRE 3.29
+Show
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SocketGroup RRGB RGRB RGBR RBGR GBRR BGRR
+	SetBackgroundColor 250 0 125
+	SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	PlayAlertSound 6 250
+	SetFontSize 45
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	DisableDropSound
+
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour"
 	ItemLevel <= 47
@@ -2139,8 +2156,8 @@ Show
 
 Show
 	Class "Shield"	
-#	BaseEvasion < 1
-#	BaseArmour < 1
+	BaseEvasion < 1
+	BaseArmour < 1
 #	BaseEnergyShield < 1
 	AreaLevel <= 69
 	Rarity Rare
@@ -2175,6 +2192,30 @@ Show
 Show
 	Class "Shield"
 	AreaLevel <= 12
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 40
+	MinimapIcon 2 Blue Circle
+	
+Show
+	Class "Shield"
+	BaseEvasion < 1
+	BaseArmour < 1
+#	BaseEnergyShield < 1
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 40
+	MinimapIcon 2 White Circle
+
+Show
+	Class "Shield"
+	BaseEvasion < 1
+	BaseArmour < 1
+#	BaseEnergyShield < 1
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
