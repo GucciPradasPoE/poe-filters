@@ -1,109 +1,3 @@
-#Sovereign Filter by StupidFatHobbit updated 3/6/26 | 3.28 Update | GENERAL VERSION
-#Update Notes: Long Overdue Economy Update (Crucible League Update I)
-
-#defaultcolors:
-#uniqueitem rgb(175,96,37)
-#rareitem rgb(255,255,119)
-#magicitem rgb(136,136,255)
-#whiteitem rgb(200,200,200)
-#gemitem rgb(27,162,155)
-#currencyitem rgb(170,158,130)
-#questitem rgb(74,230,58)
-#defaultfontsize: 32 (18-45)
-
-#New Color Guide:
-#Colors follow a value progression from black -> green -> blue -> purple -> red -> white 
-#Ranged items are lime green, melee are dark red, and caster sky blue for racing/levelling purposes
-
-#NOTE ON CUSTOM SOUNDS - if using a CS filter and unsure of how to set it up, refer to the instructions in the forum thread. 
-
-################################ >>>>>>>> PLEASE READ THIS <<<<<<<< ###################################
-#This is a complete filter meant to cover all aspects of the game including racing, map preparation, and endgame in a hardcore league.
-#It includes dynamic highlighting while levelling and is heavily designed around racing and playing in zero-gear environments (aka start of new leagues).
-#There are four "phases" to the filter: racing, levelling, early maps, and endgame. The filter transitions smoothly between these phases and changes what is shown and hidden based on what's needed at the time. 
-#This filter is much more aggressive than most. Race level filtering is more relaxed to account for worst case scenarios.
-#The idea behind this filter is anything you could possibly want is shown, no more, no less, especially in race environments. Minimum visual clutter.
-
-#Use General filter for leaguestarting and racing. Switch to Strict when you're done with the chaos recipe and need to see less rares. Switch to Uber when you're done picking up non-jewellery rares and need to stop seeing 84/85 bases.
-#The filter is highly modular and sections can be easily copied from one filter to another without issues. Example: If you want to use Uber but still see some rares, you can simply copy Strict's Section 11 into Uber. 
-#For late-league levelling use Strict if you have basic levelling gear setup (tabula, goldrim, wanderlust, lochtonial) and want to replace wanderlust/lochtonial sometime during Part 2. Use Uber if you have absolutely all levelling gear setup and don't want to see any rares/bases aside from t1 jewellery. 
-#Race and SSF Overrides are located in Section 0. Common options and settings are all located in Section 1. 
-
-#If you have any questions or comments please post them in the forum thread located here: https://www.pathofexile.com/forum/view-thread/1595976
-#Using Filterblast (http://filterblast.oversoul.xyz/StupidFatHobbit/) is the best way to preview my (or anyone's) filter. 
-#You will always be able to find the most updated version of the filter on the forums or at twitch.tv/sfhobbit via !filter.
-#Special thanks to Guccipradas, Yovu, BiggestE, RaizQT, RichJMoney, UberElite, PressStartToPaws, Dissolator and any others I may have forgotten for helping test the filter and provide valuable feedback.
-#Major thanks to reddit user "deathtorn" for writing a small program to generate the CS files easily, saving countless hours of work every update. 
-
-#######################################################################################################
-#notes for me / random info / stuff you probably shouldn't be reading
-#docks/lake levels: 29/34, 51/55, 64/67
-#oriath: lake 34, harvest 40, church 45, bridge 60
-#-------------------------
-#SOUND 2.0
-#1 - clashgong - levelling 4L's, 5L
-#2 - stone drop - mid tier currency / div card
-#3 - sour stone drop -  currency / div card
-#4 - rising wind - variable value or multiple basetype unique, divine vessels
-#5 - rising metal - high value unique
-#6 - sharper rising metal? - top tier currency / div card / unique
-#7 - ALIENS - unique jewel, unique map
-#8 - dadadadada - red tier map
-#9 - quieter #8 - all other maps
-#ORIATH SOUNDS
-#10 - hard metal drop - high tier special items
-#11 - soft metal drop - mid tier special items
-#12 - crystal drop - quality gems
-#13 - synth metal reverb? -  generic high value (rare atlas basetypes, high ilvl abyss jewels)
-#14 - metal echo - levelling flasks
-#15 - rapid metal echo - max tier maps
-#16 - muffled drop - shaped/elder items
-
-#############################################################################################
-############################## --- Table of Contents --- ####################################
-#############################################################################################
-#Note: Ctrl+F a section i.e. "Section 1" to jump to that area
-#Options and Customization Blocks:
-#Section 0 - Racing Options & Overrides
-#Section 1 - Chance Items, Priority Highlight, Link Options
-#High Priority Blocks:f
-#Section 2 - Currency & 6L
-#Section 3 - League & Zone Specific
-#Section 4 - Maps & Atlas Items
-#Section 5 - Influence & Special Bases
-#Section 6 - IDcraft
-#Section 7 - Jewels & Sockets
-#Section 8 - Uniques
-#Section 9 - Divination Cards
-#Basetype Highlighting Blocks:
-#Section 10 - i84+ Bases
-#Section 11 - Rare Highlighting
-#Section 12 - 3CL & Miscellaneous
-#Levelling Blocks:
-#Section 13 - Global Levelling
-#Section 14 - Caster Levelling
-#Section 15 - Summoner Levelling
-#Section 16 - Melee Levelling
-#Section 17 - Ranged Levelling
-#Section 18 - Armour
-#Section 19 - Flasks
-#Other Blocks:
-#Section 20 - Gems
-#Section 21 - Racing Safety Nets & Catch-Alls
-#Section 22 - Chaos Recipe & Other Niche Options
-#Section 23 - Animate Weapon
-#Section 24 - Terminus
-
-#INSTRUCTIONS FOR SETTING UP THE GENERAL FILTER AT LEAGUESTART:
-#Step 1 - Set your preferred archetype link colors (melee, caster, bow, summoner) in Section 1 for your planned levelling skills
-#Step 2 - [OPTIONAL BUT RECOMMENDED] Delete the levelling archetype blocks that you don't need. Example: If you're setting up a caster filter, delete Sections 15 (summoner), 16 (melee), 17 (ranged). 
-#Step 3 - Save As a different filter
-
-#ADVANCED OPTIONS LOCATED ELSEWHERE
-#Most option blocks are located in Sections 0 & 1. There are a few advanced options blocks that are worth noting.
-#In Section 11A, there are class-targeted blocks designed for SSF to target item classes you're needing the most. There is also an alternative rare highligting section. 
-#To enable the chaos recipe go read the notes in Section 22.
-#Note that the filter is extremely modular. If you don't need a section feel free to delete it without interfering with other key sections.
 
 #Show
 #	CustomAlertSound "gucci_sounds/StopUsingNow.mp3" 300
@@ -816,17 +710,19 @@ Show
 	
 	
 #####FLASKS#####
-#Show
-#	BaseType "Small Life Flask"
-#	AreaLevel <= 5
-#	SetBorderColor 0 0 0
-#	SetTextColor 0 250 250
-#	SetBackgroundColor 250 0 0
-#	SetFontSize 45
-#	CustomAlertSound "gucci_sounds/LifeFlask.mp3" 300
-#	MinimapIcon 2 Red Kite
+Show
+	BaseType "Small Life Flask"
+	Rarity Normal Magic
+	AreaLevel <= 5
+	SetBorderColor 0 0 0
+	SetTextColor 0 250 250
+	SetBackgroundColor 250 0 0
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/LifeFlask.mp3" 300
+	MinimapIcon 2 Red Kite
 Show
 	BaseType "Medium Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 11
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -836,6 +732,7 @@ Show
 	MinimapIcon 2 Red Kite
 Show
 	BaseType "Large Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 15
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -845,6 +742,7 @@ Show
 	MinimapIcon 2 Red Kite
 Show
 	BaseType "Greater Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 17
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -854,6 +752,7 @@ Show
 	MinimapIcon 2 Red Kite
 Show
 	BaseType "Grand Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 23
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -863,6 +762,7 @@ Show
 	MinimapIcon 2 Red Kite
 Show
 	BaseType "Giant Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 29
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -872,6 +772,7 @@ Show
 	MinimapIcon 2 Red Kite
 Show
 	BaseType "Colossal Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 35
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -881,6 +782,7 @@ Show
 	MinimapIcon 2 Red Kite
 #Show
 #	BaseType "Sacred Life Flask"
+#	Rarity Normal Magic
 #	AreaLevel <= 41
 #	SetBorderColor 0 0 0
 #	SetTextColor 0 250 250
@@ -890,6 +792,7 @@ Show
 #	MinimapIcon 2 Red Kite
 Show
 	BaseType "Hallowed Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 55
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -899,6 +802,7 @@ Show
 	MinimapIcon 2 Red Kite
 Show
 	BaseType "Divine Life Flask"
+	Rarity Normal Magic
 	AreaLevel <= 67
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -909,6 +813,7 @@ Show
 
 Show
 	BaseType "Medium Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 6
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -918,6 +823,7 @@ Show
 	MinimapIcon 2 Blue Kite	
 Show
 	BaseType "Large Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 13
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -927,6 +833,7 @@ Show
 	MinimapIcon 2 Blue Kite
 Show
 	BaseType "Greater Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 20
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -936,6 +843,7 @@ Show
 	MinimapIcon 2 Blue Kite
 Show
 	BaseType "Grand Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 26
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -945,6 +853,7 @@ Show
 	MinimapIcon 2 Blue Kite
 Show
 	BaseType "Giant Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 31
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -954,6 +863,7 @@ Show
 	MinimapIcon 2 Blue Kite	
 Show
 	BaseType "Colossal Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 37
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -963,6 +873,7 @@ Show
 	MinimapIcon 2 Blue Kite	
 Show
 	BaseType "Sacred Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 41
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -972,6 +883,7 @@ Show
 	MinimapIcon 2 Blue Kite	
 Show
 	BaseType "Hallowed Mana Flask"
+	Rarity Normal Magic
 	AreaLevel <= 49
 	SetBorderColor 0 0 0
 	SetTextColor 0 250 250
@@ -988,7 +900,16 @@ Show
 #	SetFontSize 45
 #	CustomAlertSound "gucci_sounds/ManaFlask.mp3" 300
 #	MinimapIcon 2 Blue Kite	
-
+Show
+	BaseType "Eternal Mana Flask"
+	Rarity Normal Magic
+	AreaLevel <= 100
+	SetBorderColor 0 0 0
+	SetTextColor 0 250 250
+	SetBackgroundColor 0 0 250
+	SetFontSize 45
+	CustomAlertSound "gucci_sounds/ManaFlask.mp3" 300
+	MinimapIcon 2 Blue Kite	
 	
 ##########################################
 ################# GEAR ###################  
@@ -1006,11 +927,22 @@ Show
 	
 Show
 	LinkedSockets >= 5
+	Class "Body Armour"
 	SetBackgroundColor 250 250 250
 	SetBorderColor 0 0 0
 	SetTextColor 250 0 0
 	SetFontSize 45
 	PlayAlertSound 6 250
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+	DisableDropSound
+Show
+	LinkedSockets >= 5
+	SetBackgroundColor 250 250 250
+	SetBorderColor 0 0 0
+	SetTextColor 250 0 0
+	SetFontSize 45
+	PlayAlertSound 10 250
 	MinimapIcon 0 White Diamond
 	PlayEffect White
 	DisableDropSound
