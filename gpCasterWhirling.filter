@@ -917,12 +917,11 @@ Show
 
 # # # # TWILIGHT STRAND ITEMS # # # # 
 Show
-	Class "Sceptre" "Wand" "Dagger"
 	LinkedSockets = 2
-	SocketGroup RB BB GG
 	SetTextColor 200 0 200
 	SetBorderColor 200 0 200
 	AreaLevel = 1
+	ItemLevel == 1
 	SetFontSize 45
 	
 Show

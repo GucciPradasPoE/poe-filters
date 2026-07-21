@@ -885,7 +885,6 @@ Show
 
 # # # # TWILIGHT STRAND ITEMS # # # # 
 Show
-#	Class "Sceptre" "Wand" 
 	LinkedSockets = 2
 	SetTextColor 200 0 200
 	SetBorderColor 200 0 200

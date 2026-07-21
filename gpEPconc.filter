@@ -928,12 +928,11 @@ Show
 
 # # # # TWILIGHT STRAND ITEMS # # # # 
 Show
-	Class "One Hand Sword" "One Hand Mace" "Bow"
 	LinkedSockets = 2
-	SocketGroup RG RR GG
 	SetTextColor 200 0 200
 	SetBorderColor 200 0 200
 	AreaLevel = 1
+	ItemLevel == 1
 	SetFontSize 45
 	
 Show
