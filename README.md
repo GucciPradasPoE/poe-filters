@@ -5,10 +5,10 @@ https://www.patreon.com/c/guccipradas if you wanna fund some fancy meals
 Video Explanation: https://clips.twitch.tv/FitHeadstrongLadiesTTours-3Gn7TZTxjf0pNpw1
 Video on how to check if filter will work: https://youtu.be/jtAEeyhWpzE
 
-Download whichever you intend to use and sounds folder. 
+Download whichever you intend to use and whichever sounds folder you want. 
 
 
-Put both in Documents > My Games > Path of Exile
+Put both in Documents > My Games > Path of Exile. **Rename the sounds folder to `gucci_sounds` if you download an alternate sound folder.**
 
 Alternatively you can also follow my public filters list https://www.pathofexile.com/account/view-profile/GucciPradas-3875/item-filters . You still need to download the sounds folder from here even if you follow on the pathofexile website
 
