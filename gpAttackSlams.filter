@@ -1196,7 +1196,7 @@ Show
 	
 Show
 	BaseType "Gilded Axe"
-	AreaLevel < 28	
+	AreaLevel < 35	
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1206,7 +1206,7 @@ Show
 	MinimapIcon 2 White Circle
 Show
 	BaseType "Gilded Axe"
-	AreaLevel < 28	
+	AreaLevel < 35	
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1229,7 +1229,7 @@ Show
 	
 Show
 	BaseType "Shadow Axe"
-	AreaLevel < 35	
+	AreaLevel < 39	
 	Rarity Normal
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
@@ -1239,7 +1239,7 @@ Show
 	MinimapIcon 2 White Circle
 Show
 	BaseType "Shadow Axe"
-	AreaLevel < 35	
+	AreaLevel < 39	
 	Rarity Magic
 	SetTextColor 0 0 0
 	SetBorderColor 255 0 0
