@@ -29,6 +29,14 @@ Show
 ##########################################
 
 #####General####
+# 3.30
+Show
+	Class "Viscera"
+	SetBackgroundColor 0 0 0  255
+	SetBorderColor 0 153 0 255
+	SetTextColor 0 153 0 255
+	SetFontSize 45
+
 # 3.29
 Show
 	Class "Chart"
@@ -170,26 +178,6 @@ Show
 #	SetFontSize 45
 
 
-Show
-	BaseType "Orb of Binding"
-	SetBorderColor 250 0 125
-	SetTextColor 250 0 125
-	AreaLevel < 69
-	SetFontSize 45
-	CustomAlertSound "gucci_sounds/binding.mp3" 300
-	MinimapIcon 0 Red Circle
-Show
-	BaseType "Orb of Binding"
-	SetBorderColor 250 0 125
-	SetTextColor 250 0 125
-	AreaLevel < 69
-	SetFontSize 45
-	DisableDropSound
-#Hide
-#	BaseType "Orb of Binding"
-#	SetBorderColor 250 0 125
-#	SetTextColor 250 0 125
-#	SetFontSize 45
 	
 	
 Show
@@ -1356,6 +1344,9 @@ Show #3.29 enable
 #	PlayAlertSound 16 300
 	CustomAlertSound "gucci_sounds/3link1blue.mp3" 300
 	MinimapIcon 2 Yellow Triangle
+
+#ALERT
+
 
 Show #3.29 enable
 	Class "Helm"
@@ -2702,7 +2693,7 @@ Show
 	
 #Fragments
 Show
-	BaseType "Fragment" "Mortal" "Crest"
+	BaseType "Fragment" "Crest"
 	Class "Map Fragments"
 	SetBackgroundColor 60 40 0
 	SetBorderColor 250 250 250
@@ -3931,7 +3922,7 @@ Show
 	PlayEffect Purple
 	DisableDropSound
 Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Orb of Chance"  "Orb of Alteration" 
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Orb of Chance"  "Orb of Alteration" 
 	Class Currency
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
@@ -3939,7 +3930,7 @@ Show
 	PlayAlertSound 3 100
 	MinimapIcon 2 Green Circle
 Show
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Glassblower's Bauble" "Chromatic Orb"
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Glassblower's Bauble" "Chromatic Orb"
 	Class Currency
 	SetBorderColor 0 180 130
 	SetTextColor 0 180 130
@@ -3986,7 +3977,7 @@ Show
 	SetTextColor 100 150 200
 	SetBorderColor 100 150 200
 Hide
-	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Binding" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" 
+	BaseType "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Orb of Regret" "Orb of Scouring" "Gemcutter's Prism" 
 	Class Currency
 	SetBackgroundColor 0 180 130
 	SetBorderColor 0 0 0
@@ -4327,17 +4318,6 @@ Show
 	AreaLevel <= 67
 	SetFontSize 45
 	SetTextColor 100 150 200
-Show
-	BaseType "Orb of Binding"
-	AreaLevel <= 69
-	SetBackgroundColor 0 250 150
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	PlayAlertSound 2 100
-	SetFontSize 45
-	MinimapIcon 1 Green Circle
-	PlayEffect Green
-	DisableDropSound
 
 #Tainted Currencies
 Show
@@ -4415,7 +4395,7 @@ Show
 	PlayEffect Pink
 	DisableDropSound
 Show
-	BaseType "Orb of Binding" "Veiled" "Enkindling Orb" "Instilling Orb"
+	BaseType "Veiled" "Enkindling Orb" "Instilling Orb"
 	Class "Currency"
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
@@ -4494,7 +4474,7 @@ Show
 
 #3.28 New Currencies
 Show
-	BaseType "Coin of Knowledge" "Coin of Power" "Coin of Skill" "Coin of Restoration" "Coin of Desecration"
+	BaseType "Soul Core of Intellect" "Soul Core of Might" "Soul Core of Finesse"
 	Class Currency
 	SetBackgroundColor 0 225 125
 	SetBorderColor 0 0 0
@@ -5049,24 +5029,6 @@ Show
 	
 #Incursion (v3.3) - Dark Red
 Show
-	BaseType "Vial of Awakening" "Vial of the Ghost" "Vial of Sacrifice" "Vial of Transcendence"
-	SetBackgroundColor 250 40 0
-	SetBorderColor 250 250 250
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 2 200
-	MinimapIcon 0 Orange Triangle
-	PlayEffect Orange
-Show
-	BaseType "Vial of"
-	SetBackgroundColor 250 40 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 2 200
-	MinimapIcon 1 Orange Triangle
-	PlayEffect Orange
-Show
 	BaseType "Stone of Passage" "Flashpowder Keg"
 	SetBackgroundColor 100 0 0
 	SetBorderColor 225 225 225
@@ -5444,10 +5406,10 @@ Show
 	SetFontSize 40
 	PlayEffect Brown Temp
 	MinimapIcon 2 Brown Moon
-#scarabs
+#Thread
 
 Show
-	BaseType "Scarab"
+	BaseType "Thread"
 	Class Map Fragment
 	SetBackgroundColor 80 40 0
 	SetBorderColor 200 200 200
@@ -5692,16 +5654,7 @@ Show
 	PlayAlertSound 3 200
 	MinimapIcon 1 Cyan Circle
 	PlayEffect Cyan Temp
-Show
-	BaseType "Lure"
-	Class "Map Fragment"
-	SetBackgroundColor 175 200 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayAlertSound 4 150
-	MinimapIcon 0 Green Moon
-	PlayEffect Green
+
 	
 #Heist (v3.12) - brown theme for the league items
 Show
@@ -6143,7 +6096,7 @@ Show
 
 #Fragments
 Show
-	BaseType "Fragment" "Mortal" "Crest"
+	BaseType "Fragment" "Crest"
 	Class "Map Fragments"
 	SetBackgroundColor 60 40 0
 	SetBorderColor 250 250 250
@@ -8241,7 +8194,7 @@ Show
 
 #Mid Tier - 5c to 20c. Lavender. Saint's Treasure should be the highest card in this tier (roughly). All 6L cards should be in this tier (except Imperial Legacy)
 Show
-	BaseType == "The Devastator" "The Artist" "The Vast" "The Valkyrie" "Heterochromia" "Lucky Deck" "The Breach" "The Dreamer" "The Obscured" "Harmony of Souls" "The Admirer" "The Undaunted" "The Professor" "The Jeweller's Boon" "The Hale Heart" "The Innocent" "The Price of Protection" "The Cacophony" "Merciless Armament" "The Thaumaturgist" "The Journey" "The Landing" "The Messenger" "Monochrome" "The Seeker" "Demigod's Wager" "The Primordial" "Akil's Prophecy" "Azyran's Reward" "Mawr Blaidd" "Perfection" "The Celestial Stone" "The Queen" "The Mad King" "The Life Thief" "The Risk" "Earth Drinker" "The Deep Ones" "Baited Expectations" "Deathly Designs" "Cameria's Cut" "The Fishmonger" "The Bones" "The Escape" "Council of Cats" "The Eldritch Decay" "Peaceful Moments" "A Note in the Wind" "The Sacrifice" "The Bitter Blossom" "The Academic" "Unchained" "Fateful Meeting" "Haunting Shadows" "The Patient" "Brotherhood in Exile" "A Modest Request" "The Enthusiasts" "The Eternal War" "The Offspring" "The Mind's Eyes" "Lachrymal Necrosis" "Dementophobia" "Chasing Risk" "The Forgotten Treasure" "Judging Voices" "Bijoux" "Misery in Darkness" "Justified Ambition" "The One That Got Away" "Magnum Opus" "Altered Perception" "Further Invention" "The Brawny Battle Mage" "A Fate Worse Than Death" "Rebirth and Renewal" "The Forward Gaze" "Ever-Changing" "A Dusty Memory" "Poisoned Faith" "A Chilling Wind" "Nook's Crown" "Luminous Trove" "The Offering" "Pride Before the Fall" "The King's Heart" "Hunter's Reward" "Abandoned Wealth" "The Rusted Bard" "The Spark and the Flame" "The Ethereal" "Dark Dreams" "Void of the Elements" "The Damned" "The Old Man" "The Hive of Knowledge" "Gift of Asenath" "Keeper's Corruption" "The Scout" "Duality" "Anarchy's Price" "The Catch" "Dying Light" "Prometheus' Armoury" "A Stone Perfected" "The Emptiness" "The Rabbit's Foot" "Lethean Temptation" "Pride of the First Ones" "The Eye of the Dragon" "The Hook" "Something Dark" "The Enforcer" "Eternal Bonds" "The Aspirant" "Auspicious Ambitions" "From Bone to Ashes" "The Darkest Dream" "The Last Supper"
+	BaseType == "The Devastator" "The Artist" "The Vast" "The Valkyrie" "Heterochromia" "Lucky Deck" "The Breach" "The Dreamer" "The Obscured" "Harmony of Souls" "The Admirer" "The Undaunted" "The Professor" "The Jeweller's Boon" "The Hale Heart" "The Innocent" "The Price of Protection" "The Cacophony" "Merciless Armament" "The Thaumaturgist" "The Journey" "The Landing" "The Messenger" "Monochrome" "The Seeker" "Demigod's Wager" "The Primordial" "Akil's Prophecy" "Azyran's Reward" "Mawr Blaidd" "Perfection" "The Celestial Stone" "The Queen" "The Mad King" "The Life Thief" "The Risk" "Earth Drinker" "The Deep Ones" "Baited Expectations" "Deathly Designs" "The Fishmonger" "The Bones" "The Escape" "Council of Cats" "The Eldritch Decay" "Peaceful Moments" "A Note in the Wind" "The Sacrifice" "The Bitter Blossom" "The Academic" "Unchained" "Fateful Meeting" "Haunting Shadows" "The Patient" "Brotherhood in Exile" "A Modest Request" "The Enthusiasts" "The Eternal War" "The Offspring" "The Mind's Eyes" "Lachrymal Necrosis" "Dementophobia" "Chasing Risk" "The Forgotten Treasure" "Judging Voices" "Bijoux" "Misery in Darkness" "Justified Ambition" "The One That Got Away" "Magnum Opus" "Altered Perception" "Further Invention" "The Brawny Battle Mage" "A Fate Worse Than Death" "Rebirth and Renewal" "The Forward Gaze" "Ever-Changing" "A Dusty Memory" "Poisoned Faith" "A Chilling Wind" "Nook's Crown" "Luminous Trove" "The Offering" "Pride Before the Fall" "The King's Heart" "Hunter's Reward" "Abandoned Wealth" "The Rusted Bard" "The Spark and the Flame" "The Ethereal" "Dark Dreams" "Void of the Elements" "The Damned" "The Old Man" "The Hive of Knowledge" "Gift of Asenath" "Keeper's Corruption" "The Scout" "Duality" "Anarchy's Price" "The Catch" "Dying Light" "Prometheus' Armoury" "A Stone Perfected" "The Emptiness" "Lethean Temptation" "Pride of the First Ones" "The Eye of the Dragon" "The Hook" "Something Dark" "The Enforcer" "Eternal Bonds" "The Aspirant" "Auspicious Ambitions" "From Bone to Ashes" "The Darkest Dream" "The Last Supper"
 	Class "Divination Card"
 	SetBackgroundColor 200 150 250
 	SetBorderColor 0 0 0
@@ -8275,7 +8228,7 @@ Show
 
 #Trash Tier -  No sounds, darker blue color. Hidden in the Uber filter only. IMPORTANT: More about removing sound spam from cards that drop a lot. Low value cards that are actually rare should still show.
 Show
-	BaseType == "The Gambler" "Emperor's Luck" "The Flora's Gift" "Her Mask" "The Catalyst" "The Road to Power" "The Spoiled Prince" "Thunderous Skies" "The Twins" "Light and Truth" "The Mercenary" "The Calling" "The Scarred Meadow" "The Visionary" "The Incantation" "Cartographer's Delight" "The Pack Leader" "The Gentleman" "A Mother's Parting Gift" "The Sun" "The Conduit" "The Fox" "The Realm" "The Web" "Turn the Other Cheek" "Lysah's Respite" "The Lich" "The Feast" "The Ruthless Ceinture" "Death" "Call to the First Ones" "The Hermit" "The Fathomless Depths" "Audacity" "Doedre's Madness" "The Watcher" "Dark Temptation" "The Blazing Fire" "The Rabid Rhoa" "Forbidden Power" "The Tumbleweed" "The Easy Stroll" "The Army of Blood" "The Journalist" "The Wolf's Shadow" "The Demoness" "The Betrayal" "Volatile Power" "Three Voices" "Three Faces in the Dark" "The Wolf" "The Trial" "The Traitor" "The Tower" "The Summoner" "The Stormcaller" "The Standoff" "The Inventor" "The Gladiator" "The Gentleman" "The Fletcher" "The Arena Champion" "The Aesthete" "Mitts" "Hunter's Resolve" "Glimmer of Hope" "Assassin's Favour" "The Blessing of Moosh" "The Fox in the Brambles" "The Master" "The Drunken Aristocrat" "The Dragon" "The Deceiver"
+	BaseType == "The Gambler" "Emperor's Luck" "The Flora's Gift" "The Catalyst" "The Road to Power" "The Spoiled Prince" "Thunderous Skies" "The Twins" "Light and Truth" "The Mercenary" "The Calling" "The Scarred Meadow" "The Visionary" "The Incantation" "Cartographer's Delight" "The Pack Leader" "The Gentleman" "A Mother's Parting Gift" "The Sun" "The Conduit" "The Fox" "The Realm" "The Web" "Turn the Other Cheek" "Lysah's Respite" "The Lich" "The Feast" "The Ruthless Ceinture" "Death" "Call to the First Ones" "The Hermit" "The Fathomless Depths" "Audacity" "Doedre's Madness" "The Watcher" "Dark Temptation" "The Blazing Fire" "The Rabid Rhoa" "Forbidden Power" "The Tumbleweed" "The Easy Stroll" "The Army of Blood" "The Journalist" "The Wolf's Shadow" "The Demoness" "The Betrayal" "Volatile Power" "Three Voices" "Three Faces in the Dark" "The Wolf" "The Trial" "The Traitor" "The Tower" "The Summoner" "The Stormcaller" "The Standoff" "The Inventor" "The Gladiator" "The Gentleman" "The Fletcher" "The Arena Champion" "The Aesthete" "Mitts" "Hunter's Resolve" "Glimmer of Hope" "Assassin's Favour" "The Blessing of Moosh" "The Fox in the Brambles" "The Master" "The Drunken Aristocrat" "The Dragon" "The Deceiver"
 	Class "Divination Card"
 	SetBackgroundColor 110 160 210
 	SetBorderColor 0 0 0
